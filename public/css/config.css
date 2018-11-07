@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Founders Grotesk Medium";
+  src: url("../font/FoundersGroteskWeb-Medium.eot?") format("eot"), url("../font/FoundersGroteskWeb-Medium.woff2") format("woff2"), url("../font/FoundersGroteskWeb-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "Founders Grotesk Regular";
+  src: url("../font/FoundersGroteskWeb-Regular.eot?") format("eot"), url("../font/FoundersGroteskWeb-Regular.woff2") format("woff2"), url("../font/FoundersGroteskWeb-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Tiempos Headline Bold";
+  src: url("../font/TiemposHeadlineWeb-Bold.eot?") format("eot"), url("../font/TiemposHeadlineWeb-Bold.woff2") format("woff2"), url("../font/TiemposHeadlineWeb-Bold.woff") format("woff"); }
+
+body {
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1, h2, h3, h4, h5, p, span, ol, ul, li {
+  margin: 0;
+  padding: 0; }
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear; }
+
+.headroom--unpinned {
+  background-color: #ffffff; }
