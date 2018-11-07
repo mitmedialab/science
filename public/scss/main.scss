@@ -50,7 +50,7 @@ body {
   padding-top: 35px;
   padding-bottom: 35px;
   width: 100%;
-  z-index: 50000;
+  z-index: 500;
   background-color: #ffffff;
   border-bottom: solid 1px rgba($color: #000000, $alpha: 0.1);
 
@@ -68,7 +68,7 @@ body {
     top: 50px;
     left: 30px;
     line-height: 20px;
-    z-index: 10000;
+    z-index: 1000;
     cursor: pointer;
   }
 }
@@ -188,6 +188,50 @@ nav {
   }
 }
 
+.menu--container {
+  display: table;
+  position: fixed;
+  top: 0;
+  left: -360px;
+  height: 100%;
+  width: 360px;
+  z-index: 2000;
+  background-color: #000;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+  &.state {
+    left: 0;
+  }
+  ul {
+    display: table-cell;
+    margin: 0;
+    padding-top: 120px;
+    padding-left: 30px;
+    vertical-align: middle;
+    li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      list-style: none;
+      a {
+        color: #fff;
+        font-size: 30px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 360px;
+  z-index: 750;
+  width: calc(100% - 360px);
+  height: 100%;
+  cursor: pointer;
+}
+
 body.home {
   main {
     .content--container {
@@ -291,26 +335,6 @@ body.about {
     position: fixed;
     width: 50%;
     height: 100%;
-  }
-
-  .menu--container {
-    display: none;
-    position: fixed;
-    top: 120px;
-    height: calc(100% - 120px);
-    vertical-align: middle;
-    width: 0;
-    border-right: solid 1px rgba($color: #000000, $alpha: 0.1);
-    overflow: hidden;
-
-    .element {
-      display: table-cell;
-      vertical-align: middle;
-
-      img {
-        height: 230px;
-      }
-    }
   }
 
   .left {
