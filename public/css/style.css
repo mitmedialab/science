@@ -362,15 +362,17 @@ body.home main .content--container {
       margin: 0 auto;
       padding-top: 20px;
       width: 260px; }
-      body.home main .content--container .element--container .element-text--container h4 {
-        margin-bottom: 10px;
-        color: #000;
-        font-size: 20px;
-        letter-spacing: -0.025em; }
-      body.home main .content--container .element--container .element-text--container p {
-        color: #ADB5BD;
-        font-size: 15px;
-        line-height: 1.15; }
+      body.home main .content--container .element--container .element-text--container a {
+        text-decoration: none; }
+        body.home main .content--container .element--container .element-text--container a h4 {
+          margin-bottom: 10px;
+          color: #000;
+          font-size: 20px;
+          letter-spacing: -0.025em; }
+        body.home main .content--container .element--container .element-text--container a p {
+          color: #ADB5BD;
+          font-size: 15px;
+          line-height: 1.15; }
 
 body.home main .mit {
   position: fixed;
