@@ -104,10 +104,11 @@ body {
 }
 
 .mit {
-  span {
-    color: #343A40;
-    font-size: 12.5px;
-    font-weight: bold;
+  position: fixed;
+  bottom: 35px;
+  left: 40px;
+  img {
+    height: 60px;
   }
 }
 
@@ -292,13 +293,6 @@ body.home {
           }
         }
       }
-    }
-
-    .mit {
-      position: fixed;
-      bottom: 20px;
-      width: 100%;
-      text-align: center;
     }
   }
 }

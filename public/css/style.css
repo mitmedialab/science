@@ -271,10 +271,12 @@ body {
     width: 75px;
     height: 75px; }
 
-.mit span {
-  color: #343A40;
-  font-size: 12.5px;
-  font-weight: bold; }
+.mit {
+  position: fixed;
+  bottom: 35px;
+  left: 40px; }
+  .mit img {
+    height: 60px; }
 
 .divider {
   position: fixed;
@@ -412,12 +414,6 @@ body.home main .content--container {
           color: #ADB5BD;
           font-size: 15px;
           line-height: 1.15; }
-
-body.home main .mit {
-  position: fixed;
-  bottom: 20px;
-  width: 100%;
-  text-align: center; }
 
 body.about .image {
   opacity: 0;
