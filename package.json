@@ -7,12 +7,12 @@
     "doc": "doc"
   },
   "dependencies": {
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^4.0.2"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
-    "gulp-concat-css": "^2.3.0",
+    "gulp-concat-css": "^3.1.0",
     "gulp-serve": "^1.4.0"
   },
   "scripts": {
