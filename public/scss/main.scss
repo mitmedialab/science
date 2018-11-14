@@ -53,15 +53,23 @@ body {
   z-index: 500;
   background-color: #ffffff;
   border-bottom: solid 1px rgba($color: #000000, $alpha: 0.1);
+  @media only screen and (max-width: $breakpoint-small) {
+    padding-top: 5px;
+    padding-block-end: 10px;
+    font-size: 15px;
+  }
 
   h2 {
     text-align: center;
     a {
-    color: #000;
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 50px;
-    text-decoration: none;
+      color: #000;
+      font-size: 50px;
+      font-weight: bold;
+      line-height: 50px;
+      text-decoration: none;
+      @media only screen and (max-width: $breakpoint-small) {
+        font-size: 15px;
+      }
     }
   }
 
@@ -72,6 +80,10 @@ body {
     line-height: 20px;
     z-index: 1000;
     cursor: pointer;
+    @media only screen and (max-width: $breakpoint-small) {
+      top: 20px;
+      left: 20px;
+    }
   }
 }
 
@@ -89,6 +101,10 @@ body {
     img {
       width: 130px;
       height: 130px;
+      @media only screen and (max-width: $breakpoint-small) {
+        width: 65px;
+        height: 65px;
+      }
     }
   }
 
@@ -99,6 +115,10 @@ body {
     img {
       width: 75px;
       height: 75px;
+      @media only screen and (max-width: $breakpoint-small) {
+        width: 37.5px;
+        height: 37.5px;
+      }
     }
   }
 }
@@ -107,8 +127,17 @@ body {
   position: fixed;
   bottom: 35px;
   left: 40px;
+  z-index: 2000;
+  @media only screen and (max-width: $breakpoint-small) {
+    bottom: 20px;
+    left: auto;
+    right: 20px;
+  }
   img {
     height: 60px;
+    @media only screen and (max-width: $breakpoint-small) {
+      height: 30px;
+    }
   }
 }
 
@@ -198,7 +227,7 @@ nav {
   left: -360px;
   height: 100%;
   width: 360px;
-  z-index: 2000;
+  z-index: 3000;
   background-color: #000;
   transition: all ease-in-out 0.5s;
   cursor: pointer;
@@ -240,16 +269,22 @@ body.home {
     .content--container {
       position: absolute;
       top: 60px;
+      padding-bottom: 120px;
       width: 100%;
       .headline {
         padding-top: 150px;
+        @media only screen and (max-width: $breakpoint-small) {
+          padding-top: 60px;
+        }
         h3 {
           color: #000;
           font-size: 25px;
           line-height: 1.55;
+          @media only screen and (max-width: $breakpoint-small) {
+            font-size: 20px;
+          }
           span {
             color: #000;
-            font-size: 25px;
             font-weight: bold;
             cursor: default;
           }
@@ -269,6 +304,7 @@ body.home {
         .element-image--container {
           text-align: center;
           img {
+            max-width: 100%;
             width: 300px;
             height: auto;
           }
@@ -277,6 +313,9 @@ body.home {
           margin: 0 auto;
           padding-top: 20px;
           width: 260px;
+          @media only screen and (max-width: $breakpoint-small) {
+            width: 100%;
+          }
           a {
             text-decoration: none;
             h4 {
@@ -323,8 +362,8 @@ body.about {
     margin-top: -25%;
     padding-left: 15%;
     padding-right: 15%;
-
   }
+
   .left,
   .right {
     display: inline-block;
