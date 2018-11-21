@@ -239,8 +239,12 @@ body {
   @media only screen and (max-width: 33.75em) {
     .header {
       padding-top: 5px;
-      padding-block-end: 10px;
+      padding-bottom: 10px;
       font-size: 15px; } }
+  @media only screen and (max-width: 45em) {
+    .header {
+      padding-top: 5px;
+      padding-bottom: 10px; } }
   .header h2 {
     text-align: center; }
     .header h2 a {
@@ -252,6 +256,9 @@ body {
       @media only screen and (max-width: 33.75em) {
         .header h2 a {
           font-size: 15px; } }
+      @media only screen and (max-width: 45em) {
+        .header h2 a {
+          font-size: 20px; } }
   .header .menu {
     position: absolute;
     top: 55px;
@@ -259,7 +266,7 @@ body {
     line-height: 20px;
     z-index: 1000;
     cursor: pointer; }
-    @media only screen and (max-width: 33.75em) {
+    @media only screen and (max-width: 45em) {
       .header .menu {
         top: 20px;
         left: 20px; } }
@@ -275,7 +282,7 @@ body {
   .corner--container .l-1 img {
     width: 130px;
     height: 130px; }
-    @media only screen and (max-width: 33.75em) {
+    @media only screen and (max-width: 45em) {
       .corner--container .l-1 img {
         width: 65px;
         height: 65px; } }
@@ -286,7 +293,7 @@ body {
   .corner--container .l-2 img {
     width: 75px;
     height: 75px; }
-    @media only screen and (max-width: 33.75em) {
+    @media only screen and (max-width: 45em) {
       .corner--container .l-2 img {
         width: 37.5px;
         height: 37.5px; } }
@@ -296,14 +303,14 @@ body {
   bottom: 35px;
   left: 40px;
   z-index: 2000; }
-  @media only screen and (max-width: 33.75em) {
+  @media only screen and (max-width: 45em) {
     .mit {
       bottom: 20px;
       left: auto;
       right: 20px; } }
   .mit img {
     height: 60px; }
-    @media only screen and (max-width: 33.75em) {
+    @media only screen and (max-width: 45em) {
       .mit img {
         height: 30px; } }
 
@@ -314,6 +321,9 @@ body {
   width: 1px;
   height: calc(100% - 120px);
   background-color: rgba(0, 0, 0, 0.1); }
+  @media only screen and (max-width: 45em) {
+    .divider {
+      display: none; } }
 
 nav {
   display: table;
@@ -482,6 +492,12 @@ body.about .right {
   position: fixed;
   width: 50%;
   height: 100%; }
+  @media only screen and (max-width: 45em) {
+    body.about .left,
+    body.about .right {
+      position: static;
+      width: 100%;
+      height: auto; } }
 
 body.about .left {
   left: 0; }
