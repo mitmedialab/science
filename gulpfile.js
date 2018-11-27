@@ -1,25 +1,19 @@
-'use strict';
-
 var gulp = require('gulp');
-var serve = require('gulp-serve');
+var shell = require('gulp-shell');
 var browserSync = require('browser-sync').create();
-var sass = require('gulp-sass');
-var concatCss = require('gulp-concat-css');
 
-gulp.task('serve', ['sass'], function() {
-  browserSync.init({server: "./"});
-  gulp.watch("scss/*.scss", ['sass']);
-  gulp.watch("*.html").on('change', browserSync.reload);
+// Task for building blog when something changed:
+gulp.task('build', shell.task(['bundle exec jekyll serve']));
+// If you don't use bundle:
+// gulp.task('build', shell.task(['jekyll serve']));
+// If you use  Windows Subsystem for Linux (thanks @SamuliAlajarvela):
+// gulp.task('build', shell.task(['bundle exec jekyll serve --force_polling']));
+
+// Task for serving blog with Browsersync
+gulp.task('serve', function () {
+    browserSync.init({ server: { baseDir: '_site/' } });
+    // Reloads page when some of the already built files changed:
+    gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
 
-gulp.task('sass', function() {
-  return gulp.src("scss/style.scss").pipe(sass()).pipe(gulp.dest("css")).pipe(browserSync.stream());
-});
-
-gulp.task('concat', function () {
-  return gulp.src('css/*.css')
-    .pipe(concatCss("css/style.css"))
-    .pipe(gulp.dest('out/'));
-});
-
-gulp.task('default', ['serve']);
+gulp.task('default', gulp.series(gulp.parallel('build', 'serve')));
