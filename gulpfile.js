@@ -22,4 +22,4 @@ gulp.task('sass', function () {
     return gulp.src("_site/scss/style.scss").pipe(sass()).pipe(gulp.dest("_site/css/")).pipe(browserSync.stream());
 });
 
-gulp.task('default', gulp.series('serve'));
+gulp.task('default', gulp.series('build', 'serve'));
