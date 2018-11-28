@@ -1,0 +1,12 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+// Imports
+@import "config";
+@import "normalize";
+@import "simple-grid";
+@import "header";
+@import "main";
+@import "footer";

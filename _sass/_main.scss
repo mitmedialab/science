@@ -1,3 +1,4 @@
+
 .corner--container {
     .corner {
         position: fixed;
@@ -189,6 +190,7 @@ nav {
 }
 
 body.home {
+    font-family: $regular;
     main {
         .content--container {
             position: absolute;
@@ -719,6 +721,7 @@ body.elements {
     #status svg {
         fill: #000;
     }
+    
 
     .disable-hover {
         pointer-events: none;
