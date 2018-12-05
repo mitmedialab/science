@@ -7,13 +7,13 @@ window.sr = ScrollReveal({
     },
     scale: 1,
     duration: 2000,
-    viewFactor: 0.4
+    viewFactor: 0.5
 });
-sr.reveal(".img");
+sr.reveal(".img-container");
+sr.reveal(".video-container");
+sr.reveal(".caption", 50);
 sr.reveal(".show");
-sr.reveal(".reveal", 30);
-sr.reveal(".award", 50);
-sr.reveal(".client-logo", 50);
+sr.reveal(".reveal", 50);
 
 var body = document.body,
     timer;
