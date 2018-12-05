@@ -548,8 +548,8 @@ body.elements {
 
 
     .section {
-        padding-top: 180px;
-        padding-bottom: 100px;
+        padding-top: 120px;
+        padding-bottom: 60px;
         padding-left: 120px;
         padding-right: 120px;
     }
@@ -572,26 +572,6 @@ body.elements {
             font-size: 20px;
             text-decoration: none;
             transition: color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-
-        ul {
-            list-style-type: none;
-            margin-left: 0;
-            padding-left: 0;
-            margin-top: 40px;
-            padding-bottom: 30px;
-
-            li {
-                text-transform: uppercase;
-                font-size: 11px;
-                font-weight: 600;
-                line-height: 2.1;
-                display: inline-block;
-                float: left;
-                letter-spacing: 2px;
-                margin-right: 15px;
-                color: #cecece;
-            }
         }
 
         h1 {
@@ -621,10 +601,9 @@ body.elements {
         }
         
         .video-container {
-            .video_responsive {
+            .video {
                 position: relative;
                 padding-bottom: 56.25%;
-                /* Default for 1600x900 videos 16:9 ratio*/
                 padding-top: 0px;
                 height: 0;
                 overflow: hidden;
