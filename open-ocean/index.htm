@@ -1,227 +1,200 @@
-<!doctype html>
-<html class="no-js" lang="">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Elements</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
+---
+layout: default
+---
 
 <body class="elements">
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+	<!--[if lte IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
 
-    <div class="menu--container">
-        <ul>
-            <li><a href="/elements/">Home</a></li>
-            <li><a href="/elements/open-ocean/">Open Ocean</a></li>
-            <li><a href="/elements/open-ocean/">Open Agriculture</a></li>
-            <li><a href="/elements/open-ocean/">Space Exploration</a></li>
-            <li><a href="/elements/about/">About</a></li>
-        </ul>
-    </div>
+	<div class="menu--container">
+		<ul>
+			<li><a href="{{ site.baseurl }}/">Home</a></li>
+			<li><a href="{{ site.baseurl }}/open-ocean/">Open Ocean</a></li>
+			<li><a href="{{ site.baseurl }}/open-ocean/">Open Agriculture</a></li>
+			<li><a href="{{ site.baseurl }}/open-ocean/">Space Exploration</a></li>
+			<li><a href="{{ site.baseurl }}/about/">About</a></li>
+		</ul>
+	</div>
 
-    <div class="overlay"></div>
+	<div class="overlay"></div>
 
-    <div class="header">
-        <div class="menu">Menu</div>
-        <h2><a href="/elements/">democratizing science</a></h2>
-    </div>
+	<div class="header">
+		<div class="menu">Menu</div>
+		<h2><a href="/elements/">democratizing science</a></h2>
+	</div>
 
-    <main>
-        <div class="corner--container">
-            <div class="corner l-1">
-                <img src="../img/l-1@2x.png" alt="">
-            </div>
-            <div class="corner l-2">
-                <img src="../img/l-2@2x.png" alt="">
-            </div>
-            <div class="mit">
-                <img src="../img/mit-media-lab@2x.png">
-            </div>
-        </div>
+	<main>
+		<div class="corner--container">
+			<div class="corner l-1">
+				<img src="{{ site.baseurl }}/img/l-1@2x.png" alt="">
+			</div>
+			<div class="corner l-2">
+				<img src="{{ site.baseurl }}/img/l-2@2x.png" alt="">
+			</div>
+			<div class="mit">
+				<img src="{{ site.baseurl }}/img/mit-media-lab@2x.png">
+			</div>
+		</div>
 
-        <span class="divider"></span>
+		<span class="divider"></span>
 
-        <div class="left-container">
-            <nav>
-                <ul>
-                    <li class="state"><span>1</span><span>Overview</span></li>
-                    <li><span>2</span><span>Section 2</span></li>
-                    <li><span>3</span><span>Section 3</span></li>
-                    <li><span>4</span><span>Section 4</span></li>
-                </ul>
-            </nav>
-        </div>
+		<div class="left-container">
+			<nav>
+				<ul>
+					<li class="state"><span>1</span><span>Overview</span></li>
+					<li><span>2</span><span>Section 2</span></li>
+					<li><span>3</span><span>Section 3</span></li>
+					<li><span>4</span><span>Section 4</span></li>
+				</ul>
+			</nav>
+		</div>
 
-        <div class="section-container">
-            <section class="section stickem-container">
-                <div class="desc stickem">
-                    <h1 class="show">Lego Wayfinder</h1>
-                    <p class="show">The LEGO Wayfinder project combines LEGO, robotics, and seawater into a playground of project-based
-                        learning and citizen science for budding engineers and explorers. As part of this outreach program, our team is
+		<div class="section-container">
+			<section class="section stickem-container">
+				<div class="desc stickem">
+					<h1 class="show">Lego Wayfinder</h1>
+					<p class="show">The LEGO Wayfinder project combines LEGO, robotics, and seawater into a playground of project-based
+						learning and citizen science for budding engineers and explorers. As part of this outreach program, our team is
 developing a prototype of a buildable LEGO marine exploration vehicle kit—addressing some of the design challenges of
 building for the underwater context.</p>
-                    <a href="https://learn.media.mit.edu/wayfinder/" target="_blank" class="sliding blue show">learn.media.mit.edu/wayfinder</a>
-                </div>
-                <div class="media-container">
-                    <div class="video-container">
-                        <div class="video show">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kY4im93tFyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="caption">
-                            <span>The LEGO Wayfinder in action.</span>
-                        </div>
-                    </div>
-                    <div class="img-container">
-                        <div class="img">
-                            <img src="../img/elements/open-ocean--1-1.jpg">
-                        </div>
-                        <div class="caption">
-                            <span>Doing some test dives in a tank at MIT Sea Grant.</span>
-                        </div>
-                    </div>
-                </div>
-                <div style="clear: both;"></div>
-            </section>
+					<a href="https://learn.media.mit.edu/wayfinder/" target="_blank" class="sliding blue show">learn.media.mit.edu/wayfinder</a>
+				</div>
+				<div class="media-container">
+					<div class="video-container">
+						<div class="video show">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/kY4im93tFyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+						<div class="caption">
+							<span>The LEGO Wayfinder in action.</span>
+						</div>
+					</div>
+					<div class="img-container">
+						<div class="img">
+							<img src="{{ site.baseurl }}/img/elements/open-ocean--1-1.jpg">
+						</div>
+						<div class="caption">
+							<span>Doing some test dives in a tank at MIT Sea Grant.</span>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</section>
 
-            <section class="section stickem-container">
-                <div class="desc stickem">
-                    <p class="show">Using this kit, we will run a series of workshops with young people who will build on top of it, making
-                        the marine explorer more sophisticated and customized in order to execute marine science experiments of their
-                        design.</p>
-                </div>
-                <div class="media-container">
-                    <div class="img-container">
-                        <div class="img">
-                            <img src="../img/elements/open-ocean--2-1.jpg">
-                        </div>
-                        <div class="caption">
-                            <span>Our workshop participants in the shop, designing customization of their Wayfinders.</span>
-                        </div>
-                    </div>
-                    <div class="img-container">
-                        <div class="img">
-                            <img src="../img/elements/open-ocean--2-2.jpg">
-                        </div>
-                        <div class="caption">
-                            <span>Customizing the Wayfinder software, using Scratch Extensions for LEGO Mindstorms.</span>
-                        </div>
-                    </div>
-                    <div class="img-container">
-                        <div class="img">
-                            <img src="../img/elements/open-ocean--2-3.jpg">
-                        </div>
-                        <div class="caption">
-                            <span>Testing the Wayfinder for water-tightness in a tank at MIT Sea Grant.</span>
-                        </div>
-                    </div>
-                </div>
-                <div style="clear: both;"></div>
-            </section>
+			<section class="section stickem-container">
+				<div class="desc stickem">
+					<p class="show">Using this kit, we will run a series of workshops with young people who will build on top of it, making
+						the marine explorer more sophisticated and customized in order to execute marine science experiments of their
+						design.</p>
+				</div>
+				<div class="media-container">
+					<div class="img-container">
+						<div class="img">
+							<img src="{{ site.baseurl }}/img/elements/open-ocean--2-1.jpg">
+						</div>
+						<div class="caption">
+							<span>Our workshop participants in the shop, designing customization of their Wayfinders.</span>
+						</div>
+					</div>
+					<div class="img-container">
+						<div class="img">
+							<img src="{{ site.baseurl }}/img/elements/open-ocean--2-2.jpg">
+						</div>
+						<div class="caption">
+							<span>Customizing the Wayfinder software, using Scratch Extensions for LEGO Mindstorms.</span>
+						</div>
+					</div>
+					<div class="img-container">
+						<div class="img">
+							<img src="{{ site.baseurl }}/img/elements/open-ocean--2-3.jpg">
+						</div>
+						<div class="caption">
+							<span>Testing the Wayfinder for water-tightness in a tank at MIT Sea Grant.</span>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</section>
 
-            <section class="section stickem-container">
-                <div class="desc stickem">
-                    <p class="show">Our aim is to build an awareness of the state of the aquatic environment and instill a greater
-                        responsibility in shaping our interactions with the environment. To do so, young people will view underwater
-                        wonders of the world with their robots and get outside to explore their local waterway. Our approach embraces
-                        Seymour Papert’s model of "low floors" (where getting started is easy), and "high ceilings," where students can
-                        pour their time and collaborative work efforts into creative engineering solutions to carry out a marine science
-                        experiment of their own design in the field.</p>
-                </div>
-                <div class="media-container">
-                    <div class="img-container">
-                        <div class="img">
-                            <img src="../img/elements/open-ocean--3-1.jpg">
-                        </div>
-                        <div class="caption">
-                            <span>One workshop team gathered together piloting their Wayfinder in the Boston harbor, and observing the video it was
-                                sending back!</span>
-                        </div>
-                    </div>
-                    <div class="video-container">
-                        <div class="video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/BGuE8ObAkRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="caption">
-                            <span>A view of the Wayfinder interface displaying the underwater video feed -- this team rigged a squid-baited lure
-                                onto their Wayfinder, and even managed to pull up two crabs!</span>
-                        </div>
-                    </div>
-                    <div class="img-container">
-                        <div class="img">
-                            <img src="../img/elements/open-ocean--3-2.jpg">
-                        </div>
-                        <div class="caption">
-                            <span>Making new friends ;)</span>
-                        </div>
-                    </div>
-                </div>
-                <div style="clear: both;"></div>
-            </section>
+			<section class="section stickem-container">
+				<div class="desc stickem">
+					<p class="show">Our aim is to build an awareness of the state of the aquatic environment and instill a greater
+						responsibility in shaping our interactions with the environment. To do so, young people will view underwater
+						wonders of the world with their robots and get outside to explore their local waterway. Our approach embraces
+						Seymour Papert’s model of "low floors" (where getting started is easy), and "high ceilings," where students can
+						pour their time and collaborative work efforts into creative engineering solutions to carry out a marine science
+						experiment of their own design in the field.</p>
+				</div>
+				<div class="media-container">
+					<div class="img-container">
+						<div class="img">
+							<img src="{{ site.baseurl }}/img/elements/open-ocean--3-1.jpg">
+						</div>
+						<div class="caption">
+							<span>One workshop team gathered together piloting their Wayfinder in the Boston harbor, and observing the video it was
+								sending back!</span>
+						</div>
+					</div>
+					<div class="video-container">
+						<div class="video">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/BGuE8ObAkRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+						<div class="caption">
+							<span>A view of the Wayfinder interface displaying the underwater video feed -- this team rigged a squid-baited lure
+								onto their Wayfinder, and even managed to pull up two crabs!</span>
+						</div>
+					</div>
+					<div class="img-container">
+						<div class="img">
+							<img src="{{ site.baseurl }}/img/elements/open-ocean--3-2.jpg">
+						</div>
+						<div class="caption">
+							<span>Making new friends ;)</span>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</section>
 
-            <section class="section stickem-container">
-                <div class="desc stickem">
-                    <p class="show">This program will kicked off in summer 2018 with the National Geographic Student
-                        Expeditions at MIT, where we will hosted 40-50 high school students for <a href="https://learn.media.mit.edu/wayfinder/"
-                            target="_blank">two days of workshops</a> at the MIT Sea Grant and New England Aquarium.
-                        Going forward, we aim to adapt this programming for wider student audiences in after-school
-                        programs, classrooms, libraries, and community-based mentor clubs for youth.</p>
-                </div>
-                <div class="media-container">
-                    <div class="img-container">
-                        <div class="img">
-                            <img src="../img/elements/open-ocean--4-1.jpg">
-                        </div>
-                        <div class="caption">
-                            <span>Some workshop participants hanging out on the docks at the New England Aquarium, getting ready to launch their
-                                Wayfinder.</span>
-                        </div>
-                    </div>
-                    <div class="img-container">
-                        <div class="img">
-                            <img src="../img/elements/open-ocean--4-2.jpg">
-                        </div>
-                        <div class="caption">
-                            <span>A Wayfinder in the wild.</span>
-                        </div>
-                    </div>
-                </div>
-                <div style="clear: both;"></div>
-            </section>
-        </div>
-    </main>
+			<section class="section stickem-container">
+				<div class="desc stickem">
+					<p class="show">This program will kicked off in summer 2018 with the National Geographic Student
+						Expeditions at MIT, where we will hosted 40-50 high school students for <a href="https://learn.media.mit.edu/wayfinder/"
+							target="_blank">two days of workshops</a> at the MIT Sea Grant and New England Aquarium.
+						Going forward, we aim to adapt this programming for wider student audiences in after-school
+						programs, classrooms, libraries, and community-based mentor clubs for youth.</p>
+				</div>
+				<div class="media-container">
+					<div class="img-container">
+						<div class="img">
+							<img src="{{ site.baseurl }}/img/elements/open-ocean--4-1.jpg">
+						</div>
+						<div class="caption">
+							<span>Some workshop participants hanging out on the docks at the New England Aquarium, getting ready to launch their
+								Wayfinder.</span>
+						</div>
+					</div>
+					<div class="img-container">
+						<div class="img">
+							<img src="{{ site.baseurl }}/img/elements/open-ocean--4-2.jpg">
+						</div>
+						<div class="caption">
+							<span>A Wayfinder in the wild.</span>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</section>
+		</div>
+	</main>
 
-    <script>
-        window.jQuery || document.write('<script src="../js/vendor/jquery-3.2.1.min.js"><\/script>')
-    </script>
-    <script src="../js/plugins.js"></script>
-    <script src="https://cdn.jsdelivr.net/kute.js/1.6.2/kute.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/kute.js/1.6.2/kute-svg.min.js"></script>
-    <script src="../js/elements.js"></script>
-    <script src="../js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-        window.ga = function () {
-            ga.q.push(arguments)
-        };
-        ga.q = [];
-        ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto');
-        ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-</body>
-
-</html>
+	<script>
+		window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-3.2.1.min.js"><\/script>')
+	</script>
+	<script src="{{ site.baseurl }}/js/plugins.js"></script>
+	<script src="https://cdn.jsdelivr.net/kute.js/1.6.2/kute.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/kute.js/1.6.2/kute-svg.min.js"></script>
+	<script src="{{ site.baseurl }}/js/elements.js"></script>
+	<script src="{{ site.baseurl }}/js/main.js"></script>

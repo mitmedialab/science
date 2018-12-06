@@ -1,18 +1,6 @@
-<!doctype html>
-<html class="no-js" lang="">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>MIT Media Lab — Elements</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+---
+layout: default
+---
 
 <body class="home">
     <!--[if lte IE 9]>
@@ -21,11 +9,11 @@
 
     <div class="menu--container">
         <ul>
-            <li><a href="/elements/">Home</a></li>
-            <li><a href="/elements/open-ocean/">Open Ocean</a></li>
-            <li><a href="/elements/open-ocean/">Open Agriculture</a></li>
-            <li><a href="/elements/open-ocean/">Space Exploration</a></li>
-            <li><a href="/elements/about/">About</a></li>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a href="{{ site.baseurl }}/open-ocean/">Open Ocean</a></li>
+            <li><a href="{{ site.baseurl }}/open-ocean/">Open Agriculture</a></li>
+            <li><a href="{{ site.baseurl }}/open-ocean/">Space Exploration</a></li>
+            <li><a href="{{ site.baseurl }}/about/">About</a></li>
         </ul>
     </div>
 
@@ -33,19 +21,19 @@
 
     <div class="header">
         <div class="menu">Menu</div>
-        <h2><a href="/elements/">democratizing science</a></h2>
+        <h2><a href="{{ site.baseurl }}/">democratizing science</a></h2>
     </div>
 
     <main>
         <div class="corner--container">
             <div class="corner l-1">
-                <img src="img/l-1@2x.png" alt="">
+                <img src="{{ site.baseurl }}/img/l-1@2x.png" alt="">
             </div>
             <div class="corner l-2">
-                <img src="img/l-2@2x.png" alt="">
+                <img src="{{ site.baseurl }}/img/l-2@2x.png" alt="">
             </div>
             <div class="mit">
-                <img src="img/mit-media-lab@2x.png">
+                <img src="{{ site.baseurl }}/img/mit-media-lab@2x.png">
             </div>
         </div>
 
@@ -68,13 +56,13 @@
                     <div class="col-4">
                         <div class="element--container element open-argiculture--container">
                             <div class="element-image--container">
-                                <a href="/elements/open-ocean"><img src="img/home--open-ocean.png"></a>
+                                <a href="{{ site.baseurl }}/open-ocean"><img src="{{ site.baseurl }}/img/home--open-ocean.png"></a>
                             </div>
                             <div class="element-text--container">
-                                <a href="/elements/open-ocean">
+                                <a href="{{ site.baseurl }}/open-ocean">
                                     <h4>Open Ocean</h4>
                                 </a>
-                                <a href="/elements/open-ocean">
+                                <a href="{{ site.baseurl }}/open-ocean">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla porta
                                         varius.</p>
                                 </a>
@@ -84,13 +72,13 @@
                     <div class="col-4">
                         <div class="element--container open-ocean--container">
                             <div class="element-image--container">
-                                <a href="/elements/open-ocean"><img src="img/home--open-argiculture.png"></a>
+                                <a href="{{ site.baseurl }}/open-ocean"><img src="{{ site.baseurl }}/img/home--open-argiculture.png"></a>
                             </div>
                             <div class="element-text--container">
-                                <a href="/elements/open-ocean">
+                                <a href="{{ site.baseurl }}/open-ocean">
                                     <h4>Open Agriculture</h4>
                                 </a>
-                                <a href="/elements/open-ocean">
+                                <a href="{{ site.baseurl }}/open-ocean">
                                     <p>Sed auctor facilisis libero, at viverra erat placerat non. Donec ac mattis
                                         neque.</p>
                                 </a>
@@ -100,13 +88,13 @@
                     <div class="col-4">
                         <div class="element--container space-exploration--container">
                             <div class="element-image--container">
-                                <a href="/elements/open-ocean"><img src="img/home--space-exploration.png"></a>
+                                <a href="{{ site.baseurl }}/open-ocean"><img src="{{ site.baseurl }}/img/home--space-exploration.png"></a>
                             </div>
                             <div class="element-text--container">
-                                <a href="/elements/open-ocean">
+                                <a href="{{ site.baseurl }}/open-ocean">
                                     <h4>Space Exploration</h4>
                                 </a>
-                                <a href="/elements/open-ocean">
+                                <a href="{{ site.baseurl }}/open-ocean">
                                     <p>Sed auctor facilisis libero, at viverra erat placerat non. Donec ac mattis
                                         neque.</p>
                                 </a>
@@ -118,27 +106,11 @@
         </div>
     </main>
 
-
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+        window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-3.2.1.min.js"><\/script>')
     </script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-        window.ga = function () {
-            ga.q.push(arguments)
-        };
-        ga.q = [];
-        ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto');
-        ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-</body>
-
-</html>
+    <script src="{{ site.baseurl }}/js/plugins.js"></script>
+    <script src="{{ site.baseurl }}/js/main.js"></script>
