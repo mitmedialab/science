@@ -37,7 +37,7 @@ $(".left-container li").click(function() {
     $(this).addClass("state");
     sectionIndex = $(this).index();
     $("html, body").animate({
-        scrollTop: $("section").eq(sectionIndex).offset().top - 120
+        scrollTop: $("section").eq(sectionIndex).offset().top
     }, 500);
     return false;
 });
@@ -46,6 +46,7 @@ $(document).ready(function() {
     $("html").animate({
         scrollTop: 0
     }, 1);
+
     $("body").animate({
         scrollTop: 0
     }, 1);
