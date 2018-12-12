@@ -66,7 +66,7 @@
     height: calc(100% - 120px);
     background-color: rgba($color: #000000, $alpha: 0.1);
 
-    @media only screen and (max-width: $breakpoint-med) {
+    @media only screen and (max-width: 1200px) {
         display: none;
     }
 }
@@ -310,7 +310,7 @@ body.about {
         width: 50%;
         height: 100%;
 
-        @media only screen and (max-width: $breakpoint-med) {
+        @media only screen and (max-width: 1200px) {
             position: static;
             width: 100%;
             height: auto;
@@ -475,12 +475,21 @@ body.about {
         width: 100%;
         text-align: center;
 
+        @media only screen and (max-width: 1200px) {
+            top: 130px;
+            width: 100%;
+            height: 360px;
+        }
+
         h3 {
             margin-top: -10px;
             color: #fff;
             font-size: 20px;
             font-weight: bold;
             line-height: 20px;
+            @media only screen and (max-width: 1200px) {
+                text-align: center;
+            }
         }
     }
 
@@ -490,9 +499,19 @@ body.about {
         height: 100%;
         text-align: center;
 
+        @media only screen and (max-width: 1200px) {
+            padding-top: 130px;
+            height: auto;
+        }
+
         .svg {
             display: table-cell;
             vertical-align: middle;
+            @media only screen and (max-width: 1200px) {
+                svg {
+                    height: 360px;
+                }
+            }
         }
     }
 }
@@ -693,9 +712,6 @@ body.elements {
         position: absolute;
     }
 
-
-
-    /* Preloader */
     #preloader {
         position: fixed;
         top: 0;
