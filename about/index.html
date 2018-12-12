@@ -71,47 +71,8 @@ layout: default
 		</div>
 		<div class="right">
 			<div class="content--container">
-				<div class="content content__ml-learning-initiative">
-					<p>The Elements project is opening up MIT Media Lab research in the form of <span class="steam">STEAM</span>
-						learning programs in three elemental areas: earth, ocean, and space.</p>
-					<p>These creative, <span class="ml-learning-initiative-image">Media-Lab style programs</span> will challenge
-						and
-						excite young people as they engage in learning experiences that are
-						anti-disciplinary, interest-based, and hands-on. With an emphasis on access and equity,
-						Elements is reimagining how to
-						inspire young people to be and feel more connected to their local ecosystems.</p>
-					<p>The <span class="learn">ML Learning Initiative</span> believes people learn best when they are working on
-						projects that they are passionate
-						about, in collaboration with peers, within a playful environment that encourages
-						experimentation. With this pedagogy
-						in mind, we design creative learning experiences and communities to open up Media Lab research
-						and expertise to the
-						world.</p>
-				</div>
-				<div class="content content__ag hide">
-					<p>The <span>Open Agriculture Initiative (OpenAg)</span> is on a mission to create healthier, more
-						engaging, and more inventive
-						future food systems. We believe the precursor to a healthier and more sustainable food system
-						will be the creation of an open-source ecosystem of technologies that enable and promote transparency,
-						networked
-						experimentation, education, and hyper-local production.
-					</p>
-				</div>
-				<div class="content content__ocean-initiative hide">
-					<p>The <span class="ocean-initiative">Open Ocean Initiative</span> works at the intersection of science,
-						technology, art, and society to design and deploy new
-						ways to understand the ocean and connect people to it in novel ways, empowering a global
-						community of explorers.
-						Together, we will discover the unknown, the extremes, and the wonder of the sea — because the
-						<span class="ocean-image">ocean</span> is for everyone.</p>
-				</div>
-				<div class="content content__space-exploration-initiative hide">
-					<p>The <span>Space Exploration Initiative</span> aims to make Space accessible and engaging for
-						millions—and someday billions—of
-						people through the reach of DIY instruments, experiments, sensors, satellites, and ultimately
-						through a new age
-						of space exploration. Space will be hackable. Space will be playful. </p>
-				</div>
+				{% capture m %}{% include about.md %}{% endcapture %}
+				{{ m | markdownify }}
 			</div>
 			<div class="footnote"></div>
 		</div>
