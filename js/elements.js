@@ -49,6 +49,10 @@ $(document).ready(function() {
     $("body").animate({
         scrollTop: 0
     }, 1);
+
+    $(".stickem-container").stickem({
+        offset: 240
+    });
 });
 
 $(window).scroll(function() {

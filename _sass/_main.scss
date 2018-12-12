@@ -517,66 +517,38 @@ body.about {
 }
 
 body.elements {
-    .stickem-container {
-        position: relative;
-    }
 
-    .left-container {
-        left: 0;
+    .section-container {
 
-        .content-container {
-            display: table;
-            height: 100%;
+        .stickem-container {
+            position: relative;
+            padding-top: 240px;
 
-            .content {
-                display: table-cell;
-                vertical-align: middle;
-                padding-left: 90px;
-                padding-right: 90px;
-                text-align: center;
+            .stickit {
+                position: fixed;
+                top: 240px;
+            }
 
-                h3 {
-                    margin-bottom: 25px;
-                    font-size: 25px;
-                }
-
-                p {
-                    font-size: 15px;
-                    line-height: 1.5;
-                }
+            .stickit-end {
+                position: absolute;
+                bottom: 0px;
+                padding-bottom: 90px;
             }
         }
     }
 
-    .section-container {
-        padding-top: 130px;
-
-        .stickit {
-            position: fixed;
-            top: 120px;
-        }
-
-        .left-container,
-        .right-container {
-            display: inline-block;
-            width: 50%;
-            height: 100%;
-        }
-    }
-
-
     .section {
-        padding-top: 120px;
-        padding-bottom: 60px;
-        padding-left: 120px;
-        padding-right: 120px;
+        padding-bottom: 90px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 
-    .desc {
-        width: 40%;
+    .text-container {
+        width: calc(50% - 180px);
         max-width: 600px;
         float: left;
         position: absolute;
+        
         p {
             color: #666;
             font-size: 20px;
@@ -683,33 +655,12 @@ body.elements {
         background: #2400ff;
     }
 
-
     .blue:hover {
         color: #2400ff;
     }
 
     .sliding:hover {
         transform: translate(3px, 0);
-    }
-
-
-
-
-    /*  sticky */
-    .stickem-container {
-        position: relative;
-    }
-
-    .stickit {
-        position: fixed;
-        top: 90px;
-        width: 32%;
-    }
-
-    .stickit-end {
-        bottom: 0px;
-        padding-bottom: 101px;
-        position: absolute;
     }
 
     #preloader {
@@ -735,7 +686,6 @@ body.elements {
         fill: #000;
     }
     
-
     .disable-hover {
         pointer-events: none;
     }
@@ -748,7 +698,6 @@ body.elements {
         border-radius: 50%;
         top: -135px;
         left: -105px;
-
         animation-name: loader;
         animation-duration: 3.5s;
         animation-iteration-count: infinite;
