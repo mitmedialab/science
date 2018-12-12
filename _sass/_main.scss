@@ -521,7 +521,9 @@ body.about {
 }
 
 body.elements {
-
+    main {
+        padding-bottom: 60px;
+    }
     .section-container {
         padding-top: 130px;
         @media only screen and (max-width: $breakpoint-med) {
@@ -642,6 +644,9 @@ body.elements {
         .caption {
             margin-top: -20px;
             padding-bottom: 45px;
+            @media only screen and (max-width: $breakpoint-med) {
+                padding-bottom: 30px;
+            }
 
             span {
                 color: #999;
@@ -651,9 +656,11 @@ body.elements {
         }
     }
 
-    .client {
-        margin-bottom: 40px;
-        max-width: 350px;
+    .clearfix {
+        clear: both;
+        @media only screen and (max-width: $breakpoint-med) {
+            border-bottom: solid 1px #eee;
+        }
     }
 
     /* slide hover */
