@@ -79,6 +79,10 @@ nav {
     height: 100%;
     z-index: 100;
 
+    @media only screen and (max-width: $breakpoint-med) {
+        display: none;
+    }
+
     ul {
         display: table-cell;
         vertical-align: middle;
@@ -519,10 +523,13 @@ body.about {
 body.elements {
 
     .section-container {
+        padding-top: 130px;
+        @media only screen and (max-width: $breakpoint-med) {
+            padding-top: 65px;
+        }
 
         .stickem-container {
             position: relative;
-            padding-top: 240px;
 
             .stickit {
                 position: fixed;
@@ -532,21 +539,41 @@ body.elements {
     }
 
     .section {
-        padding-bottom: 90px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         padding-left: 150px;
         padding-right: 150px;
+        @media only screen and (max-width: $breakpoint-large) {
+            padding-bottom: 30px;
+        }
+        @media only screen and (max-width: $breakpoint-med) {
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 
     .text-container {
-        width: calc(50% - 180px);
-        max-width: 600px;
         float: left;
         position: absolute;
+        padding-bottom: 30px;
+        width: calc(50% - 180px);
+        max-width: 600px;
+
+        @media only screen and (max-width: $breakpoint-large) {
+            width: auto;
+            max-width: auto;
+            float: unset;
+            position: static;
+        }
         
         p {
             color: #666;
             font-size: 20px;
             line-height: 1.5;
+            @media only screen and (max-width: $breakpoint-med) {
+                font-size: 15px;
+            }
         }
 
         a {
@@ -555,7 +582,10 @@ body.elements {
             font-weight: 500;
             font-size: 20px;
             text-decoration: none;
-            transition: color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+            transition: color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            @media only screen and (max-width: $breakpoint-med) {
+                font-size: 15px;
+            }
         }
 
         h1 {
@@ -566,8 +596,13 @@ body.elements {
     }
 
     .media-container {
-        width: calc(50% - 120px);
         float: right;
+        width: calc(50% - 120px);
+        
+        @media only screen and (max-width: $breakpoint-large) {
+            width: auto;
+            float: unset;
+        }
 
         .img {
             width: 100%;

@@ -9,6 +9,7 @@ window.sr = ScrollReveal({
     duration: 2000,
     viewFactor: 0.5
 });
+
 sr.reveal(".img-container");
 sr.reveal(".video-container");
 sr.reveal(".caption", 50);
@@ -24,7 +25,6 @@ window.addEventListener("scroll", function() {
     if (!body.classList.contains("disable-hover")) {
         body.classList.add("disable-hover")
     }
-
     timer = setTimeout(function() {
         body.classList.remove("disable-hover")
     }, 500);
@@ -43,17 +43,11 @@ $(".left-container li").click(function() {
 });
 
 $(document).ready(function() {
-    $("html").animate({
-        scrollTop: 0
-    }, 1);
-
-    $("body").animate({
-        scrollTop: 0
-    }, 1);
-
-    $(".stickem-container").stickem({
-        offset: 240
-    });
+    if ($(window).width() > 960) {
+        $(".stickem-container").stickem({
+            offset: 240
+        });
+    }
 });
 
 $(window).scroll(function() {
