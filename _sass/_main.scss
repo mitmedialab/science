@@ -527,6 +527,7 @@ body.elements {
                 padding-bottom: 30px;
                 width: calc(50% - 180px);
                 max-width: 600px;
+                mix-blend-mode: multiply;
 
                 @media only screen and (max-width: $breakpoint-large) {
                     width: auto;
@@ -622,6 +623,30 @@ body.elements {
                 }
             }
         }
+    }
+
+    .svg--container {
+        display: table;
+        position: fixed;
+        z-index: -1;
+        top: 130px;
+        padding-left: 60px;
+        width: 50%;
+        height: calc(100% - 130px);
+         
+        @media only screen and (max-width: $breakpoint-med) {
+            display: none;
+        }
+        .svg {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            svg {
+                width: 50%;
+                fill: #2196F3;
+            }
+        }
+        
     }
 
     .sliding {
