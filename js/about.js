@@ -66,66 +66,6 @@ $(document).ready(function () {
         morphIndex: 150
     });
 
-    $(".steam").mouseover(function(e) {
-        $(".footnote").text("https://en.wikipedia.org/wiki/STEAM_fields");
-        e.preventDefault();
-    });
-
-    $(".ml-learning-initiative-image").mouseenter(function (e) {
-        $(".ml-learning-initiative-image--holder").animate({
-            "opacity": 1
-        }, 500);
-        e.preventDefault();
-    });
-
-    $(".ml-learning-initiative-image").mouseleave(function(e) {
-        $(".ml-learning-initiative-image--holder").animate({
-            "opacity": 0
-        }, 500);
-        e.preventDefault();
-    });
-
-    $(".learn").mouseover(function(e) {
-        $(".footnote").text("http://learn.media.mit.edu/");
-        e.preventDefault();
-
-    });
-
-    $(".content__ag span").mouseover(function(e) {
-        $(".footnote").text("https://www.media.mit.edu/groups/open-agriculture-openag/overview/");
-        e.preventDefault();
-    });
-
-    $(".ocean-initiative").mouseover(function(e) {
-        $(".footnote").text("https://www.media.mit.edu/groups/open-ocean/overview/");
-        e.preventDefault();
-    });
-
-    $(".ocean-image").mouseover(function(e) {
-        $(".ocean-image--holder").animate({
-            "opacity": 1
-        }, 500);
-        e.preventDefault();
-
-    });
-
-    $(".ocean-image").mouseleave(function(e) {
-        $(".ocean-image--holder").animate({
-            "opacity": 0
-        }, 500);
-        e.preventDefault();
-    });
-
-    $(".content__space-exploration-initiative span").mouseover(function(e) {
-        $(".footnote").text("https://www.media.mit.edu/groups/space-exploration/overview/");
-        e.preventDefault();
-    });
-
-    $(".content span").mouseleave(function(e) {
-        $(".footnote").text("");
-        e.preventDefault();
-    });
-
     $(".left nav ul li").click(function () {
         $(".left nav ul li").removeClass("state");
         $(this).addClass("state");
@@ -137,7 +77,7 @@ $(document).ready(function () {
             setTimeout(function () {
                 $(".content").addClass("hide");
                 $(".content__ml-learning-initiative").removeClass("hide");
-                $(".headline--container h3").text("ML Learning Initiative");
+                $(".headline--container h3").text("Elements");
             }, 1000);
             !tween0.playing && tween0.start();
         } else if (state == 1) {
