@@ -532,36 +532,49 @@ body.elements {
             padding-top: 65px;
         }
 
-        .stickem-container {
-            position: relative;
+        section {
+            padding-top: 110px;
+            padding-bottom: 60px;
+            padding-left: 150px;
+            padding-right: 150px;
+            zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 
-            .stickit {
-                position: fixed;
-                top: 240px;
-                @media only screen and (max-width: 960px) {
-                    position: static;
+            @media only screen and (max-width: $breakpoint-large) {
+                padding-bottom: 30px;
+            }
+            
+            @media only screen and (max-width: $breakpoint-med) {
+                padding-top: 30px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            &:before,
+            &:after {
+                display: table;
+                content: "";
+            }
+
+            &:after {
+                clear: both;
+            }
+
+            &.stickem-container {
+                position: relative;
+
+                .stickit {
+                    position: fixed;
+                    top: 240px;
+                    @media only screen and (max-width: 960px) {
+                        position: static;
+                    }
+                }
+
+                .stickit-end {	
+                    position: absolute;	
+                    bottom: 0;
                 }
             }
-
-            .stickit-end {	
-                position: absolute;	
-                bottom: 0;
-            }
-        }
-    }
-
-    .section {
-        padding-top: 110px;
-        padding-bottom: 60px;
-        padding-left: 150px;
-        padding-right: 150px;
-        @media only screen and (max-width: $breakpoint-large) {
-            padding-bottom: 30px;
-        }
-        @media only screen and (max-width: $breakpoint-med) {
-            padding-top: 30px;
-            padding-left: 20px;
-            padding-right: 20px;
         }
     }
 
