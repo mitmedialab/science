@@ -537,11 +537,17 @@ body.elements {
                 position: fixed;
                 top: 240px;
             }
+
+            .stickit-end {	
+                position: absolute;	
+                bottom: 0px;	
+                padding-bottom: 90px;	
+            }
         }
     }
 
     .section {
-        padding-top: 60px;
+        padding-top: 110px;
         padding-bottom: 60px;
         padding-left: 150px;
         padding-right: 150px;
