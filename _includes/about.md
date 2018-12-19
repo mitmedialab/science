@@ -1,5 +1,5 @@
 {::options parse_block_html="true" /}
-<div class="content content__ml-learning-initiative">
+<div class="content content__elements">
 The Elements project is opening up MIT Media Lab research in the form of STEAM learning programs in three elemental areas: earth, ocean, and space.
 
 These creative, Media-Lab style programs will challenge and excite young people as they engage in learning experiences that are anti-disciplinary, interest-based, and hands-on. With an emphasis on access and equity, Elements is reimagining how to inspire young people to be and feel more connected to their local ecosystems.
