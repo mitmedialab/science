@@ -76,7 +76,7 @@ $(document).ready(function () {
             });
             setTimeout(function () {
                 $(".content").addClass("hide");
-                $(".content__ml-learning-initiative").removeClass("hide");
+                $(".content__elements").removeClass("hide");
                 $(".headline--container h3").text("Elements");
             }, 1000);
             !tween0.playing && tween0.start();
