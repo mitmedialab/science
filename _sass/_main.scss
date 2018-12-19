@@ -536,12 +536,14 @@ body.elements {
             .stickit {
                 position: fixed;
                 top: 240px;
+                @media only screen and (max-width: 960px) {
+                    position: static;
+                }
             }
 
             .stickit-end {	
                 position: absolute;	
-                bottom: 0px;	
-                padding-bottom: 90px;	
+                bottom: 0;
             }
         }
     }
@@ -662,102 +664,35 @@ body.elements {
         }
     }
 
-    .clearfix {
-        clear: both;
-        @media only screen and (max-width: $breakpoint-med) {
-            border-bottom: solid 1px #eee;
-        }
-    }
-
-    /* slide hover */
     .sliding {
         display: inline-block;
-        transition: transform .3s cubic-bezier(0.23, 1, 0.32, 1)
-    }
-
-    .sliding:after {
-        content: '';
-        display: block;
-        height: 2px;
-        width: 0;
-        background: #fff;
-        transition: width .3s cubic-bezier(0.23, 1, 0.32, 1);
-    }
-
-    .sliding:hover:after {
-        width: 100%;
-        background: #fff;
-    }
-
-    .blue:after {
-        background: #2400ff;
-    }
-
-    .blue:hover:after {
-        background: #2400ff;
-    }
-
-    .blue:hover {
-        color: #2400ff;
-    }
-
-    .sliding:hover {
-        transform: translate(3px, 0);
-    }
-
-    #preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #f8f8f8;
-        z-index: 9999;
-    }
-
-    #status {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin: -50px 0 0 -50px;
-    }
-
-    #status svg {
-        fill: #000;
-    }
-    
-    .disable-hover {
-        pointer-events: none;
-    }
-
-    .loader {
-        width: 300px;
-        height: 300px;
-        position: absolute;
-        border: #e7e7e7 1px solid;
-        border-radius: 50%;
-        top: -135px;
-        left: -105px;
-        animation-name: loader;
-        animation-duration: 3.5s;
-        animation-iteration-count: infinite;
-    }
-
-    @keyframes loader {
-        0% {
-            transform: scale(0.3);
-            opacity: 0;
+        transition: transform .5s cubic-bezier(0.23, 1, 0.32, 1);
+        &:after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background: #fff;
+            transition: width .5s cubic-bezier(0.23, 1, 0.32, 1);
         }
-
-        30% {
-            opacity: 1;
+        &:hover {
+            transform: translate(3px, 0);
+            &:after {
+                width: 100%;
+                background: #fff;
+            }
         }
+    }
 
-        100% {
-            transform: scale(1.3);
-            opacity: 0;
+    .blue {
+        &:after {
+            background: #2400ff;
+        }
+        &:hover {
+            color: #2400ff;
+            &:after {
+                background: #2400ff;
+            }
         }
     }
 }
