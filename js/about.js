@@ -112,5 +112,4 @@ $(document).ready(function () {
             !tween3.playing && tween3.start();
         }
     });
-
 });
