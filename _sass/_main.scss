@@ -169,13 +169,13 @@ nav {
         vertical-align: middle;
 
         li {
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
             list-style: none;
 
             a {
                 color: #fff;
-                font-size: 25px;
+                font-size: 20px;
                 text-decoration: none;
             }
         }
@@ -283,7 +283,6 @@ body.home {
 }
 
 body.about {
-
     .left,
     .right {
         display: inline-block;
@@ -318,7 +317,7 @@ body.about {
             }
 
             h3 {
-                color: #fff;
+                color: #000;
                 font-size: 20px;
                 font-weight: bold;
                 line-height: 20px;
@@ -399,6 +398,13 @@ body.about {
                 padding-left: 60px;
                 padding-right: 60px;
                 text-align: left;
+
+                a {
+                    margin-bottom: 2px;
+                    border-bottom: solid 2px #000;
+                    color: #000;
+                    text-decoration: none;
+                }
 
                 @media only screen and (max-width: 1200px) {
                     padding-top: 0;
