@@ -1,4 +1,12 @@
 main.home {
+    .container {
+        width: 87.5%;
+
+        @media only screen and (max-width: $breakpoint-med) {
+            width: 96%;
+        }
+    }
+
     .content--container {
         position: absolute;
         top: 130px;
@@ -7,7 +15,7 @@ main.home {
 
         @media only screen and (max-width: $breakpoint-small) {
             top: 65px;
-            padding-bottom: 90px;
+            padding-bottom: 0px;
         }
 
         .headline {
@@ -73,7 +81,7 @@ main.home {
                 padding-right: 60px;
                 text-align: center;
 
-                @media only screen and (max-width: $breakpoint-small) {
+                @media only screen and (max-width: $breakpoint-med) {
                     padding-left: 0;
                     padding-right: 0;
                 }
