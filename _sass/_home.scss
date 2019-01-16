@@ -1,0 +1,108 @@
+main.home {
+    .content--container {
+        position: absolute;
+        top: 60px;
+        padding-bottom: 120px;
+        width: 100%;
+
+        .headline {
+            padding-top: 150px;
+
+            @media only screen and (max-width: $breakpoint-small) {
+                padding-top: 60px;
+            }
+
+            h3 {
+                color: #000;
+                font-size: 25px;
+                letter-spacing: -0.025em;
+                line-height: 1.75em;
+
+                @media only screen and (max-width: $breakpoint-small) {
+                    font-size: 20px;
+                }
+
+                span {
+                    color: #000;
+                    cursor: default;
+                }
+
+                a {
+                    margin-bottom: -10px;
+                    color: #000;
+                    font-family: $bold;
+                    text-decoration: none;
+                    line-height: 1.25em;
+                    transition: color 0.25s;
+
+                    &.blue {
+                        &:hover {
+                            color: $blue;
+                        }
+                    }
+
+                    &.green {
+                        &:hover {
+                            color: $green;
+                        }
+                    }
+
+                    &.yellow {
+                        &:hover {
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+        }
+
+        .element--container {
+            padding-top: 75px;
+
+            .element-image--container {
+                padding-left: 60px;
+                padding-right: 60px;
+                text-align: center;
+
+                @media only screen and (max-width: $breakpoint-small) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .element-text--container {
+                padding-top: 20px;
+                padding-left: 60px;
+                padding-right: 60px;
+
+                @media only screen and (max-width: $breakpoint-small) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                a {
+                    text-decoration: none;
+
+                    h4 {
+                        margin-bottom: 10px;
+                        color: #000;
+                        font-size: 15px;
+                        font-family: $bold;
+                        letter-spacing: -0.025em;
+                    }
+
+                    p {
+                        color: #999;
+                        font-size: 15px;
+                        line-height: 1.45;
+                    }
+                }
+            }
+        }
+    }
+}

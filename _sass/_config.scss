@@ -1,3 +1,4 @@
+// Fonts
 @font-face {
     font-family: "Light";
     src: url("../font/HaasLight.woff2") format("woff2")
@@ -17,15 +18,22 @@ $light: "Light";
 $regular: "Regular";
 $bold: "Bold";
 
-// colours
-$blue: #2400ff;
+// Colours
+$white: #FFFFFF;
+$black: #000000;
+$light-grey: #ADB5BD;
+$blue: #4263EB;
+$green: #20C997;
+$yellow: #FAB005;
+$red: #F03E3E;
+
 
 body {
+    font-family: $regular;
     font-synthesis: none;
     -moz-font-feature-settings: 'kern';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: $regular;
 }
 
 header,

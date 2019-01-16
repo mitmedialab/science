@@ -1,0 +1,160 @@
+main.elements {
+    padding-bottom: 60px;
+
+    .section-container {
+        padding-top: 130px;
+        
+        @media only screen and (max-width: $breakpoint-med) {
+            padding-top: 65px;
+        }
+
+        section {
+            padding-top: 110px;
+            padding-bottom: 60px;
+            padding-left: 150px;
+            padding-right: 150px;
+            zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+
+            @media only screen and (max-width: $breakpoint-large) {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            
+            @media only screen and (max-width: $breakpoint-med) {
+                padding-top: 30px;
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+
+            &:before,
+            &:after {
+                display: table;
+                content: "";
+            }
+
+            &:after {
+                clear: both;
+            }
+
+            &.stickem-container {
+                position: relative;
+
+                .stickit {
+                    position: fixed;
+                    top: 240px;
+                    @media only screen and (max-width: 960px) {
+                        position: static;
+                    }
+                }
+
+                .stickit-end {	
+                    position: absolute;	
+                    bottom: 0;
+                }
+            }
+
+            .text-container {
+                float: left;
+                position: absolute;
+                padding-bottom: 30px;
+                width: calc(50% - 180px);
+                max-width: 600px;
+                mix-blend-mode: multiply;
+
+                @media only screen and (max-width: $breakpoint-large) {
+                    width: auto;
+                    max-width: auto;
+                    float: unset;
+                    position: static;
+                }
+
+                h3 {
+                    margin-top: 0;
+                    margin-bottom: 50px;
+                    font-family: $bold;
+                    font-size: 25px;
+                }
+                
+                p {
+                    color: #666;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    @media only screen and (max-width: $breakpoint-med) {
+                        font-size: 15px;
+                    }
+                }
+
+                a {
+                    margin-top: 20px;
+                    color: #000;
+                    font-family: $bold;
+                    font-size: 20px;
+                    text-decoration: none;
+                    transition: color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+                    @media only screen and (max-width: $breakpoint-med) {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .media-container {
+                float: right;
+                width: calc(50% - 120px);
+                
+                @media only screen and (max-width: $breakpoint-large) {
+                    width: auto;
+                    float: unset;
+                }
+
+                .img {
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 30px;
+
+                    img,
+                    span {
+                        display: block;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+                
+                .video-container {
+                    .video {
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        padding-top: 0px;
+                        height: 0;
+                        overflow: hidden;
+                        margin-bottom: 30px;
+                        width: 100%;
+
+                        iframe {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .caption {
+                    margin-top: -20px;
+                    padding-bottom: 45px;
+                    @media only screen and (max-width: $breakpoint-med) {
+                        padding-bottom: 30px;
+                    }
+
+                    span {
+                        color: #999;
+                        font-size: 13px;
+                        line-break: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

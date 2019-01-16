@@ -1,0 +1,190 @@
+main.about {
+    .left,
+    .right {
+        display: inline-block;
+        position: fixed;
+        width: 50%;
+        height: 100%;
+
+        @media only screen and (max-width: 1200px) {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .left {
+        left: 0;
+
+        .headline--container {
+            position: absolute;
+            top: calc(50% + 50px);
+            width: 100%;
+            text-align: center;
+
+            @media only screen and (max-width: 1200px) {
+                top: 50%;
+                margin-top: 50px;
+                width: 100%;
+            }
+
+            @media only screen and (max-width: $breakpoint-med) {
+                margin-top: 0;
+            }
+
+            h3 {
+                color: $black;
+                font-family: $bold;
+                font-size: 20px;
+                line-height: 20px;
+                @media only screen and (max-width: 1200px) {
+                    text-align: center;
+                }
+            }
+        }
+
+        .svg--container {
+            display: table;
+            margin-top: 130px;
+            width: 100%;
+            height: calc(100% - 130px);
+            text-align: center;
+
+            @media only screen and (max-width: 1200px) {
+                height: auto;
+            }
+
+            @media only screen and (max-width: $breakpoint-med) {
+                display: none;
+            }
+
+            .svg {
+                display: table-cell;
+                vertical-align: middle;
+
+                @media only screen and (max-width: 1200px) {
+                    svg {
+                        width: 100%;
+                        height: 510px;
+                    }
+                }
+            }
+        }
+
+        .mit {
+            position: absolute;
+            bottom: 30px;
+            z-index: 100;
+            width: 100%;
+            font-family: $bold;
+            font-size: 15px;
+            line-height: 1;
+            text-align: center;
+        }
+    }
+
+    .right {
+        right: 0;
+
+        @media only screen and (max-width: $breakpoint-med) {
+            position: absolute;
+            top: 65px;
+        }
+
+        .content--container {
+            display: table;
+            margin-top: 130px;
+            width: 100%;
+            height: calc(100% - 130px);
+
+            @media only screen and (max-width: 1200px) {
+                margin-top: 0;
+                height: auto;
+            }
+
+            @media only screen and (max-width: $breakpoint-med) {
+                padding-top: 60px;
+            }
+
+            .content {
+                display: table-cell;
+                vertical-align: middle;
+                padding-top: 120px;
+                padding-bottom: 30px;
+                padding-left: 60px;
+                padding-right: 60px;
+                text-align: left;
+
+                a {
+                    margin-bottom: 2px;
+                    border-bottom: solid 2px $black;
+                    color: $black;
+                    text-decoration: none;
+                }
+
+                @media only screen and (max-width: 1200px) {
+                    padding-top: 0;
+                    padding-left: 150px;
+                    padding-right: 150px;
+                }
+
+                @media only screen and (max-width: $breakpoint-med) {
+                    display: block;
+                    padding-bottom: 60px;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                }
+
+                @media only screen and (min-width: $breakpoint-med) {
+                    width: 100%;
+                    &.hide {
+                        display: none;
+                    }
+                }
+
+                &.content__elements {
+                    h3 {
+                        color: $red;
+                    }
+                }
+
+                &.content__ag {
+                    h3 {
+                        color: $green;
+                    }
+                }
+
+                &.content__ocean-initiative {
+                    h3 {
+                        color: $blue;
+                    }
+                }
+
+                &.content__space-exploration-initiative {
+                    h3 {
+                        color: $yellow;
+                    }
+                }
+
+                h3 {
+                    display: none;
+
+                    @media only screen and (max-width: $breakpoint-med) {
+                        display: block;
+                        margin-bottom: 15px;
+                        font-size: 20px;
+                    }
+                }
+
+                p {
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    @media only screen and (max-width: $breakpoint-med) {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
