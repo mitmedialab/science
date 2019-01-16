@@ -1,3 +1,38 @@
+.sliding {
+    display: inline-block;
+    transition: transform .5s cubic-bezier(0.23, 1, 0.32, 1);
+
+    &:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+        background: #fff;
+        transition: width .5s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    &:hover {
+        transform: translate(3px, 0);
+
+        &:after {
+            width: 100%;
+            background: #fff;
+        }
+    }
+}
+
+.blue {
+    &:after {
+        background: $blue;
+    }
+
+    &:hover {
+        color: $blue;
+        &:after {
+            background: $blue;
+        }
+    }
+}
+
 
 .corner--container {
     .corner {
@@ -221,7 +256,6 @@ body.home {
 
                     span {
                         color: #000;
-                        font-family: "bold";
                         cursor: default;
                     }
 
@@ -266,7 +300,8 @@ body.home {
                         h4 {
                             margin-bottom: 10px;
                             color: #000;
-                            font-size: 20px;
+                            font-size: 15px;
+                            font-family: $bold;
                             letter-spacing: -0.025em;
                         }
 
@@ -318,8 +353,8 @@ body.about {
 
             h3 {
                 color: #000;
+                font-family: $bold;
                 font-size: 20px;
-                font-weight: bold;
                 line-height: 20px;
                 @media only screen and (max-width: 1200px) {
                     text-align: center;
@@ -360,8 +395,8 @@ body.about {
             bottom: 30px;
             z-index: 100;
             width: 100%;
+            font-family: $bold;
             font-size: 15px;
-            font-weight: bold;
             line-height: 1;
             text-align: center;
         }
@@ -548,7 +583,7 @@ body.elements {
                 h3 {
                     margin-top: 0;
                     margin-bottom: 50px;
-                    font-family: "bold";
+                    font-family: $bold;
                     font-size: 25px;
                 }
                 
@@ -564,7 +599,7 @@ body.elements {
                 a {
                     margin-top: 20px;
                     color: #000;
-                    font-weight: 500;
+                    font-family: $bold;
                     font-size: 20px;
                     text-decoration: none;
                     transition: color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
@@ -657,40 +692,5 @@ body.elements {
             }
         }
         
-    }
-
-    .sliding {
-        display: inline-block;
-        transition: transform .5s cubic-bezier(0.23, 1, 0.32, 1);
-
-        &:after {
-            content: '';
-            display: block;
-            height: 2px;
-            width: 0;
-            background: #fff;
-            transition: width .5s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-        &:hover {
-            transform: translate(3px, 0);
-
-            &:after {
-                width: 100%;
-                background: #fff;
-            }
-        }
-    }
-
-    .blue {
-        &:after {
-            background: #2400ff;
-        }
-
-        &:hover {
-            color: #2400ff;
-            &:after {
-                background: #2400ff;
-            }
-        }
     }
 }
