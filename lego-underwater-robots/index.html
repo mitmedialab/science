@@ -1,29 +1,7 @@
 ---
 layout: default
 ---
-<body class="elements">
-	<!--[if lte IE 9]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-	<![endif]-->
-
-	<div class="menu--container">
-		<ul>
-			<li><a href="{{ site.baseurl }}/">Home</a></li>
-			<li><a href="{{ site.baseurl }}/open-ocean/">LEGO Underwater Robots</a></li>
-			<li><a href="{{ site.baseurl }}/open-ocean/">Personal Food Computer EDU</a></li>
-			<li><a href="{{ site.baseurl }}/open-ocean/">Climate CubeSat Co-Building</a></li>
-			<li><a href="{{ site.baseurl }}/about/">About</a></li>
-		</ul>
-	</div>
-
-	<div class="overlay"></div>
-
-	<div class="header">
-		<div class="menu">Menu</div>
-		<h2><a href="{{ site.baseurl }}/">democratizing science</a></h2>
-	</div>
-
-	<main>
+	<main class="elements">
 		<div class="corner--container">
 			<div class="corner l-1">
 				<img src="{{ site.baseurl }}/img/l-1@2x.png" alt="">
@@ -50,7 +28,7 @@ layout: default
 		</div>
 
 		<div class="section-container">
-			{% capture m %}{% include open-ocean.md %}{% endcapture %}
+			{% capture m %}{% include lego-underwater-robots.md %}{% endcapture %}
 			{{ m | markdownify }}
 		</div>
 
