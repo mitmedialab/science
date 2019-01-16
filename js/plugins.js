@@ -207,5 +207,850 @@
 // KUTE.js v1.6.6 | © dnp_theme | Core Engine | MIT-License
 !function(t,e){"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?module.exports=e():t.KUTE=e()}(this,function(){"use strict";for(var t,e="undefined"!=typeof global?global:window,i=e.performance,n=document.body,r=[],s=null,a="length",o="split",u="indexOf",h="options",c="valuesStart",l="valuesEnd",f="element",p="delay",v="repeat",g="yoyo",m="style",w=["color","backgroundColor"],y=["top","left","width","height"],I=["translate3d","translateX","translateY","translateZ","rotate","translate","rotateX","rotateY","rotateZ","skewX","skewY","scale"],b=["opacity"],M=w.concat(b,y,I),O={},T=0,k=M[a];T<k;T++)t=M[T],-1!==w[u](t)?O[t]="rgba(0,0,0,0)":-1!==y[u](t)?O[t]=0:"translate3d"===t?O[t]=[0,0,0]:"translate"===t?O[t]=[0,0]:"rotate"===t||/X|Y|Z/.test(t)?O[t]=0:"scale"!==t&&"opacity"!==t||(O[t]=1);var x={duration:700,delay:0,offset:0,repeat:0,repeatDelay:0,yoyo:!1,easing:"linear",keepHex:!1},E=function(){for(var t,e=["Moz","moz","Webkit","webkit","O","o","Ms","ms"],i=0,r=e[a];i<r;i++)if(e[i]+"Transform"in n[m]){t=e[i];break}return t},P=function(t){var e=!(t in n[m]),i=E();return e?i+(t.charAt(0).toUpperCase()+t.slice(1)):t},Y=function(t,e){var i;if(null===(i=e?t instanceof Object||"object"==typeof t?t:document.querySelectorAll(t):"object"==typeof t?t:document.querySelector(t))&&"window"!==t)throw new TypeError("Element not found or incorrect selector: "+t);return i},X=function(t){return 180*t/Math.PI},C=function(t,e){for(var i,n=parseInt(t)||0,r=["px","%","deg","rad","em","rem","vh","vw"],s=0;s<r[a];s++)if("string"==typeof t&&-1!==t[u](r[s])){i=r[s];break}return i=void 0!==i?i:e?"deg":"px",{v:n,u:i}},F=function(t){if(/rgb|rgba/.test(t)){var i=t.replace(/\s|\)/,"")[o]("(")[1][o](","),n=i[3]?i[3]:null;return n?{r:parseInt(i[0]),g:parseInt(i[1]),b:parseInt(i[2]),a:parseFloat(n)}:{r:parseInt(i[0]),g:parseInt(i[1]),b:parseInt(i[2])}}if(/^#/.test(t)){var r=_(t);return{r:r.r,g:r.g,b:r.b}}if(/transparent|none|initial|inherit/.test(t))return{r:0,g:0,b:0,a:0};if(!/^#|^rgb/.test(t)){var s=document.getElementsByTagName("head")[0];s[m].color=t;var a=e.getComputedStyle(s,null).color;return a=/rgb/.test(a)?a.replace(/[^\d,]/g,"")[o](","):[0,0,0],s[m].color="",{r:parseInt(a[0]),g:parseInt(a[1]),b:parseInt(a[2])}}},A=function(t,e,i){return"#"+((1<<24)+(t<<16)+(e<<8)+i).toString(16).slice(1)},_=function(t){var e=/^#?([a-f\d])([a-f\d])([a-f\d])$/i;t=t.replace(e,function(t,e,i,n){return e+e+i+i+n+n});var i=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(t);return i?{r:parseInt(i[1],16),g:parseInt(i[2],16),b:parseInt(i[3],16)}:null},S=function(t){if(t){for(var e=t[m].cssText.replace(/\s/g,"")[o](";"),i={},n=0,r=e[a];n<r;n++)if(/transform/i.test(e[n]))for(var s=e[n][o](":")[1][o](")"),h=0,c=s[a]-1;h<c;h++){var l=s[h][o]("("),f=l[0],p=l[1];-1!==I[u](f)&&(i[f]=/translate3d/.test(f)?p[o](","):p)}return i}},Z=function(t,i){var n=t[m],r=e.getComputedStyle(t,null)||t.currentStyle,s=P(i),a=n[i]&&!/auto|initial|none|unset/.test(n[i])?n[i]:r[s];if("transform"!==i&&(s in r||s in n)){if(a){if("filter"===s){var u=parseInt(a[o]("=")[1].replace(")",""));return parseFloat(u/100)}return a}return O[i]}},B=function(t){r.push(t)},$=function(t){var e=r[u](t);-1!==e&&r.splice(e,1)},q=function(){setTimeout(function(){!r[a]&&s&&(D(s),s=null)},64)},H="ontouchstart"in e||navigator&&navigator.msMaxTouchPoints||!1,Q=H?"touchstart":"mousewheel",R=e.requestAnimationFrame||e.webkitRequestAnimationFrame||function(t){return setTimeout(t,16)},D=e.cancelAnimationFrame||e.webkitCancelRequestAnimationFrame||function(t){return clearTimeout(t)},W=P("transform"),z=document.getElementsByTagName("HTML")[0],j=navigator&&/(EDGE|Mac)/i.test(navigator.userAgent)?n:z,N=!(!navigator||null===new RegExp("MSIE ([0-9]{1,}[.0-9]{0,})").exec(navigator.userAgent))&&parseFloat(RegExp.$1),L=8===N,U=e.Interpolate={},G=U.number=function(t,e,i){return t=+t,e-=t,t+e*i},K=(U.unit=function(t,e,i,n){return t=+t,e-=t,t+e*n+i},U.color=function(t,e,i,n){var r,s={};for(r in e)s[r]="a"!==r?G(t[r],e[r],i)>>0||0:t[r]&&e[r]?(100*G(t[r],e[r],i)>>0)/100:null;return n?A(s.r,s.g,s.b):s.a?"rgba("+s.r+","+s.g+","+s.b+","+s.a+")":"rgb("+s.r+","+s.g+","+s.b+")"}),J=U.translate=function(t,e,i,n){var r={};for(var s in e)r[s]=(t[s]===e[s]?e[s]:(1e3*(t[s]+(e[s]-t[s])*n)>>0)/1e3)+i;return r.x||r.y?"translate("+r.x+","+r.y+")":"translate3d("+r.translateX+","+r.translateY+","+r.translateZ+")"},V=U.rotate=function(t,e,i,n){var r={};for(var s in e)r[s]="z"===s?"rotate("+(1e3*(t[s]+(e[s]-t[s])*n)>>0)/1e3+i+")":s+"("+(1e3*(t[s]+(e[s]-t[s])*n)>>0)/1e3+i+")";return r.z?r.z:(r.rotateX||"")+(r.rotateY||"")+(r.rotateZ||"")},tt=U.skew=function(t,e,i,n){var r={};for(var s in e)r[s]=s+"("+(1e3*(t[s]+(e[s]-t[s])*n)>>0)/1e3+i+")";return(r.skewX||"")+(r.skewY||"")},et=U.scale=function(t,e,i){return"scale("+(1e3*(t+(e-t)*i)>>0)/1e3+")"},it={},nt=function(t){for(var e=0;e<r[a];)rt.call(r[e],t)?e++:r.splice(e,1);s=R(nt)},rt=function(t){if((t=t||i.now())<this._startTime&&this.playing)return!0;var e=Math.min((t-this._startTime)/this[h].duration,1),n=this[h].easing(e);for(var r in this[l])it[r](this[f],r,this[c][r],this[l][r],n,this[h]);if(this[h].update&&this[h].update.call(this),1===e){if(this[h][v]>0)return isFinite(this[h][v])&&this[h][v]--,this[h][g]&&(this.reversed=!this.reversed,ct.call(this)),this._startTime=this[h][g]&&!this.reversed?t+this[h].repeatDelay:t,!0;this[h].complete&&this[h].complete.call(this),pt.call(this);for(var s=0,o=this[h].chain[a];s<o;s++)this[h].chain[s].start();return lt.call(this),!1}return!0},st=function(){var t=this[f],e=this[h];void 0!==e.perspective&&W in this[l]&&(this[c][W].perspective=this[l][W].perspective),void 0===e.transformOrigin||"svgTransform"in this[l]||(t[m][P("transformOrigin")]=e.transformOrigin),void 0!==e.perspectiveOrigin&&(t[m][P("perspectiveOrigin")]=e.perspectiveOrigin),void 0!==e.parentPerspective&&(t.parentNode[m][P("perspective")]=e.parentPerspective+"px"),void 0!==e.parentPerspectiveOrigin&&(t.parentNode[m][P("perspectiveOrigin")]=e.parentPerspectiveOrigin)},at={},ot={},ut={boxModel:function(t,e){t in it||(it[t]=function(t,e,i,n,r){t[m][e]=(r>.99||r<.01?(10*G(i,n,r)>>0)/10:G(i,n,r)>>0)+"px"});var i=C(e),n="height"===t?"offsetHeight":"offsetWidth";return"%"===i.u?i.v*this[f][n]/100:i.v},transform:function(t,e){if(W in it||(it[W]=function(t,e,i,n,r,s){t[m][e]=(i.perspective||"")+("translate"in i?J(i.translate,n.translate,"px",r):"")+("rotate"in i?V(i.rotate,n.rotate,"deg",r):"")+("skew"in i?tt(i.skew,n.skew,"deg",r):"")+("scale"in i?et(i.scale,n.scale,r):"")}),/translate/.test(t)){if("translate3d"===t){var i=e[o](","),n=C(i[0]),r=C(i[1],t3d2=C(i[2]));return{translateX:"%"===n.u?n.v*this[f].offsetWidth/100:n.v,translateY:"%"===r.u?r.v*this[f].offsetHeight/100:r.v,translateZ:"%"===t3d2.u?t3d2.v*(this[f].offsetHeight+this[f].offsetWidth)/200:t3d2.v}}if(/^translate(?:[XYZ])$/.test(t)){var s=C(e),u=/X/.test(t)?this[f].offsetWidth/100:/Y/.test(t)?this[f].offsetHeight/100:(this[f].offsetWidth+this[f].offsetHeight)/200;return"%"===s.u?s.v*u:s.v}if("translate"===t){var h,c="string"==typeof e?e[o](","):e,l={},p=C(c[0]),v=c[a]?C(c[1]):{v:0,u:"px"};return c instanceof Array?(l.x="%"===p.u?p.v*this[f].offsetWidth/100:p.v,l.y="%"===v.u?v.v*this[f].offsetHeight/100:v.v):(h=C(c),l.x="%"===h.u?h.v*this[f].offsetWidth/100:h.v,l.y=0),l}}else if(/rotate|skew/.test(t)){if(/^rotate(?:[XYZ])$|skew(?:[XY])$/.test(t)){var d=C(e,!0);return"rad"===d.u?X(d.v):d.v}if("rotate"===t){var g={},w=C(e,!0);return g.z="rad"===w.u?X(w.v):w.v,g}}else if("scale"===t)return parseFloat(e)},unitless:function(t,e){return!/scroll/.test(t)||t in it?"opacity"===t&&(t in it||(it[t]=L?function(t,e,i,n,r){t[m].filter="alpha(opacity="+(100*G(i,n,r)>>0)+")"}:function(t,e,i,n,r){t[m].opacity=(100*G(i,n,r)>>0)/100})):it[t]=function(t,e,i,n,r){t.scrollTop=G(i,n,r)>>0},parseFloat(e)},colors:function(t,e){return t in it||(it[t]=function(t,e,i,n,r,s){t[m][e]=K(i,n,r,s.keepHex)}),F(e)}},ht=function(t,e){var i="start"===e?this[c]:this[l],n={},r={},s={},a={};for(var o in t)if(-1!==I[u](o)){var h=["X","Y","Z"];if(/^translate(?:[XYZ]|3d)$/.test(o)){for(var f=0;f<3;f++){var p=h[f];/3d/.test(o)?s["translate"+p]=ut.transform.call(this,"translate"+p,t[o][f]):s["translate"+p]="translate"+p in t?ut.transform.call(this,"translate"+p,t["translate"+p]):0}a.translate=s}else if(/^rotate(?:[XYZ])$|^skew(?:[XY])$/.test(o)){for(var v=/rotate/.test(o)?"rotate":"skew",d="rotate"===v?r:n,g=0;g<3;g++){var m=h[g];void 0!==t[v+m]&&"skewZ"!==o&&(d[v+m]=ut.transform.call(this,v+m,t[v+m]))}a[v]=d}else/(rotate|translate|scale)$/.test(o)&&(a[o]=ut.transform.call(this,o,t[o]));i[W]=a}else-1!==y[u](o)?i[o]=ut.boxModel.call(this,o,t[o]):-1!==b[u](o)||"scroll"===o?i[o]=ut.unitless.call(this,o,t[o]):-1!==w[u](o)?i[o]=ut.colors.call(this,o,t[o]):o in ut&&(i[o]=ut[o].call(this,o,t[o]))},ct=function(){if(this[h][g])for(var t in this[l]){var e=this.valuesRepeat[t];this.valuesRepeat[t]=this[l][t],this[l][t]=e,this[c][t]=this.valuesRepeat[t]}},lt=function(){this[v]>0&&(this[h][v]=this[v]),this[h][g]&&!0===this.reversed&&(ct.call(this),this.reversed=!1),this.playing=!1,q()},ft=function(t){var e=n.getAttribute("data-tweening");e&&"scroll"===e&&t.preventDefault()},pt=function(){"scroll"in this[l]&&n.getAttribute("data-tweening")&&n.removeAttribute("data-tweening")},vt=function(){"scroll"in this[l]&&!n.getAttribute("data-tweening")&&n.setAttribute("data-tweening","scroll")},dt=function(t){return"function"==typeof t?t:"string"==typeof t?mt[t]:void 0},gt=function(){var t={},i=S(this[f]),n=["rotate","skew"],r=["X","Y","Z"];for(var s in this[c])if(-1!==I[u](s)){var a=/(rotate|translate|scale)$/.test(s);if(/translate/.test(s)&&"translate"!==s)t.translate3d=i.translate3d||O[s];else if(a)t[s]=i[s]||O[s];else if(!a&&/rotate|skew/.test(s))for(var o=0;o<2;o++)for(var h=0;h<3;h++){var p=n[o]+r[h];-1!==I[u](p)&&p in this[c]&&(t[p]=i[p]||O[p])}}else if("scroll"!==s)if("opacity"===s&&L){var v=Z(this[f],"filter");t.opacity="number"==typeof v?v:O.opacity}else-1!==M[u](s)?t[s]=Z(this[f],s)||d[s]:t[s]=s in at?at[s].call(this,s,this[c][s]):0;else t[s]=this[f]===j?e.pageYOffset||j.scrollTop:this[f].scrollTop;for(var g in i)-1===I[u](g)||g in this[c]||(t[g]=i[g]||O[g]);if(this[c]={},ht.call(this,t,"start"),W in this[l])for(var m in this[c][W])if("perspective"!==m)if("object"==typeof this[c][W][m])for(var w in this[c][W][m])void 0===this[l][W][m]&&(this[l][W][m]={}),"number"==typeof this[c][W][m][w]&&void 0===this[l][W][m][w]&&(this[l][W][m][w]=this[c][W][m][w]);else"number"==typeof this[c][W][m]&&void 0===this[l][W][m]&&(this[l][W][m]=this[c][W][m])},mt=e.Easing={};mt.linear=function(t){return t},mt.easingSinusoidalIn=function(t){return 1-Math.cos(t*Math.PI/2)},mt.easingSinusoidalOut=function(t){return Math.sin(t*Math.PI/2)},mt.easingSinusoidalInOut=function(t){return-.5*(Math.cos(Math.PI*t)-1)},mt.easingQuadraticIn=function(t){return t*t},mt.easingQuadraticOut=function(t){return t*(2-t)},mt.easingQuadraticInOut=function(t){return t<.5?2*t*t:(4-2*t)*t-1},mt.easingCubicIn=function(t){return t*t*t},mt.easingCubicOut=function(t){return--t*t*t+1},mt.easingCubicInOut=function(t){return t<.5?4*t*t*t:(t-1)*(2*t-2)*(2*t-2)+1},mt.easingQuarticIn=function(t){return t*t*t*t},mt.easingQuarticOut=function(t){return 1- --t*t*t*t},mt.easingQuarticInOut=function(t){return t<.5?8*t*t*t*t:1-8*--t*t*t*t},mt.easingQuinticIn=function(t){return t*t*t*t*t},mt.easingQuinticOut=function(t){return 1+--t*t*t*t*t},mt.easingQuinticInOut=function(t){return t<.5?16*t*t*t*t*t:1+16*--t*t*t*t*t},mt.easingCircularIn=function(t){return-(Math.sqrt(1-t*t)-1)},mt.easingCircularOut=function(t){return Math.sqrt(1-(t-=1)*t)},mt.easingCircularInOut=function(t){return(t*=2)<1?-.5*(Math.sqrt(1-t*t)-1):.5*(Math.sqrt(1-(t-=2)*t)+1)},mt.easingExponentialIn=function(t){return Math.pow(2,10*(t-1))-.001},mt.easingExponentialOut=function(t){return 1-Math.pow(2,-10*t)},mt.easingExponentialInOut=function(t){return(t*=2)<1?.5*Math.pow(2,10*(t-1)):.5*(2-Math.pow(2,-10*(t-1)))},mt.easingBackIn=function(t){var e=1.70158;return t*t*((e+1)*t-e)},mt.easingBackOut=function(t){var e=1.70158;return--t*t*((e+1)*t+e)+1},mt.easingBackInOut=function(t){var e=2.5949095;return(t*=2)<1?t*t*((e+1)*t-e)*.5:.5*((t-=2)*t*((e+1)*t+e)+2)},mt.easingElasticIn=function(t){var e,i=.1;return 0===t?0:1===t?1:(!i||i<1?(i=1,e=.1):e=.4*Math.asin(1/i)/Math.PI*2,-i*Math.pow(2,10*(t-=1))*Math.sin((t-e)*Math.PI*2/.4))},mt.easingElasticOut=function(t){var e,i=.1;return 0===t?0:1===t?1:(!i||i<1?(i=1,e=.1):e=.4*Math.asin(1/i)/Math.PI*2,i*Math.pow(2,-10*t)*Math.sin((t-e)*Math.PI*2/.4)+1)},mt.easingElasticInOut=function(t){var e,i=.1;return 0===t?0:1===t?1:(!i||i<1?(i=1,e=.1):e=.4*Math.asin(1/i)/Math.PI*2,(t*=2)<1?i*Math.pow(2,10*(t-=1))*Math.sin((t-e)*Math.PI*2/.4)*-.5:i*Math.pow(2,-10*(t-=1))*Math.sin((t-e)*Math.PI*2/.4)*.5+1)},mt.easingBounceIn=function(t){return 1-mt.easingBounceOut(1-t)},mt.easingBounceOut=function(t){return t<1/2.75?7.5625*t*t:t<2/2.75?7.5625*(t-=1.5/2.75)*t+.75:t<2.5/2.75?7.5625*(t-=2.25/2.75)*t+.9375:7.5625*(t-=2.625/2.75)*t+.984375},mt.easingBounceInOut=function(t){return t<.5?.5*mt.easingBounceIn(2*t):.5*mt.easingBounceOut(2*t-1)+.5};var wt=function(t,e,i,n){this[f]="scroll"in i&&(void 0===t||null===t)?j:t,this.playing=!1,this.reversed=!1,this.paused=!1,this._startTime=null,this._pauseTime=null,this._startFired=!1,this[h]={};for(var r in n)this[h][r]=n[r];if(this[h].rpr=n.rpr||!1,this.valuesRepeat={},this[l]={},this[c]={},ht.call(this,i,"end"),this[h].rpr?this[c]=e:ht.call(this,e,"start"),void 0!==this[h].perspective&&W in this[l]){var s="perspective("+parseInt(this[h].perspective)+"px)";this[l][W].perspective=s}for(var a in this[l])a in ot&&!this[h].rpr&&ot[a].call(this);this[h].chain=[],this[h].easing=dt(n.easing)||mt[x.easing]||mt.linear,this[h][v]=n[v]||x[v],this[h].repeatDelay=n.repeatDelay||x.repeatDelay,this[h][g]=n[g]||x[g],this[h].duration=n.duration||x.duration,this[h][p]=n[p]||x[p],this[v]=this[h][v]},yt=(wt.prototype={start:function(t){vt.call(this),this[h].rpr&&gt.apply(this),st.apply(this);for(var e in this[l])e in ot&&this[h].rpr&&ot[e].call(this),this.valuesRepeat[e]=this[c][e];return r.push(this),this.playing=!0,this.paused=!1,this._startFired=!1,this._startTime=t||i.now(),this._startTime+=this[h][p],this._startFired||(this[h].start&&this[h].start.call(this),this._startFired=!0),!s&&nt(),this},play:function(){return this.paused&&this.playing&&(this.paused=!1,this[h].resume&&this[h].resume.call(this),this._startTime+=i.now()-this._pauseTime,B(this),!s&&nt()),this},resume:function(){return this.play()},pause:function(){return!this.paused&&this.playing&&($(this),this.paused=!0,this._pauseTime=i.now(),this[h].pause&&this[h].pause.call(this)),this},stop:function(){return!this.paused&&this.playing&&($(this),this.playing=!1,this.paused=!1,pt.call(this),this[h].stop&&this[h].stop.call(this),this.stopChainedTweens(),lt.call(this)),this},chain:function(){return this[h].chain=arguments,this},stopChainedTweens:function(){for(var t=0,e=this[h].chain[a];t<e;t++)this[h].chain[t].stop()}},function(t,e,i){this.tweens=[];for(var n=[],r=0,s=t[a];r<s;r++)n[r]=i||{},i[p]=i[p]||x[p],n[r][p]=r>0?i[p]+(i.offset||x.offset):i[p],this.tweens.push(bt(t[r],e,n[r]))}),It=function(t,e,i,n){this.tweens=[];for(var r=[],s=0,o=t[a];s<o;s++)r[s]=n||{},n[p]=n[p]||x[p],r[s][p]=s>0?n[p]+(n.offset||x.offset):n[p],this.tweens.push(Mt(t[s],e,i,r[s]))},bt=(yt.prototype=It.prototype={start:function(t){t=t||i.now();for(var e=0,n=this.tweens[a];e<n;e++)this.tweens[e].start(t);return this},stop:function(){for(var t=0,e=this.tweens[a];t<e;t++)this.tweens[t].stop();return this},pause:function(){for(var t=0,e=this.tweens[a];t<e;t++)this.tweens[t].pause();return this},chain:function(){return this.tweens[this.tweens[a]-1][h].chain=arguments,this},play:function(){for(var t=0,e=this.tweens[a];t<e;t++)this.tweens[t].play();return this},resume:function(){return this.play()}},function(t,e,i){return i=i||{},i.rpr=!0,new wt(Y(t),e,e,i)}),Mt=function(t,e,i,n){return n=n||{},new wt(Y(t),e,i,n)},Ot=function(t,e,i){return new yt(Y(t,!0),e,i)},Tt=function(t,e,i,n){return new It(Y(t,!0),e,i,n)};return document.addEventListener(Q,ft,!1),document.addEventListener("mouseenter",ft,!1),{property:P,getPrefix:E,selector:Y,processEasing:dt,defaultOptions:x,to:bt,fromTo:Mt,allTo:Ot,allFromTo:Tt,ticker:nt,tick:s,tweens:r,update:rt,dom:it,parseProperty:ut,prepareStart:at,crossCheck:ot,Tween:wt,truD:C,truC:F,rth:A,htr:_,getCurrentStyle:Z}});
 
-// KUTE.js v1.6.6 | © dnp_theme | SVG Plugin | MIT-License
-!function(t,e){if("function"==typeof define&&define.amd)define(["./kute.js"],e);else if("object"==typeof module&&"function"==typeof require)module.exports=e(require("./kute.js"));else{if(void 0===t.KUTE)throw new Error("SVG Plugin require KUTE.js.");e(t.KUTE)}}(this,function(t){"use strict";var e="undefined"!=typeof global?global:window,r=t,n=r.dom,a=r.parseProperty,i=r.prepareStart,s=r.getCurrentStyle,o=(r.truC,r.truD,r.crossCheck),l=e.Interpolate.number,h=(e.Interpolate.unit,e.Interpolate.color,r.defaultOptions),u=null!==new RegExp("MSIE ([0-9]{1,}[.0-9]{0,})").exec(navigator.userAgent)&&parseFloat(RegExp.$1);if(!(u&&u<9)){var p=/(m[^(h|v|l)]*|[vhl][^(v|h|l|z)]*)/gim,g=e.Interpolate.coords=function(t,e,r,n){for(var a=[],i=0;i<r;i++){a[i]=[];for(var s=0;s<2;s++)a[i].push((1e3*(t[i][s]+(e[i][s]-t[i][s])*n)>>0)/1e3)}return a},f=function(t,e,r){for(var n=[],a=[],i=t.getTotalLength(),s=e.getTotalLength(),o=Math.max(i,s),l=o/r,h=0,u=l*r;(h+=r)<u;)n.push([t.getPointAtLength(h).x,t.getPointAtLength(h).y]),a.push([e.getPointAtLength(h).x,e.getPointAtLength(h).y]);return[n,a]},c=function(t,e,r){for(var n,a,i,s,o,l=[],h=r.length,u=0;u<h;u++)n=Math.abs(r[u][0]-e.x),a=Math.abs(r[u][1]-e.y),l.push(Math.sqrt(n*n+a*a));return i=l.indexOf(Math.min.apply(null,l)),o=r[i-1]?i-1:h-1,s=r[i+1]?i+1:0,Math.abs(r[o][0]-e.x)<t&&Math.abs(r[o][1]-e.y)<t?r[o]:Math.abs(r[s][0]-e.x)<t&&Math.abs(r[s][1]-e.y)<t?r[s]:Math.abs(r[i][0]-e.x)<t&&Math.abs(r[i][1]-e.y)<t?r[i]:[e.x,e.y]},v=function(t){for(var e,r,n=t.match(p),a=n.length,i=0,s=0,o=0;o<a;o++)n[o]=n[o],e=n[o][0],r=new RegExp(e+"[^\\d|\\-]*","i"),n[o]=n[o].replace(/(^|[^,])\s*-/g,"$1,-").replace(/(\s+\,|\s|\,)/g,",").replace(r,"").split(","),n[o][0]=parseFloat(n[o][0]),n[o][1]=parseFloat(n[o][1]),0===o?(i+=n[o][0],s+=n[o][1]):(i=n[o-1][0],s=n[o-1][1],/l/i.test(e)?(n[o][0]="l"===e?n[o][0]+i:n[o][0],n[o][1]="l"===e?n[o][1]+s:n[o][1]):/h/i.test(e)?(n[o][0]="h"===e?n[o][0]+i:n[o][0],n[o][1]=s):/v/i.test(e)&&(n[o][0]=i,n[o][1]="v"===e?n[o][0]+s:n[o][0]));return n},m=function(t){return t.split(/z/i).shift()+"z"},d=function(t){var e=document.createElementNS("http://www.w3.org/2000/svg","path"),r="object"==typeof t?t.getAttribute("d"):t;return e.setAttribute("d",r),e},y=function(t){if("glyph"===t.tagName){var e=d(t);return t.parentNode.appendChild(e),e}return t},b=function(t){var e={},r="object"==typeof t?t:/^\.|^\#/.test(t)?document.querySelector(t):null;return r&&/path|glyph/.test(r.tagName)?(e.e=y(r),e.o=r.getAttribute("d")):!r&&/[a-z][^a-z]*/gi.test(t)&&(e.e=d(t.trim()),e.o=t),e},w=function(t,e){var r,n,a,i,s,o,l,h,u,p,g=[],m=this.options.morphIndex;if(this._isPolygon)if(t=v(t),e=v(e),t.length!==e.length){i=Math.max(t.length,e.length),i===e.length?(s=t,o=e):(s=e,o=t),s.length,l=d("M"+s.join("L")+"z"),h=l.getTotalLength()/i;for(var y=0;y<i;y++)u=l.getPointAtLength(h*y),p=c(h,u,s),g.push([p[0],p[1]]);i===e.length?(n=o,r=g):(r=o,n=g)}else r=t,n=e;else t=d(t),e=d(e),a=f(t,e,this.options.morphPrecision),r=a[0],n=a[1],i=n.length;if(this.options.reverseFirstPath&&r.reverse(),this.options.reverseSecondPath&&n.reverse(),m){n=n.splice(m,i-m).concat(n)}return t=e=null,[r,n]};h.morphPrecision=15,a.path=function(t,e){return"path"in n||(n.path=function(t,e,r,n,a){t.setAttribute("d",1===a?n.o:"M"+g(r.d,n.d,n.d.length,a)+"Z")}),b(e)},i.path=function(t){return this.element.getAttribute("d")},o.path=function(){var t,e=m(this.valuesStart.path.o),r=m(this.valuesEnd.path.o);this.options.morphPrecision=this.options&&"morphPrecision"in this.options?parseInt(this.options.morphPrecision):h.morphPrecision,this._isPolygon=!/[CSQTA]/i.test(e)&&!/[CSQTA]/i.test(r),t=w.apply(this,[e,r]),this.valuesStart.path.d=t[0],this.valuesEnd.path.d=t[1]};var A=function(t,e){return parseFloat(t)/100*e},M=function(t){return 2*t.getAttribute("width")+2*t.getAttribute("height")},x=function(t){var e=t.getAttribute("points").split(" "),r=0;if(e.length>1){var n=function(t){var e=t.split(",");if(2==e.length&&!isNaN(e[0])&&!isNaN(e[1]))return[parseFloat(e[0]),parseFloat(e[1])]},a=function(t,e){return void 0!=t&&void 0!=e?Math.sqrt(Math.pow(e[0]-t[0],2)+Math.pow(e[1]-t[1],2)):0};if(e.length>2)for(var i=0;i<e.length-1;i++)r+=a(n(e[i]),n(e[i+1]));r+="polygon"===t.tagName?a(n(e[0]),n(e[e.length-1])):0}return r},k=function(t){var e=t.getAttribute("x1"),r=t.getAttribute("x2"),n=t.getAttribute("y1"),a=t.getAttribute("y2");return Math.sqrt(Math.pow(r-e,2)+Math.pow(a-n,2))},P=function(t){var e=t.getAttribute("r");return 2*Math.PI*e},T=function(t){var e=t.getAttribute("rx"),r=t.getAttribute("ry"),n=2*e,a=2*r;return Math.sqrt(.5*(n*n+a*a))*(2*Math.PI)/2},F=function(t){return/rect/.test(t.tagName)?M(t):/circle/.test(t.tagName)?P(t):/ellipse/.test(t.tagName)?T(t):/polygon|polyline/.test(t.tagName)?x(t):/line/.test(t.tagName)?k(t):void 0},N=function(t,e){var r,n,a,i,o=/path|glyph/.test(t.tagName)?t.getTotalLength():F(t);return e instanceof Object?e:("string"==typeof e?(e=e.split(/\,|\s/),r=/%/.test(e[0])?A(e[0].trim(),o):parseFloat(e[0]),n=/%/.test(e[1])?A(e[1].trim(),o):parseFloat(e[1])):void 0===e&&(i=parseFloat(s(t,"stroke-dashoffset")),a=s(t,"stroke-dasharray").split(/\,/),r=0-i,n=parseFloat(a[0])+r||o),{s:r,e:n,l:o})};a.draw=function(t,e){return"draw"in n||(n.draw=function(t,e,r,n,a){var i=(100*r.l>>0)/100,s=(100*l(r.s,n.s,a)>>0)/100,o=(100*l(r.e,n.e,a)>>0)/100,h=0-s,u=o+h;t.style.strokeDashoffset=h+"px",t.style.strokeDasharray=(100*(u<1?0:u)>>0)/100+"px, "+i+"px"}),N(this.element,e)},i.draw=function(){return N(this.element)};var S=function(t,e){return/[a-zA-Z]/.test(t)&&!/px/.test(t)?t.replace(/top|left/,0).replace(/right|bottom/,100).replace(/center|middle/,50):/%/.test(t)?e.x+parseFloat(t)*e.width/100:parseFloat(t)},E=function(t){var e=t&&/\)/.test(t)?t.substring(0,t.length-1).split(/\)\s|\)/):"none",r={};if(e instanceof Array)for(var n=0,a=e.length;n<a;n++){var i=e[n].trim().split("(");r[i[0]]=i[1]}return r},I=function(t){var e,r={},n=this.element.getBBox(),a=n.x+n.width/2,i=n.y+n.height/2,s=this.options.transformOrigin;s=s?s instanceof Array?s:s.split(/\s/):[a,i],s[0]="number"==typeof s[0]?s[0]:S(s[0],n),s[1]="number"==typeof s[1]?s[1]:S(s[1],n),r.origin=s;for(var o in t)"rotate"===o?r[o]="number"==typeof t[o]?t[o]:t[o]instanceof Array?t[o][0]:1*t[o].split(/\s/)[0]:"translate"===o?(e=t[o]instanceof Array?t[o]:/\,|\s/.test(t[o])?t[o].split(","):[t[o],0],r[o]=[1*e[0]||0,1*e[1]||0]):/skew/.test(o)?r[o]=1*t[o]||0:"scale"===o&&(r[o]=parseFloat(t[o])||1);return r};return a.svgTransform=function(t,e){return"svgTransform"in n||(n.svgTransform=function(t,e,r,n,a){var i,s=0,o=0,h=Math.PI/180,u="scale"in n?l(r.scale,n.scale,a):1,p="rotate"in n?l(r.rotate,n.rotate,a):0,g=Math.sin(p*h),f=Math.cos(p*h),c="skewX"in n?l(r.skewX,n.skewX,a):0,v="skewY"in n?l(r.skewY,n.skewY,a):0,m=p||c||v||1!==u||0;s-=m?n.origin[0]:0,o-=m?n.origin[1]:0,s*=u,o*=u,o+=v?s*Math.tan(v*h):0,s+=c?o*Math.tan(c*h):0,i=f*s-g*o,o=p?g*s+f*o:o,s=p?i:s,s+="translate"in n?l(r.translate[0],n.translate[0],a):0,o+="translate"in n?l(r.translate[1],n.translate[1],a):0,s+=m?n.origin[0]:0,o+=m?n.origin[1]:0,t.setAttribute("transform",(s||o?"translate("+(1e3*s>>0)/1e3+(o?","+(1e3*o>>0)/1e3:"")+")":"")+(p?"rotate("+(1e3*p>>0)/1e3+")":"")+(c?"skewX("+(1e3*c>>0)/1e3+")":"")+(v?"skewY("+(1e3*v>>0)/1e3+")":"")+(1!==u?"scale("+(1e3*u>>0)/1e3+")":""))}),I.call(this,e)},i.svgTransform=function(t,e){var r={},n=E(this.element.getAttribute("transform"));for(var a in e)r[a]=a in n?n[a]:"scale"===a?1:0;return r},o.svgTransform=function(){if(this.options.rpr){var t=this.valuesStart.svgTransform,e=this.valuesEnd.svgTransform,r=I.call(this,E(this.element.getAttribute("transform")));for(var n in r)t[n]=r[n];var a=this.element.ownerSVGElement,i=a.createSVGTransformFromMatrix(a.createSVGMatrix().translate(-t.origin[0],-t.origin[1]).translate("translate"in t?t.translate[0]:0,"translate"in t?t.translate[1]:0).rotate(t.rotate||0).skewX(t.skewX||0).skewY(t.skewY||0).scale(t.scale||1).translate(+t.origin[0],+t.origin[1]));t.translate=[i.matrix.e,i.matrix.f];for(var n in t)n in e||(e[n]=t[n])}},this}});
+/*!
+ * jQuery Scrollify
+ * Version 1.0.19
+ *
+ * Requires:
+ * - jQuery 1.7 or higher
+ *
+ * https://github.com/lukehaas/Scrollify
+ *
+ * Copyright 2016, Luke Haas
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of
+ * this software and associated documentation files (the "Software"), to deal in
+ * the Software without restriction, including without limitation the rights to
+ * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+ * the Software, and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+if touchScroll is false - update index
+
+ */
+(function (global, factory) {
+    "use strict";
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery'], function ($) {
+            return factory($, global, global.document);
+        });
+    } else if (typeof module === 'object' && module.exports) {
+        // Node/CommonJS
+        module.exports = factory(require('jquery'), global, global.document);
+    } else {
+        // Browser globals
+        factory(jQuery, global, global.document);
+    }
+}(typeof window !== 'undefined' ? window : this, function ($, window, document, undefined) {
+    "use strict";
+    var heights = [],
+        names = [],
+        elements = [],
+        overflow = [],
+        index = 0,
+        currentIndex = 0,
+        interstitialIndex = 1,
+        hasLocation = false,
+        timeoutId,
+        timeoutId2,
+        $window = $(window),
+        portHeight,
+        top = $window.scrollTop(),
+        scrollable = false,
+        locked = false,
+        scrolled = false,
+        manualScroll,
+        swipeScroll,
+        util,
+        disabled = false,
+        scrollSamples = [],
+        scrollTime = new Date().getTime(),
+        firstLoad = true,
+        initialised = false,
+        destination = 0,
+        wheelEvent = 'onwheel' in document ? 'wheel' : document.onmousewheel !== undefined ? 'mousewheel' : 'DOMMouseScroll',
+        settings = {
+            //section should be an identifier that is the same for each section
+            section: ".section",
+            sectionName: "section-name",
+            interstitialSection: "",
+            easing: "easeOutExpo",
+            scrollSpeed: 1100,
+            offset: 0,
+            scrollbars: true,
+            target: "html,body",
+            standardScrollElements: false,
+            setHeights: true,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll: true,
+            before: function () { },
+            after: function () { },
+            afterResize: function () { },
+            afterRender: function () { }
+        };
+    function getportHeight() {
+        return ($window.height() + settings.offset);
+    }
+    function animateScroll(index, instant, callbacks, toTop) {
+        if (currentIndex === index) {
+            callbacks = false;
+        }
+        if (disabled === true) {
+            return true;
+        }
+        if (names[index]) {
+            scrollable = false;
+            if (firstLoad === true) {
+                settings.afterRender();
+                firstLoad = false;
+            }
+            if (callbacks) {
+                if (typeof settings.before == 'function' && settings.before(index, elements) === false) {
+                    return true;
+                }
+            }
+            interstitialIndex = 1;
+            destination = heights[index];
+            if (firstLoad === false && currentIndex > index && toTop === false) {
+                //We're going backwards
+                if (overflow[index]) {
+                    portHeight = getportHeight();
+
+                    interstitialIndex = parseInt(elements[index].outerHeight() / portHeight);
+
+                    destination = parseInt(heights[index]) + (elements[index].outerHeight() - portHeight);
+                }
+            }
+
+
+            if (settings.updateHash && settings.sectionName && !(firstLoad === true && index === 0)) {
+                if (history.pushState) {
+                    try {
+                        history.replaceState(null, null, names[index]);
+                    } catch (e) {
+                        if (window.console) {
+                            console.warn("Scrollify warning: Page must be hosted to manipulate the hash value.");
+                        }
+                    }
+
+                } else {
+                    window.location.hash = names[index];
+                }
+            }
+
+            currentIndex = index;
+            if (instant) {
+                $(settings.target).stop().scrollTop(destination);
+                if (callbacks) {
+                    settings.after(index, elements);
+                }
+            } else {
+                locked = true;
+                if ($().velocity) {
+                    $(settings.target).stop().velocity('scroll', {
+                        duration: settings.scrollSpeed,
+                        easing: settings.easing,
+                        offset: destination,
+                        mobileHA: false
+                    });
+                } else {
+                    $(settings.target).stop().animate({
+                        scrollTop: destination
+                    }, settings.scrollSpeed, settings.easing);
+                }
+
+                if (window.location.hash.length && settings.sectionName && window.console) {
+                    try {
+                        if ($(window.location.hash).length) {
+                            console.warn("Scrollify warning: ID matches hash value - this will cause the page to anchor.");
+                        }
+                    } catch (e) { }
+                }
+                $(settings.target).promise().done(function () {
+                    locked = false;
+                    firstLoad = false;
+                    if (callbacks) {
+                        settings.after(index, elements);
+                    }
+                });
+            }
+
+        }
+    }
+
+    function isAccelerating(samples) {
+        function average(num) {
+            var sum = 0;
+
+            var lastElements = samples.slice(Math.max(samples.length - num, 1));
+
+            for (var i = 0; i < lastElements.length; i++) {
+                sum += lastElements[i];
+            }
+
+            return Math.ceil(sum / num);
+        }
+
+        var avEnd = average(10);
+        var avMiddle = average(70);
+
+        if (avEnd >= avMiddle) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    var scrollify = function (options) {
+        initialised = true;
+        $.easing['easeOutExpo'] = function (x, t, b, c, d) {
+            return (t == d) ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
+        };
+
+        manualScroll = {
+            handleMousedown: function () {
+                if (disabled === true) {
+                    return true;
+                }
+                scrollable = false;
+                scrolled = false;
+            },
+            handleMouseup: function () {
+                if (disabled === true) {
+                    return true;
+                }
+                scrollable = true;
+                if (scrolled) {
+                    //instant,callbacks
+                    manualScroll.calculateNearest(false, true);
+                }
+            },
+            handleScroll: function () {
+                if (disabled === true) {
+                    return true;
+                }
+                if (timeoutId) {
+                    clearTimeout(timeoutId);
+                }
+
+                timeoutId = setTimeout(function () {
+                    scrolled = true;
+                    if (scrollable === false) {
+                        return false;
+                    }
+                    scrollable = false;
+                    //instant,callbacks
+                    manualScroll.calculateNearest(false, true);
+                }, 200);
+            },
+            calculateNearest: function (instant, callbacks) {
+                top = $window.scrollTop();
+                var i = 1,
+                    max = heights.length,
+                    closest = 0,
+                    prev = Math.abs(heights[0] - top),
+                    diff;
+                for (; i < max; i++) {
+                    diff = Math.abs(heights[i] - top);
+
+                    if (diff < prev) {
+                        prev = diff;
+                        closest = i;
+                    }
+                }
+                if ((atBottom() && closest > index) || atTop()) {
+                    index = closest;
+                    //index, instant, callbacks, toTop
+                    animateScroll(closest, instant, callbacks, false);
+                }
+            },
+            wheelHandler: function (e) {
+                if (disabled === true) {
+                    return true;
+                } else if (settings.standardScrollElements) {
+                    if ($(e.target).is(settings.standardScrollElements) || $(e.target).closest(settings.standardScrollElements).length) {
+                        return true;
+                    }
+                }
+                if (!overflow[index]) {
+                    e.preventDefault();
+                }
+                var currentScrollTime = new Date().getTime();
+
+
+                e = e || window.event;
+                var value = e.originalEvent.wheelDelta || -e.originalEvent.deltaY || -e.originalEvent.detail;
+                var delta = Math.max(-1, Math.min(1, value));
+
+                //delta = delta || -e.originalEvent.detail / 3 || e.originalEvent.wheelDelta / 120;
+
+                if (scrollSamples.length > 149) {
+                    scrollSamples.shift();
+                }
+                //scrollSamples.push(Math.abs(delta*10));
+                scrollSamples.push(Math.abs(value));
+
+                if ((currentScrollTime - scrollTime) > 200) {
+                    scrollSamples = [];
+                }
+                scrollTime = currentScrollTime;
+
+
+                if (locked) {
+                    return false;
+                }
+                if (delta < 0) {
+                    if (index < heights.length - 1) {
+                        if (atBottom()) {
+                            if (isAccelerating(scrollSamples)) {
+                                e.preventDefault();
+                                index++;
+                                locked = true;
+                                //index, instant, callbacks, toTop
+                                animateScroll(index, false, true, false);
+                            } else {
+                                return false;
+                            }
+                        }
+                    }
+                } else if (delta > 0) {
+                    if (index > 0) {
+                        if (atTop()) {
+                            if (isAccelerating(scrollSamples)) {
+                                e.preventDefault();
+                                index--;
+                                locked = true;
+                                //index, instant, callbacks, toTop
+                                animateScroll(index, false, true, false);
+                            } else {
+                                return false
+                            }
+                        }
+                    }
+                }
+
+            },
+            keyHandler: function (e) {
+                if (disabled === true || document.activeElement.readOnly === false) {
+                    return true;
+                } else if (settings.standardScrollElements) {
+                    if ($(e.target).is(settings.standardScrollElements) || $(e.target).closest(settings.standardScrollElements).length) {
+                        return true;
+                    }
+                }
+                if (locked === true) {
+                    return false;
+                }
+                if (e.keyCode == 38 || e.keyCode == 33) {
+                    if (index > 0) {
+                        if (atTop()) {
+                            e.preventDefault();
+                            index--;
+                            //index, instant, callbacks, toTop
+                            animateScroll(index, false, true, false);
+                        }
+                    }
+                } else if (e.keyCode == 40 || e.keyCode == 34) {
+                    if (index < heights.length - 1) {
+                        if (atBottom()) {
+                            e.preventDefault();
+                            index++;
+                            //index, instant, callbacks, toTop
+                            animateScroll(index, false, true, false);
+                        }
+                    }
+                }
+            },
+            init: function () {
+                if (settings.scrollbars) {
+                    $window.on('mousedown', manualScroll.handleMousedown);
+                    $window.on('mouseup', manualScroll.handleMouseup);
+                    $window.on('scroll', manualScroll.handleScroll);
+                } else {
+                    $("body").css({ "overflow": "hidden" });
+                }
+                $window.on(wheelEvent, manualScroll.wheelHandler);
+                //$(document).bind(wheelEvent,manualScroll.wheelHandler);
+                $window.on('keydown', manualScroll.keyHandler);
+            }
+        };
+
+        swipeScroll = {
+            touches: {
+                "touchstart": { "y": -1, "x": -1 },
+                "touchmove": { "y": -1, "x": -1 },
+                "touchend": false,
+                "direction": "undetermined"
+            },
+            options: {
+                "distance": 30,
+                "timeGap": 800,
+                "timeStamp": new Date().getTime()
+            },
+            touchHandler: function (event) {
+                if (disabled === true) {
+                    return true;
+                } else if (settings.standardScrollElements) {
+                    if ($(event.target).is(settings.standardScrollElements) || $(event.target).closest(settings.standardScrollElements).length) {
+                        return true;
+                    }
+                }
+                var touch;
+                if (typeof event !== 'undefined') {
+                    if (typeof event.touches !== 'undefined') {
+                        touch = event.touches[0];
+                        switch (event.type) {
+                            case 'touchstart':
+                                swipeScroll.touches.touchstart.y = touch.pageY;
+                                swipeScroll.touches.touchmove.y = -1;
+
+                                swipeScroll.touches.touchstart.x = touch.pageX;
+                                swipeScroll.touches.touchmove.x = -1;
+
+                                swipeScroll.options.timeStamp = new Date().getTime();
+                                swipeScroll.touches.touchend = false;
+                            case 'touchmove':
+                                swipeScroll.touches.touchmove.y = touch.pageY;
+                                swipeScroll.touches.touchmove.x = touch.pageX;
+                                if (swipeScroll.touches.touchstart.y !== swipeScroll.touches.touchmove.y && (Math.abs(swipeScroll.touches.touchstart.y - swipeScroll.touches.touchmove.y) > Math.abs(swipeScroll.touches.touchstart.x - swipeScroll.touches.touchmove.x))) {
+                                    //if(!overflow[index]) {
+                                    event.preventDefault();
+                                    //}
+                                    swipeScroll.touches.direction = "y";
+                                    if ((swipeScroll.options.timeStamp + swipeScroll.options.timeGap) < (new Date().getTime()) && swipeScroll.touches.touchend == false) {
+
+                                        swipeScroll.touches.touchend = true;
+                                        if (swipeScroll.touches.touchstart.y > -1) {
+
+                                            if (Math.abs(swipeScroll.touches.touchmove.y - swipeScroll.touches.touchstart.y) > swipeScroll.options.distance) {
+                                                if (swipeScroll.touches.touchstart.y < swipeScroll.touches.touchmove.y) {
+
+                                                    swipeScroll.up();
+
+                                                } else {
+                                                    swipeScroll.down();
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                break;
+                            case 'touchend':
+                                if (swipeScroll.touches[event.type] === false) {
+                                    swipeScroll.touches[event.type] = true;
+                                    if (swipeScroll.touches.touchstart.y > -1 && swipeScroll.touches.touchmove.y > -1 && swipeScroll.touches.direction === "y") {
+
+                                        if (Math.abs(swipeScroll.touches.touchmove.y - swipeScroll.touches.touchstart.y) > swipeScroll.options.distance) {
+                                            if (swipeScroll.touches.touchstart.y < swipeScroll.touches.touchmove.y) {
+                                                swipeScroll.up();
+
+                                            } else {
+                                                swipeScroll.down();
+
+                                            }
+                                        }
+                                        swipeScroll.touches.touchstart.y = -1;
+                                        swipeScroll.touches.touchstart.x = -1;
+                                        swipeScroll.touches.direction = "undetermined";
+                                    }
+                                }
+                            default:
+                                break;
+                        }
+                    }
+                }
+            },
+            down: function () {
+
+                if (index < heights.length) {
+
+                    if (atBottom() && index < heights.length - 1) {
+
+                        index++;
+                        //index, instant, callbacks, toTop
+                        animateScroll(index, false, true, false);
+                    } else {
+                        portHeight = getportHeight();
+                        if (Math.floor(elements[index].height() / portHeight) > interstitialIndex) {
+
+                            interstitialScroll(parseInt(heights[index]) + (portHeight * interstitialIndex));
+                            interstitialIndex += 1;
+
+                        } else {
+                            interstitialScroll(parseInt(heights[index]) + (elements[index].outerHeight() - portHeight));
+                        }
+
+                    }
+                }
+            },
+            up: function () {
+                if (index >= 0) {
+                    if (atTop() && index > 0) {
+
+                        index--;
+                        //index, instant, callbacks, toTop
+                        animateScroll(index, false, true, false);
+                    } else {
+
+                        if (interstitialIndex > 2) {
+                            portHeight = getportHeight();
+
+                            interstitialIndex -= 1;
+                            interstitialScroll(parseInt(heights[index]) + (portHeight * interstitialIndex));
+
+                        } else {
+
+                            interstitialIndex = 1;
+                            interstitialScroll(parseInt(heights[index]));
+                        }
+                    }
+
+                }
+            },
+            init: function () {
+                if (document.addEventListener && settings.touchScroll) {
+                    var eventListenerOptions = {
+                        passive: false
+                    };
+                    document.addEventListener('touchstart', swipeScroll.touchHandler, eventListenerOptions);
+                    document.addEventListener('touchmove', swipeScroll.touchHandler, eventListenerOptions);
+                    document.addEventListener('touchend', swipeScroll.touchHandler, eventListenerOptions);
+                }
+            }
+        };
+
+
+        util = {
+            refresh: function (withCallback, scroll) {
+                clearTimeout(timeoutId2);
+                timeoutId2 = setTimeout(function () {
+                    //retain position
+                    sizePanels(true);
+                    //scroll, firstLoad
+                    calculatePositions(scroll, false);
+                    if (withCallback) {
+                        settings.afterResize();
+                    }
+                }, 400);
+            },
+            handleUpdate: function () {
+                //callbacks, scroll
+                //changed from false,true to false,false
+                util.refresh(false, false);
+            },
+            handleResize: function () {
+                //callbacks, scroll
+                util.refresh(true, false);
+            },
+            handleOrientation: function () {
+                //callbacks, scroll
+                util.refresh(true, true);
+            }
+        };
+        settings = $.extend(settings, options);
+
+        //retain position
+        sizePanels(false);
+
+        calculatePositions(false, true);
+
+        if (true === hasLocation) {
+            //index, instant, callbacks, toTop
+            animateScroll(index, false, true, true);
+        } else {
+            setTimeout(function () {
+                //instant,callbacks
+                manualScroll.calculateNearest(true, false);
+            }, 200);
+        }
+        if (heights.length) {
+            manualScroll.init();
+            swipeScroll.init();
+
+            $window.on("resize", util.handleResize);
+            if (document.addEventListener) {
+                window.addEventListener("orientationchange", util.handleOrientation, false);
+            }
+        }
+        function interstitialScroll(pos) {
+            if ($().velocity) {
+                $(settings.target).stop().velocity('scroll', {
+                    duration: settings.scrollSpeed,
+                    easing: settings.easing,
+                    offset: pos,
+                    mobileHA: false
+                });
+            } else {
+                $(settings.target).stop().animate({
+                    scrollTop: pos
+                }, settings.scrollSpeed, settings.easing);
+            }
+        }
+
+        function sizePanels(keepPosition) {
+            if (keepPosition) {
+                top = $window.scrollTop();
+            }
+
+            var selector = settings.section;
+            overflow = [];
+            if (settings.interstitialSection.length) {
+                selector += "," + settings.interstitialSection;
+            }
+            if (settings.scrollbars === false) {
+                settings.overflowScroll = false;
+            }
+            portHeight = getportHeight();
+            $(selector).each(function (i) {
+                var $this = $(this);
+
+                if (settings.setHeights) {
+                    if ($this.is(settings.interstitialSection)) {
+                        overflow[i] = false;
+                    } else {
+                        if (($this.css("height", "auto").outerHeight() < portHeight) || $this.css("overflow") === "hidden") {
+                            $this.css({ "height": portHeight });
+
+                            overflow[i] = false;
+                        } else {
+
+                            $this.css({ "height": $this.outerHeight() });
+
+                            if (settings.overflowScroll) {
+                                overflow[i] = true;
+                            } else {
+                                overflow[i] = false;
+                            }
+                        }
+
+                    }
+
+                } else {
+
+                    if (($this.outerHeight() < portHeight) || (settings.overflowScroll === false)) {
+                        overflow[i] = false;
+                    } else {
+                        overflow[i] = true;
+                    }
+                }
+            });
+            if (keepPosition) {
+                $window.scrollTop(top);
+            }
+        }
+        function calculatePositions(scroll, firstLoad) {
+            var selector = settings.section;
+            if (settings.interstitialSection.length) {
+                selector += "," + settings.interstitialSection;
+            }
+            heights = [];
+            names = [];
+            elements = [];
+            $(selector).each(function (i) {
+                var $this = $(this);
+                if (i > 0) {
+                    heights[i] = parseInt($this.offset().top) + settings.offset;
+                } else {
+                    heights[i] = parseInt($this.offset().top);
+                }
+                if (settings.sectionName && $this.data(settings.sectionName)) {
+                    names[i] = "#" + $this.data(settings.sectionName).toString().replace(/ /g, "-");
+                } else {
+                    if ($this.is(settings.interstitialSection) === false) {
+                        names[i] = "#" + (i + 1);
+                    } else {
+                        names[i] = "#";
+                        if (i === $(selector).length - 1 && i > 1) {
+                            heights[i] = heights[i - 1] + (parseInt($($(selector)[i - 1]).outerHeight()) - parseInt($(window).height())) + parseInt($this.outerHeight());
+                        }
+                    }
+                }
+                elements[i] = $this;
+                try {
+                    if ($(names[i]).length && window.console) {
+                        console.warn("Scrollify warning: Section names can't match IDs - this will cause the browser to anchor.");
+                    }
+                } catch (e) { }
+
+                if (window.location.hash === names[i]) {
+                    index = i;
+                    hasLocation = true;
+                }
+
+            });
+
+            if (true === scroll) {
+                //index, instant, callbacks, toTop
+                animateScroll(index, false, false, false);
+            }
+        }
+
+        function atTop() {
+            if (!overflow[index]) {
+                return true;
+            }
+            top = $window.scrollTop();
+            if (top > parseInt(heights[index])) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+        function atBottom() {
+            if (!overflow[index]) {
+                return true;
+            }
+            top = $window.scrollTop();
+            portHeight = getportHeight();
+
+            if (top < parseInt(heights[index]) + (elements[index].outerHeight() - portHeight) - 28) {
+
+                return false;
+
+            } else {
+                return true;
+            }
+        }
+    }
+
+    function move(panel, instant) {
+        var z = names.length;
+        for (; z >= 0; z--) {
+            if (typeof panel === 'string') {
+                if (names[z] === panel) {
+                    index = z;
+                    //index, instant, callbacks, toTop
+                    animateScroll(z, instant, true, true);
+                }
+            } else {
+                if (z === panel) {
+                    index = z;
+                    //index, instant, callbacks, toTop
+                    animateScroll(z, instant, true, true);
+                }
+            }
+        }
+    }
+    scrollify.move = function (panel) {
+        if (panel === undefined) {
+            return false;
+        }
+        if (panel.originalEvent) {
+            panel = $(this).attr("href");
+        }
+        move(panel, false);
+    };
+    scrollify.instantMove = function (panel) {
+        if (panel === undefined) {
+            return false;
+        }
+        move(panel, true);
+    };
+    scrollify.next = function () {
+        if (index < names.length) {
+            index += 1;
+            //index, instant, callbacks, toTop
+            animateScroll(index, false, true, true);
+        }
+    };
+    scrollify.previous = function () {
+        if (index > 0) {
+            index -= 1;
+            //index, instant, callbacks, toTop
+            animateScroll(index, false, true, true);
+        }
+    };
+    scrollify.instantNext = function () {
+        if (index < names.length) {
+            index += 1;
+            //index, instant, callbacks, toTop
+            animateScroll(index, true, true, true);
+        }
+    };
+    scrollify.instantPrevious = function () {
+        if (index > 0) {
+            index -= 1;
+            //index, instant, callbacks, toTop
+            animateScroll(index, true, true, true);
+        }
+    };
+    scrollify.destroy = function () {
+        if (!initialised) {
+            return false;
+        }
+        if (settings.setHeights) {
+            $(settings.section).each(function () {
+                $(this).css("height", "auto");
+            });
+        }
+        $window.off("resize", util.handleResize);
+        if (settings.scrollbars) {
+            $window.off('mousedown', manualScroll.handleMousedown);
+            $window.off('mouseup', manualScroll.handleMouseup);
+            $window.off('scroll', manualScroll.handleScroll);
+        }
+        $window.off(wheelEvent, manualScroll.wheelHandler);
+        $window.off('keydown', manualScroll.keyHandler);
+
+        if (document.addEventListener && settings.touchScroll) {
+            document.removeEventListener('touchstart', swipeScroll.touchHandler, false);
+            document.removeEventListener('touchmove', swipeScroll.touchHandler, false);
+            document.removeEventListener('touchend', swipeScroll.touchHandler, false);
+        }
+        heights = [];
+        names = [];
+        elements = [];
+        overflow = [];
+    };
+    scrollify.update = function () {
+        if (!initialised) {
+            return false;
+        }
+        util.handleUpdate();
+    };
+    scrollify.current = function () {
+        return elements[index];
+    };
+    scrollify.currentIndex = function () {
+        return index;
+    };
+    scrollify.disable = function () {
+        disabled = true;
+    };
+    scrollify.enable = function () {
+        disabled = false;
+        if (initialised) {
+            //instant,callbacks
+            manualScroll.calculateNearest(false, false);
+        }
+    };
+    scrollify.isDisabled = function () {
+        return disabled;
+    };
+    scrollify.setOptions = function (updatedOptions) {
+        if (!initialised) {
+            return false;
+        }
+        if (typeof updatedOptions === "object") {
+            settings = $.extend(settings, updatedOptions);
+            util.handleUpdate();
+        } else if (window.console) {
+            console.warn("Scrollify warning: setOptions expects an object.");
+        }
+    };
+    $.scrollify = scrollify;
+    return scrollify;
+}));

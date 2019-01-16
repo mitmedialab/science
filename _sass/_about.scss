@@ -2,7 +2,7 @@ main.about {
     .left,
     .right {
         display: inline-block;
-        position: fixed;
+        position: absolute;
         width: 50%;
         height: 100%;
 
@@ -17,9 +17,9 @@ main.about {
         left: 0;
 
         .headline--container {
-            position: absolute;
+            position: fixed;
             top: calc(50% + 50px);
-            width: 100%;
+            width: 50%;
             text-align: center;
 
             @media only screen and (max-width: 1200px) {
@@ -44,9 +44,10 @@ main.about {
         }
 
         .svg--container {
+            position: fixed;
             display: table;
             margin-top: 130px;
-            width: 100%;
+            width: 50%;
             height: calc(100% - 130px);
             text-align: center;
 
@@ -92,13 +93,8 @@ main.about {
         }
 
         .content--container {
-            display: table;
-            margin-top: 130px;
-            width: 100%;
-            height: calc(100% - 130px);
 
             @media only screen and (max-width: 1200px) {
-                margin-top: 0;
                 height: auto;
             }
 
@@ -107,17 +103,16 @@ main.about {
             }
 
             .content {
-                display: table-cell;
-                vertical-align: middle;
-                padding-top: 120px;
+                display: table;
+                padding-top: 360px;
                 padding-bottom: 30px;
                 padding-left: 60px;
                 padding-right: 60px;
                 text-align: left;
 
                 a {
-                    margin-bottom: 2px;
-                    border-bottom: solid 2px $black;
+                    padding-bottom: 0;
+                    border-bottom: solid 1px $black;
                     color: $black;
                     text-decoration: none;
                 }
@@ -131,36 +126,30 @@ main.about {
                 @media only screen and (max-width: $breakpoint-med) {
                     display: block;
                     padding-bottom: 60px;
-                    padding-left: 60px;
-                    padding-right: 60px;
-                }
-
-                @media only screen and (min-width: $breakpoint-med) {
-                    width: 100%;
-                    &.hide {
-                        display: none;
-                    }
+                    padding-left: 20px;
+                    padding-right: 20px;
                 }
 
                 &.content__elements {
+
                     h3 {
                         color: $red;
                     }
                 }
 
-                &.content__ag {
+                &.green {
                     h3 {
                         color: $green;
                     }
                 }
 
-                &.content__ocean-initiative {
+                &.blue {
                     h3 {
                         color: $blue;
                     }
                 }
 
-                &.content__space-exploration-initiative {
+                &.yellow {
                     h3 {
                         color: $yellow;
                     }

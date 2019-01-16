@@ -86,13 +86,12 @@ $(document).ready(function () {
         $(".left nav ul li").removeClass("state");
         $(this).addClass("state");
         state = $(this).index();
+        // $.scrollify.move($(this).attr("href"));
         if (state == 0) {
             $("#s-1").css({
                 "fill": '#FFFFFF'
             });
             setTimeout(function () {
-                $(".content").addClass("hide");
-                $(".content__elements-1").removeClass("hide");
                 $(".headline--container h3").text("Elements").css({ "color": "#000000" });
             }, 1000);
             !tween0.playing && tween0.start();
@@ -101,8 +100,6 @@ $(document).ready(function () {
                 "fill": '#FFFFFF'
             });
             setTimeout(function () {
-                $(".content").addClass("hide");
-                $(".content__elements-2").removeClass("hide");
                 $(".headline--container h3").text("Elements").css({ "color": "#000000" });
             }, 1000);
             !tween0.playing && tween0.start();
@@ -111,8 +108,6 @@ $(document).ready(function () {
                 "fill": '#F03E3E'
             });
             setTimeout(function () {
-                $(".content").addClass("hide");
-                $(".content__ml-learning").removeClass("hide");
                 $(".headline--container h3").text("ML Learning").css({ "color": "#FFFFFF" });
             }, 1000);
             !tween0.playing && tween0.start();
@@ -121,8 +116,6 @@ $(document).ready(function () {
                 "fill": '#20C997'
             });
             setTimeout(function () {
-                $(".content").addClass("hide");
-                $(".content__ag").removeClass("hide");
                 $(".headline--container h3").text("Open Agriculture Initiative (OpenAg)").css({ "color": "#FFFFFF" });
             }, 1000);
             !tween1.playing && tween1.start();
@@ -131,8 +124,6 @@ $(document).ready(function () {
                 "fill": '#4263EB'
             });
             setTimeout(function () {
-                $(".content").addClass("hide");
-                $(".content__ocean-initiative").removeClass("hide");
                 $(".headline--container h3").text("Open Ocean").css({ "color": "#FFFFFF" });
             }, 1000);
             !tween2.playing && tween2.start();
@@ -141,11 +132,20 @@ $(document).ready(function () {
                 "fill": '#FAB005'
             });
             setTimeout(function () {
-                $(".content").addClass("hide");
-                $(".content__space-exploration-initiative").removeClass("hide");
                 $(".headline--container h3").text("Space Exploration Initiative").css({ "color": "#FFFFFF" });
             }, 1000);
             !tween3.playing && tween3.start();
         }
+    });
+
+    $(function () {
+        var index = 0;
+        $.scrollify({
+            section: ".content",
+            before: function () { },
+            after: function () { },
+            afterResize: function () { },
+            afterRender: function () { }
+        });
     });
 });
