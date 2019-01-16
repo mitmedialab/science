@@ -13,7 +13,7 @@ main.home {
         padding-bottom: 120px;
         width: 100%;
 
-        @media only screen and (max-width: $breakpoint-small) {
+        @media only screen and (max-width: $breakpoint-med) {
             top: 65px;
             padding-bottom: 0px;
         }
@@ -21,7 +21,7 @@ main.home {
         .headline {
             padding-top: 60px;
 
-            @media only screen and (max-width: $breakpoint-small) {
+            @media only screen and (max-width: $breakpoint-med) {
                 padding-top: 30px;
             }
 
@@ -31,7 +31,7 @@ main.home {
                 letter-spacing: -0.025em;
                 line-height: 1.75em;
 
-                @media only screen and (max-width: $breakpoint-small) {
+                @media only screen and (max-width: $breakpoint-med) {
                     font-size: 20px;
                 }
 
@@ -72,13 +72,13 @@ main.home {
         .element--container {
             padding-top: 75px;
 
-            @media only screen and (max-width: $breakpoint-small) {
+            @media only screen and (max-width: $breakpoint-med) {
                 padding-top: 45px;
             }
 
             .element-image--container {
-                padding-left: 60px;
-                padding-right: 60px;
+                padding-left: 17.5%;
+                padding-right: 17.5%;
                 text-align: center;
 
                 @media only screen and (max-width: $breakpoint-med) {
@@ -94,8 +94,8 @@ main.home {
 
             .element-text--container {
                 padding-top: 20px;
-                padding-left: 60px;
-                padding-right: 60px;
+                padding-left: 17.5%;
+                padding-right: 17.5%;
 
                 @media only screen and (max-width: $breakpoint-small) {
                     padding-top: 15px;
