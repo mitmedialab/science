@@ -1,15 +1,19 @@
 main.home {
     .content--container {
         position: absolute;
-        top: 60px;
+        top: 130px;
         padding-bottom: 120px;
         width: 100%;
 
+        @media only screen and (max-width: $breakpoint-small) {
+            top: 65px;
+        }
+
         .headline {
-            padding-top: 150px;
+            padding-top: 60px;
 
             @media only screen and (max-width: $breakpoint-small) {
-                padding-top: 60px;
+                padding-top: 30px;
             }
 
             h3 {
@@ -59,6 +63,10 @@ main.home {
         .element--container {
             padding-top: 75px;
 
+            @media only screen and (max-width: $breakpoint-small) {
+                padding-top: 45px;
+            }
+
             .element-image--container {
                 padding-left: 60px;
                 padding-right: 60px;
@@ -81,6 +89,7 @@ main.home {
                 padding-right: 60px;
 
                 @media only screen and (max-width: $breakpoint-small) {
+                    padding-top: 15px;
                     padding-left: 0;
                     padding-right: 0;
                 }
