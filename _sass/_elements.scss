@@ -21,9 +21,8 @@ main.elements {
             }
             
             @media only screen and (max-width: $breakpoint-med) {
-                padding-top: 30px;
-                padding-left: 0;
-                padding-right: 0;
+                padding-left: 20px;
+                padding-right: 20px;
             }
 
             &:before,
@@ -57,9 +56,7 @@ main.elements {
                 float: left;
                 position: absolute;
                 padding-bottom: 30px;
-                width: calc(50% - 180px);
-                max-width: 600px;
-                mix-blend-mode: multiply;
+                width: calc(50% - 240px);
 
                 @media only screen and (max-width: $breakpoint-large) {
                     width: auto;

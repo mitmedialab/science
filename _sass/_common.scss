@@ -127,7 +127,7 @@
     height: calc(100% - 120px);
     background-color: rgba($color: $black, $alpha: 0.1);
 
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: $breakpoint-med) {
         display: none;
     }
 }
