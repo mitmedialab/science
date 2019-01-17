@@ -15,7 +15,7 @@ main.home {
 
         @media only screen and (max-width: $breakpoint-med) {
             top: 65px;
-            padding-bottom: 0px;
+            padding-bottom: 80px;
         }
 
         .headline {
@@ -97,7 +97,7 @@ main.home {
                 padding-left: 17.5%;
                 padding-right: 17.5%;
 
-                @media only screen and (max-width: $breakpoint-small) {
+                @media only screen and (max-width: $breakpoint-med) {
                     padding-top: 15px;
                     padding-left: 0;
                     padding-right: 0;
