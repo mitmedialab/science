@@ -10,9 +10,9 @@ $(document).ready(function () {
         },
         path: '#s-1'
     }, {
-        delay: 500,
+        duration: 250,
         easing: 'easingCubicInOut',
-        duration: 1000,
+        duration: 2000,
         reverseFirstPath: false,
         morphPrecision: 1,
         morphIndex: 150
@@ -26,9 +26,9 @@ $(document).ready(function () {
     }, {
         path: '#s-2'
     }, {
-        delay: 500,
+        duration: 250,
         easing: 'easingCubicInOut',
-        duration: 1000,
+        duration: 2000,
         reverseFirstPath: true,
         morphPrecision: 500,
         morphIndex: 100
@@ -42,9 +42,9 @@ $(document).ready(function () {
     }, {
         path: '#s-3'
     }, {
-        delay: 500,
+        duration: 250,
         easing: 'easingCubicInOut',
-        duration: 1000,
+        duration: 2000,
         reverseFirstPath: true,
         morphPrecision: 500,
         morphIndex: 100
@@ -55,9 +55,9 @@ $(document).ready(function () {
     }, {
         path: '#s-4'
     }, {
-        delay: 500,
+        duration: 250,
         easing: 'easingCubicInOut',
-        duration: 1000,
+        duration: 2000,
         reverseFirstPath: false,
         morphPrecision: 1,
         morphIndex: 50
@@ -74,9 +74,9 @@ $(document).ready(function () {
         },
         path: '#s-5'
     }, {
-        delay: 500,
+        duration: 250,
         easing: 'easingCubicInOut',
-        duration: 1000,
+        duration: 2000,
         reverseFirstPath: false,
         morphPrecision: 1,
         morphIndex: 150

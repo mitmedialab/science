@@ -21,9 +21,10 @@ main.about {
             vertical-align: middle;
 
             svg {
+                opacity: 0.5;
                 fill: $white;
                 stroke-width: 0.1px;
-                width: 50%;
+                width: 100%;
                 height: 100%;
                 path {
                     &:not(:first-of-type) {
