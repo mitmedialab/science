@@ -1,179 +1,119 @@
 main.about {
-    .left,
-    .right {
-        display: inline-block;
-        position: absolute;
-        width: 50%;
-        height: 100%;
+    .svg--container {
+        position: fixed;
+        display: table;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        margin-top: 130px;
+        width: 100%;
+        height: calc(100% - 130px);
+        text-align: center;
 
-        @media only screen and (max-width: 1200px) {
-            position: relative;
-            width: 100%;
-            height: auto;
+        @media only screen and (max-width: $breakpoint-med) {
+            display: none;
+        }
+
+        .svg {
+            display: table-cell;
+            vertical-align: middle;
+
+            svg {
+                fill: $white;
+                stroke-width: 0.1px;
+                width: 50%;
+                height: 100%;
+                path {
+                    &:not(:first-of-type) {
+                        visibility: hidden;
+                    }
+                }
+            }
         }
     }
 
-    .left {
+    .content--container {
+        position: absolute;
+        top: 130px;
+        bottom: 0;
         left: 0;
+        right: 0;
+        width: 100%;
 
-        .headline--container {
-            position: fixed;
-            top: calc(50% + 50px);
-            width: 50%;
-            text-align: center;
+        @media only screen and (max-width: $breakpoint-med) {
+            top: 65px;
+            padding-top: 60px;
+        }
+
+        section {
+            padding-top: 130px;
+            padding-bottom: 65px;
+            text-align: left;
+
+            &:last-of-type {
+                padding-bottom: calc(100% - 260px)
+;            }
 
             @media only screen and (max-width: 1200px) {
-                top: 50%;
-                margin-top: 50px;
-                width: 100%;
+                padding-top: 0;
+                padding-left: 150px;
+                padding-right: 150px;
             }
 
             @media only screen and (max-width: $breakpoint-med) {
-                margin-top: 0;
+                display: block;
+                padding-bottom: 60px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            &.content__elements {
+                h3 {
+                    color: $red;
+                }
+            }
+
+            &.green {
+                h3 {
+                    color: $green;
+                }
+            }
+
+            &.blue {
+                h3 {
+                    color: $blue;
+                }
+            }
+
+            &.yellow {
+                h3 {
+                    color: $yellow;
+                }
             }
 
             h3 {
-                color: $black;
+                margin-bottom: 30px;
                 font-family: $bold;
+                font-size: 25px;
+            }
+
+            p {
+                margin-bottom: 15px;
+                font-family: $regular;
                 font-size: 20px;
-                line-height: 20px;
-                @media only screen and (max-width: 1200px) {
-                    text-align: center;
-                }
-            }
-        }
-
-        .svg--container {
-            position: fixed;
-            display: table;
-            margin-top: 130px;
-            width: 50%;
-            height: calc(100% - 130px);
-            text-align: center;
-
-            @media only screen and (max-width: 1200px) {
-                height: auto;
-            }
-
-            @media only screen and (max-width: $breakpoint-med) {
-                display: none;
-            }
-
-            .svg {
-                display: table-cell;
-                vertical-align: middle;
-                
-
-                @media only screen and (max-width: 1200px) {
-                    svg {
-                        width: 100%;
-                        height: 510px;
-                    }
-                }
-            }
-        }
-
-        .mit {
-            position: absolute;
-            bottom: 30px;
-            z-index: 100;
-            width: 100%;
-            font-family: $bold;
-            font-size: 15px;
-            line-height: 1;
-            text-align: center;
-        }
-    }
-
-    .right {
-        right: 0;
-
-        @media only screen and (max-width: $breakpoint-med) {
-            position: absolute;
-            top: 65px;
-        }
-
-        .content--container {
-
-            @media only screen and (max-width: 1200px) {
-                height: auto;
-            }
-
-            @media only screen and (max-width: $breakpoint-med) {
-                padding-top: 60px;
-            }
-
-            .content {
-                display: table;
-                padding-top: 360px;
-                padding-bottom: 30px;
-                padding-left: 60px;
-                padding-right: 60px;
-                text-align: left;
-
-                a {
-                    padding-bottom: 0;
-                    border-bottom: solid 1px $black;
-                    color: $black;
-                    text-decoration: none;
-                }
-
-                @media only screen and (max-width: 1200px) {
-                    padding-top: 0;
-                    padding-left: 150px;
-                    padding-right: 150px;
-                }
-
+                line-height: 1.5;
                 @media only screen and (max-width: $breakpoint-med) {
-                    display: block;
-                    padding-bottom: 60px;
-                    padding-left: 20px;
-                    padding-right: 20px;
+                    font-size: 15px;
                 }
+            }
 
-                &.content__elements {
-
-                    h3 {
-                        color: $red;
-                    }
-                }
-
-                &.green {
-                    h3 {
-                        color: $green;
-                    }
-                }
-
-                &.blue {
-                    h3 {
-                        color: $blue;
-                    }
-                }
-
-                &.yellow {
-                    h3 {
-                        color: $yellow;
-                    }
-                }
-
-                h3 {
-                    display: none;
-
-                    @media only screen and (max-width: $breakpoint-med) {
-                        display: block;
-                        margin-bottom: 15px;
-                        font-size: 20px;
-                    }
-                }
-
-                p {
-                    margin-bottom: 15px;
-                    font-size: 20px;
-                    line-height: 1.5;
-                    @media only screen and (max-width: $breakpoint-med) {
-                        font-size: 15px;
-                    }
-                }
+            a {
+                padding-bottom: 0;
+                border-bottom: solid 1px $black;
+                color: $black;
+                text-decoration: none;
             }
         }
     }
