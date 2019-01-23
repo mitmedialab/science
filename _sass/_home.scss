@@ -72,52 +72,61 @@ main.home {
         .element--container {
             padding-top: 75px;
 
-            @media only screen and (max-width: $breakpoint-med) {
-                padding-top: 45px;
-            }
+            a {
+                text-decoration: none;
 
-            .element-image--container {
-                padding-left: 17.5%;
-                padding-right: 17.5%;
-                text-align: center;
+                .element-link {
+                    padding-left: 17.5%;
+                    padding-right: 17.5%;
 
-                @media only screen and (max-width: $breakpoint-med) {
-                    padding-left: 0;
-                    padding-right: 0;
-                }
-
-                img {
-                    max-width: 100%;
-                    height: auto;
-                }
-            }
-
-            .element-text--container {
-                padding-top: 20px;
-                padding-left: 17.5%;
-                padding-right: 17.5%;
-
-                @media only screen and (max-width: $breakpoint-med) {
-                    padding-top: 15px;
-                    padding-left: 0;
-                    padding-right: 0;
-                }
-
-                a {
-                    text-decoration: none;
-
-                    h4 {
-                        margin-bottom: 10px;
-                        color: #000;
-                        font-size: 15px;
-                        font-family: $bold;
-                        letter-spacing: -0.025em;
+                    &:hover {
+                        img {
+                            transform: scale(1.05);
+                        }
                     }
+        
+                    @media only screen and (max-width: $breakpoint-med) {
+                        padding-top: 45px;
+                    }
+        
+                    .element-image--container {
+                        font-size: 0;
+                        overflow: hidden;
 
-                    p {
-                        color: #999;
-                        font-size: 15px;
-                        line-height: 1.45;
+                        @media only screen and (max-width: $breakpoint-med) {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+        
+                        img {
+                            width: 100%;
+                            height: auto;
+                            transition: transform 0.75s;
+                        }
+                    }
+        
+                    .element-text--container {
+                        padding-top: 20px;
+        
+                        @media only screen and (max-width: $breakpoint-med) {
+                            padding-top: 15px;
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+        
+                        h4 {
+                            margin-bottom: 10px;
+                            color: #000;
+                            font-size: 15px;
+                            font-family: $bold;
+                            letter-spacing: -0.025em;
+                        }
+        
+                        p {
+                            color: #999;
+                            font-size: 15px;
+                            line-height: 1.45;
+                        }
                     }
                 }
             }

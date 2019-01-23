@@ -137,15 +137,4 @@ $(document).ready(function () {
             !tween3.playing && tween3.start();
         }
     });
-
-    $(function () {
-        var index = 0;
-        $.scrollify({
-            section: ".content",
-            before: function () { },
-            after: function () { },
-            afterResize: function () { },
-            afterRender: function () { }
-        });
-    });
 });
