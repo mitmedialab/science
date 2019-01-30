@@ -54,17 +54,12 @@ main.about {
             text-align: left;
 
             &:last-of-type {
-                padding-bottom: calc(100% - 260px)
-;            }
-
-            @media only screen and (max-width: 1200px) {
-                padding-top: 0;
-                padding-left: 150px;
-                padding-right: 150px;
+                padding-bottom: calc(100% - 260px);
             }
 
             @media only screen and (max-width: $breakpoint-med) {
                 display: block;
+                padding-top: 30px;
                 padding-bottom: 60px;
                 padding-left: 20px;
                 padding-right: 20px;

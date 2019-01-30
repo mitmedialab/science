@@ -102,19 +102,21 @@ main.elements {
                     width: auto;
                     float: unset;
                 }
-
-                .img {
-                    width: 100%;
-                    display: block;
-                    margin-bottom: 30px;
-
-                    img,
-                    span {
+                .img-container {
+                    .img {
                         display: block;
-                    }
-
-                    img {
+                        margin-bottom: 30px;
                         width: 100%;
+                        background-color: $light-grey;
+
+                        img,
+                        span {
+                            display: block;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
                     }
                 }
                 
@@ -127,6 +129,7 @@ main.elements {
                         overflow: hidden;
                         margin-bottom: 30px;
                         width: 100%;
+                        background-color: $light-grey;
 
                         iframe {
                             position: absolute;

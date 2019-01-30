@@ -14,7 +14,6 @@ sr.reveal(".img-container");
 sr.reveal(".video-container");
 sr.reveal(".caption", 50);
 sr.reveal(".show");
-sr.reveal(".reveal", 50);
 
 var sectionIndex = 0;
 
