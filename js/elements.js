@@ -40,13 +40,13 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
     var a = $(window).height() / 2 + $(window).scrollTop();
-    $(".section").each(function() {
+    $("section").each(function() {
         var $this = $(this),
         b = $this.offset().top,
         c = b + $this.height();
         $this.toggleClass("active", b < a && c >= a);
     });
-    var e = $(".active").index(".section");
+    var e = $(".active").index("section");
     if (e >= 0) {
         $("nav ul li").removeClass("state").eq(e).addClass("state");
     };
