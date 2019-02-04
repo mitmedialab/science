@@ -26,7 +26,7 @@ main.home {
             }
 
             h3 {
-                color: #000;
+                color: $black;
                 font-size: 25px;
                 letter-spacing: -0.025em;
                 line-height: 1.75em;
@@ -36,13 +36,13 @@ main.home {
                 }
 
                 span {
-                    color: #000;
+                    color: $black;
                     cursor: default;
                 }
 
                 a {
                     margin-bottom: -10px;
-                    color: #000;
+                    color: $black;
                     font-family: $bold;
                     text-decoration: none;
                     line-height: 1.25em;
@@ -72,6 +72,10 @@ main.home {
         .element--container {
             padding-top: 75px;
 
+            @media only screen and (max-width: $breakpoint-med) {
+                padding-top: 0;
+            }
+
             a {
                 text-decoration: none;
 
@@ -83,6 +87,11 @@ main.home {
                         img {
                             transform: scale(1.05);
                         }
+                    }
+
+                    @media only screen and (max-width: $breakpoint-small) {
+                        padding-left: 0;
+                        padding-right: 0;
                     }
         
                     @media only screen and (max-width: $breakpoint-med) {
@@ -116,16 +125,16 @@ main.home {
         
                         h4 {
                             margin-bottom: 10px;
-                            color: #000;
-                            font-size: 15px;
+                            color: $black;
+                            font-size: 18px;
                             font-family: $bold;
                             letter-spacing: -0.025em;
                         }
         
                         p {
-                            color: #999;
-                            font-size: 15px;
-                            line-height: 1.45;
+                            color: $black;
+                            font-size: 12px;
+                            line-height: 1.5;
                         }
                     }
                 }
