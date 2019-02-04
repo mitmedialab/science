@@ -1,21 +1,29 @@
 window.sr = ScrollReveal({
     delay: 0,
-    distance: "60px",
+    distance: "30px",
     easing: "cubic-bezier(.19,1,.22,1)",
     rotate: {
         z: 0
     },
+    opacity: 1,
     scale: 1,
-    duration: 2000,
-    viewFactor: 0.5
+    duration: 1000,
+    viewFactor: 0.5,
+    mobile: false
 });
 
-sr.reveal(".img-container");
-sr.reveal(".video-container");
-sr.reveal(".caption", 50);
-sr.reveal(".show");
-
 var sectionIndex = 0;
+
+function init() {
+    sr.reveal(".img-container");
+    sr.reveal(".video-container");
+    sr.reveal(".caption", 50);
+    sr.reveal(".show");
+
+    $(".stickem-container").stickem({
+        offset: 240
+    });
+}
 
 $(".left-container li").click(function() {
     $(".left-container li").removeClass("state");
@@ -30,9 +38,7 @@ $(".left-container li").click(function() {
 $(document).ready(function() {
     var sticky = $(".stickem-container").stickem();
     if ($(window).width() > 960) {
-        $(".stickem-container").stickem({
-            offset: 240
-        });
+        init();
     } else {
         sticky.destroy();
     }
@@ -54,13 +60,11 @@ $(window).scroll(function() {
 
 var resizeTimer;
 
-$(window).on("resize", function (e) {
+$(window).on("resize", function() {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function () {
         if ($(window).width() > 960) {
-            $(".stickem-container").stickem({
-                offset: 240
-            });
+            init();
         } else {
             sticky.destroy();
         }
