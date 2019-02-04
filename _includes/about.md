@@ -8,9 +8,9 @@ These creative, Media-Lab style programs will challenge and excite young people 
 Elements is a collaborative Media Lab project from ML Learning, OpenAg, Open Ocean, and the Space Exploration Initiative. Each of our three elemental focus areas is based on current Media Lab research.
 </section>
 
-<section>
+<section class="red">
 <h3>ML Learning</h3>
-The <a href="https://learn.media.mit.edu/" target="_blank" class="sliding black">ML Learning Initiative</a> believes people learn best when they are working on projects that they are passionate about, in collaboration with peers, within a playful environment that encourages experimentation. With this pedagogy in mind, we design creative learning experiences and communities to open up Media Lab research and expertise to the world.
+The <a href="https://learn.media.mit.edu/" target="_blank" class="sliding red">ML Learning Initiative</a> believes people learn best when they are working on projects that they are passionate about, in collaboration with peers, within a playful environment that encourages experimentation. With this pedagogy in mind, we design creative learning experiences and communities to open up Media Lab research and expertise to the world.
 </section>
 
 <section class="green">

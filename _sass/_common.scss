@@ -33,15 +33,15 @@
         }
     }
 
-    &.blue {
+    &.red {
         &:after {
-            background-color: $blue;
+            background-color: $red;
         }
 
         &:hover {
-            color: $blue;
+            color: $red;
             &:after {
-                background-color: $blue;
+                background-color: $red;
             }
         }
     }
@@ -55,6 +55,19 @@
             color: $green;
             &:after {
                 background-color: $green;
+            }
+        }
+    }
+
+    &.blue {
+        &:after {
+            background-color: $blue;
+        }
+
+        &:hover {
+            color: $blue;
+            &:after {
+                background-color: $blue;
             }
         }
     }
