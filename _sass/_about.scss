@@ -106,9 +106,8 @@ main.about {
             }
 
             a {
-                padding-bottom: 0;
-                border-bottom: solid 1px $black;
                 color: $black;
+                font-family: $bold;
                 text-decoration: none;
             }
         }

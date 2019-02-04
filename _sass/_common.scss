@@ -1,6 +1,6 @@
 .sliding {
     display: inline-block;
-    transition: transform .5s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all .5s cubic-bezier(0.23, 1, 0.32, 1);
 
     &:after {
         content: '';
@@ -8,7 +8,7 @@
         height: 2px;
         width: 0;
         background-color: $white;
-        transition: width .5s cubic-bezier(0.23, 1, 0.32, 1);
+        transition: all .5s cubic-bezier(0.23, 1, 0.32, 1);
     }
 
     &:hover {
@@ -17,6 +17,19 @@
         &:after {
             width: 100%;
             background-color: $white;
+        }
+    }
+
+    &.black {
+        &:after {
+            background-color: $black;
+        }
+
+        &:hover {
+            color: $black;
+            &:after {
+                background-color: $black;
+            }
         }
     }
 
