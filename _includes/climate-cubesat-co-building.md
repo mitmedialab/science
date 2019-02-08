@@ -1,29 +1,17 @@
 {::options parse_block_html="true" /}
 <section class="stickem-container">
 <div class="text-container stickem stickit">
-<h3 class="show">Lego Wayfinder</h3>
-<p class="show">The LEGO Wayfinder project combines LEGO, robotics, and seawater into a playground of project-based
-learning and citizen science for budding engineers and explorers. As part of this outreach program, our team is
-developing a prototype of a buildable LEGO marine exploration vehicle kit—addressing some of the design challenges of
-building for the underwater context.</p>
-<a href="https://learn.media.mit.edu/wayfinder/" target="_blank" class="sliding blue show">learn.media.mit.edu/wayfinder</a>
+<h3 class="show">Climate CubeSat Co-Building</h3>
+<p class="show">The Media Lab Space Exploration Initiative is driven by an effort to democratize the future of space exploration. As such, we are committed to the development of meaningful community engagement endeavors related to achieving an open and hackable "New Space Age." Beginning in Spring 2018, in an aim to fulfill NASA’s vision of 50 CubeSats from 50 States in 5 Years, we launched our Climate CubeSat Co-building Outreach Program (C3), in which we mentor 20 Boston-area high school students through designing, building, testing, and launching a cubesat that makes climate science and earth-observation measurements.</p>
+<a href="https://www.media.mit.edu/projects/cubesat/" target="_blank" class="sliding yellow show">media.mit.edu/projects/cubesat</a>
 </div>
 <div class="media-container">
-<div class="video-container">
-<div class="video show">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kY4im93tFyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
-<div class="caption">
-<span>The LEGO Wayfinder in action.</span>
-</div>
-</div>
-<div class="img-container">
+<div class="img-container show">
 <div class="img">
-<img src="{{ site.baseurl }}/img/elements/open-ocean--1-1.jpg">
+<img src="https://dam-prod.media.mit.edu/thumb/2018/07/07/CubeSat_Ewan-session.png.1400x1400.png">
 </div>
 <div class="caption">
-<span>Doing some test dives in a tank at MIT Sea Grant.</span>
+<span>AeroAstro STAR Lab guest lecture with CubeSat models</span>
 </div>
 </div>
 </div>
@@ -31,33 +19,31 @@ allowfullscreen></iframe>
 
 <section class="stickem-container">
 <div class="text-container stickem">
-<p class="show">Using this kit, we will run a series of workshops with young people who will build on top of it, making
-the marine explorer more sophisticated and customized in order to execute marine science experiments of their
-design.</p>
+<p class="show">The Media Lab Space Exploration Initiative is driven by an effort to democratize the future of space exploration. As such, we are committed to the development of meaningful community engagement endeavors related to achieving an open and hackable "New Space Age." Beginning in Spring 2018, in an aim to fulfill NASA’s vision of 50 CubeSats from 50 States in 5 Years, we launched our Climate CubeSat Co-building Outreach Program (C3), in which we mentor 20 Boston-area high school students through designing, building, testing, and launching a cubesat that makes climate science and earth-observation measurements.</p>
 </div>
 <div class="media-container">
 <div class="img-container">
 <div class="img">
-<img src="{{ site.baseurl }}/img/elements/open-ocean--2-1.jpg">
+<img src="https://dam-prod.media.mit.edu/thumb/2018/07/07/CubeSat_Ewan-session.png.1400x1400.png">
 </div>
 <div class="caption">
-<span>Our workshop participants in the shop, designing customization of their Wayfinders.</span>
+<span>AeroAstro STAR Lab guest lecture with CubeSat models</span>
 </div>
 </div>
 <div class="img-container">
 <div class="img">
-<img src="{{ site.baseurl }}/img/elements/open-ocean--2-2.jpg">
+<img src="https://dam-prod.media.mit.edu/thumb/2018/07/07/CubeSat_Ewan-session.png.1400x1400.png">
 </div>
 <div class="caption">
-<span>Customizing the Wayfinder software, using Scratch Extensions for LEGO Mindstorms.</span>
+<span>AeroAstro STAR Lab guest lecture with CubeSat models</span>
 </div>
 </div>
 <div class="img-container">
 <div class="img">
-<img src="{{ site.baseurl }}/img/elements/open-ocean--2-3.jpg">
+<img src="https://dam-prod.media.mit.edu/thumb/2018/07/07/CubeSat_Ewan-session.png.1400x1400.png">
 </div>
 <div class="caption">
-<span>Testing the Wayfinder for water-tightness in a tank at MIT Sea Grant.</span>
+<span>AeroAstro STAR Lab guest lecture with CubeSat models</span>
 </div>
 </div>
 </div>
@@ -65,39 +51,24 @@ design.</p>
 
 <section class="stickem-container">
 <div class="text-container stickem">
-<p class="show">Our aim is to build an awareness of the state of the aquatic environment and instill a greater
-responsibility in shaping our interactions with the environment. To do so, young people will view underwater
-wonders of the world with their robots and get outside to explore their local waterway. Our approach embraces
-Seymour Papert’s model of "low floors" (where getting started is easy), and "high ceilings," where students can
-pour their time and collaborative work efforts into creative engineering solutions to carry out a marine science
-experiment of their own design in the field.</p>
+<p class="show">The Media Lab Space Exploration Initiative is driven by an effort to democratize the future of space exploration. As such, we are committed to the development of meaningful community engagement endeavors related to achieving an open and hackable "New Space Age." Beginning in Spring 2018, in an aim to fulfill NASA’s vision of 50 CubeSats from 50 States in 5 Years, we launched our Climate CubeSat Co-building Outreach Program (C3), in which we mentor 20 Boston-area high school students through designing, building, testing, and launching a cubesat that makes climate science and earth-observation measurements.</p>
 </div>
 <div class="media-container">
 <div class="img-container">
 <div class="img">
-<img src="{{ site.baseurl }}/img/elements/open-ocean--3-1.jpg">
+<img src="https://dam-prod.media.mit.edu/thumb/2018/07/07/CubeSat_Ewan-session.png.1400x1400.png">
 </div>
 <div class="caption">
 <span>One workshop team gathered together piloting their Wayfinder in the Boston harbor, and observing the video it was
 sending back!</span>
 </div>
 </div>
-<div class="video-container">
-<div class="video">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BGuE8ObAkRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
-<div class="caption">
-<span>A view of the Wayfinder interface displaying the underwater video feed -- this team rigged a squid-baited lure
-onto their Wayfinder, and even managed to pull up two crabs!</span>
-</div>
-</div>
 <div class="img-container">
 <div class="img">
-<img src="{{ site.baseurl }}/img/elements/open-ocean--3-2.jpg">
+<img src="https://dam-prod.media.mit.edu/thumb/2018/07/07/CubeSat_Ewan-session.png.1400x1400.png">
 </div>
 <div class="caption">
-<span>Making new friends ;)</span>
+<span>AeroAstro STAR Lab guest lecture with CubeSat models</span>
 </div>
 </div>
 </div>
@@ -105,11 +76,7 @@ onto their Wayfinder, and even managed to pull up two crabs!</span>
 
 <section class="stickem-container">
 <div class="text-container stickem">
-<p class="show">This program will kicked off in summer 2018 with the National Geographic Student
-Expeditions at MIT, where we will hosted 40-50 high school students for <a href="https://learn.media.mit.edu/wayfinder/"
-target="_blank">two days of workshops</a> at the MIT Sea Grant and New England Aquarium.
-Going forward, we aim to adapt this programming for wider student audiences in after-school
-programs, classrooms, libraries, and community-based mentor clubs for youth.</p>
+<p class="show">The Media Lab Space Exploration Initiative is driven by an effort to democratize the future of space exploration. As such, we are committed to the development of meaningful community engagement endeavors related to achieving an open and hackable "New Space Age." Beginning in Spring 2018, in an aim to fulfill NASA’s vision of 50 CubeSats from 50 States in 5 Years, we launched our Climate CubeSat Co-building Outreach Program (C3), in which we mentor 20 Boston-area high school students through designing, building, testing, and launching a cubesat that makes climate science and earth-observation measurements.</p>
 </div>
 <div class="media-container">
 <div class="img-container">
@@ -117,8 +84,7 @@ programs, classrooms, libraries, and community-based mentor clubs for youth.</p>
 <img src="{{ site.baseurl }}/img/elements/open-ocean--4-1.jpg">
 </div>
 <div class="caption">
-<span>Some workshop participants hanging out on the docks at the New England Aquarium, getting ready to launch their
-Wayfinder.</span>
+<span>AeroAstro STAR Lab guest lecture with CubeSat models</span>
 </div>
 </div>
 <div class="img-container">
@@ -126,7 +92,7 @@ Wayfinder.</span>
 <img src="{{ site.baseurl }}/img/elements/open-ocean--4-2.jpg">
 </div>
 <div class="caption">
-<span>A Wayfinder in the wild.</span>
+<span>AeroAstro STAR Lab guest lecture with CubeSat models</span>
 </div>
 </div>
 </div>

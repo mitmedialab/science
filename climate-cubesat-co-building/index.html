@@ -1,37 +1,29 @@
 ---
 layout: default
 ---
-    <main class="elements">
-        <span class="divider"></span>
+<main class="elements">
+    <span class="divider"></span>
 
-        <div class="left-container">
-            <nav>
-                <ul>
-                    <li class="state"><span>1</span><span>Overview</span></li>
-                    <li><span>2</span><span>Section 2</span></li>
-                    <li><span>3</span><span>Section 3</span></li>
-                    <li><span>4</span><span>Section 4</span></li>
-                </ul>
-            </nav>
-        </div>
+    <div class="left-container">
+        <nav>
+            <ul>
+                <li class="state"><span>1</span><span>Overview</span></li>
+                <li><span>2</span><span></span></li>
+                <li><span>3</span><span></span></li>
+                <li><span>4</span><span></span></li>
+            </ul>
+        </nav>
+    </div>
 
-        <div class="section-container">
-            {% capture m %}{% include climate-cubesat-co-building.md %}{% endcapture %}
-            {{ m | markdownify }}
-        </div>
+    <div class="section-container">
+        {% capture m %}{% include climate-cubesat-co-building.md %}{% endcapture %}
+        {{ m | markdownify }}
+    </div>
+</main>
 
-        <div class="svg--container">
-            <div class="svg">
-                <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path d="M187.5,105.144C273.593,55.438,393.753,102.384,455.885,210S498.59299999999996,445.15,412.5,494.856S206.247,497.616,144.115,390S101.407,154.85,187.5,105.144Z" />
-                </svg>
-            </div>
-        </div>
-    </main>
-
-    <script>
-        window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-3.2.1.min.js"><\/script>')
-    </script>
-    <script src="{{ site.baseurl }}/js/plugins.js"></script>
-    <script src="{{ site.baseurl }}/js/elements.js"></script>
-    <script src="{{ site.baseurl }}/js/main.js"></script>
+<script>
+    window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-3.2.1.min.js"><\/script>')
+</script>
+<script src="{{ site.baseurl }}/js/plugins.js"></script>
+<script src="{{ site.baseurl }}/js/elements.js"></script>
+<script src="{{ site.baseurl }}/js/main.js"></script>
