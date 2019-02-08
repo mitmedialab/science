@@ -15,13 +15,15 @@ window.sr = ScrollReveal({
 var sectionIndex = 0;
 
 function init() {
-    sr.reveal(".img-container");
-    sr.reveal(".video-container");
-    sr.reveal(".caption", 50);
-    sr.reveal(".show");
+    $("main").imagesLoaded(function() {
+        sr.reveal(".img-container");
+        sr.reveal(".video-container");
+        sr.reveal(".caption", 50);
+        sr.reveal(".show");
 
-    $(".stickem-container").stickem({
-        offset: 240
+        $(".stickem-container").stickem({
+            offset: 240
+        });
     });
 }
 
