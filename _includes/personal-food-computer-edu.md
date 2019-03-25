@@ -51,7 +51,7 @@
 
 <section class="stickem-container">
 <div class="text-container stickem">
-<p class="show">Our latest version—the PFC v3.0, or "PFC_EDU"—has been scaled down from previous PFC's in terms of cost, size, and complexity, and designed specifically with educators and children aged 8-14 in mind. It offers a spectrum of control so that users can make their growing experience as manual or as automated as they would like.</p>
+<p class="show">Our latest version—the PFC v3.0, or "PFC_EDU"—has been scaled down from previous PFC's in terms of cost, size, and complexity, and designed specifically with educators and children aged 8-14 in mind. It offers a spectrum of control so that users can make their growing experience as manual or as automated as they would like. By introducing OpenAg™  Food Computers into the education context, including in schools and museums, we hope to inspire and empower the high-tech farmers of the future. Our latest testing in schools and libraries shows more than half of students who tested a PFC_EDU think more about food production, hunger, and where their food comes from.</p>
 </div>
 <div class="media-container">
 <div class="img-container">
@@ -62,14 +62,6 @@
 <span>A group of high school students who helped prototype some of the earliest versions of the PFC_EDU.</span>
 </div>
 </div>
-</div>
-</section>
-
-<section class="stickem-container">
-<div class="text-container stickem">
-<p class="show">Today's students have grown up in a world of rapidly evolving technology, and they are natural-born experimenters, programmers, and tinkerers. By introducing OpenAg™  Food Computers into the education context, including in schools and museums, we hope to inspire and empower the high-tech farmers of the future. Our latest testing in schools and libraries shows <b>more than half of students</b> who tested a PFC_EDU <b>think more about food production, hunger, and where their food comes from.</b></p>
-</div>
-<div class="media-container">
 <div class="img-container">
 <div class="img">
 <img src="{{ site.baseurl }}/img/elements/open-ag--4-1.jpeg">
