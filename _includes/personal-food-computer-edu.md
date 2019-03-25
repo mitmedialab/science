@@ -51,7 +51,7 @@
 
 <section class="stickem-container">
 <div class="text-container stickem">
-<p class="show">Our latest version—the PFC v3.0, or "PFC_EDU"—has been scaled down from previous PFC's in terms of cost, size, and complexity, and designed specifically with educators and children aged 8-14 in mind. It offers a spectrum of control so that users can make their growing experience as manual or as automated as they would like. By introducing OpenAg™  Food Computers into the education context, including in schools and museums, we hope to inspire and empower the high-tech farmers of the future. Our latest testing in schools and libraries shows more than half of students who tested a PFC_EDU think more about food production, hunger, and where their food comes from.</p>
+<p class="show">Our latest version—the PFC v3.0, or "PFC_EDU"—has been scaled down from previous PFC's in terms of cost, size, and complexity, and designed specifically with educators and children aged 8-14 in mind. It offers a spectrum of control so that users can make their growing experience as manual or as automated as they would like. By introducing PFC_EDUs into the education context, including in schools and museums, we hope to inspire and empower the high-tech farmers of the future.</p>
 </div>
 <div class="media-container">
 <div class="img-container">
@@ -75,7 +75,7 @@
 
 <section class="stickem-container">
 <div class="text-container stickem">
-<p class="show">Like all OpenAg's Food Computers, the PFC_EDU is open source and can be made from easily accessible components so that #nerdfarmers with a broad spectrum of skills, resources, and interests can build, modify, share, and upgrade over time.</p>
+<p class="show">Our latest testing in schools and libraries shows more than half of students who tested a PFC_EDU think more about food production, hunger, and where their food comes from. Like all OpenAg's Food Computers, the PFC_EDU is open source and can be made from easily accessible components so that #nerdfarmers with a broad spectrum of skills, resources, and interests can build, modify, share, and upgrade over time.</p>
 <a href="https://www.media.mit.edu/posts/build-a-food-computer/" target="_blank" class="sliding green show">Get Started Building your own PFC_EDU!</a>
 </div>
 <div class="media-container">
