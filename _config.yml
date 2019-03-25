@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: elements
 email: elements@media.mit.edu
-description: The elements project is opening up MIT Media Lab research in the form of STEAM learning programs that democratize science in three elemental areas: Ocean, Earth, and Space.
+description: The elements project is opening up MIT Media Lab research in the form of STEAM learning programs that democratize science.
 baseurl: "/elements"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: 
