@@ -1,8 +1,8 @@
 {::options parse_block_html="true" /}
 <section class="stickem-container">
 <div class="text-container stickem stickit">
-<h3 class="show">Lego Wayfinder</h3>
-<p class="show">The LEGO Wayfinder project combines LEGO, robotics, and seawater into a playground of project-based
+<h3 class="show">LEGO Underwater Robots</h3>
+<p class="show">The LEGO Underwater Robot project combines LEGO, robotics, and seawater into a playground of project-based
 learning and citizen science for budding engineers and explorers. As part of this outreach program, our team is
 developing a prototype of a buildable LEGO marine exploration vehicle kit—addressing some of the design challenges of
 building for the underwater context.</p>
@@ -15,7 +15,7 @@ building for the underwater context.</p>
 allowfullscreen></iframe>
 </div>
 <div class="caption">
-<span>The LEGO Wayfinder in action.</span>
+<span>A LEGO Underwater Robot in action.</span>
 </div>
 </div>
 <div class="img-container">
@@ -41,7 +41,7 @@ design.</p>
 <img src="{{ site.baseurl }}/img/elements/open-ocean--2-1.jpg">
 </div>
 <div class="caption">
-<span>Our workshop participants in the shop, designing customization of their Wayfinders.</span>
+<span>Our workshop participants in the shop, designing customization of their bots.</span>
 </div>
 </div>
 <div class="img-container">
@@ -49,7 +49,7 @@ design.</p>
 <img src="{{ site.baseurl }}/img/elements/open-ocean--2-2.jpg">
 </div>
 <div class="caption">
-<span>Customizing the Wayfinder software, using Scratch Extensions for LEGO Mindstorms.</span>
+<span>Customizing the LEGO Underwater Robot software, using Scratch Extensions for LEGO Mindstorms.</span>
 </div>
 </div>
 <div class="img-container">
@@ -57,7 +57,7 @@ design.</p>
 <img src="{{ site.baseurl }}/img/elements/open-ocean--2-3.jpg">
 </div>
 <div class="caption">
-<span>Testing the Wayfinder for water-tightness in a tank at MIT Sea Grant.</span>
+<span>Testing the LEGO Underwater Robot for water-tightness in a tank at MIT Sea Grant.</span>
 </div>
 </div>
 </div>
@@ -78,7 +78,7 @@ experiment of their own design in the field.</p>
 <img src="{{ site.baseurl }}/img/elements/open-ocean--3-1.jpg">
 </div>
 <div class="caption">
-<span>One workshop team gathered together piloting their Wayfinder in the Boston harbor, and observing the video it was
+<span>One workshop team gathered together piloting their underwater robot in the Boston harbor, and observing the video it was
 sending back!</span>
 </div>
 </div>
@@ -88,8 +88,8 @@ sending back!</span>
 allowfullscreen></iframe>
 </div>
 <div class="caption">
-<span>A view of the Wayfinder interface displaying the underwater video feed -- this team rigged a squid-baited lure
-onto their Wayfinder, and even managed to pull up two crabs!</span>
+<span>A view of the LEGO Underwater Robot interface displaying the underwater video feed -- this team rigged a squid-baited lure
+onto their bot, and even managed to pull up two crabs!</span>
 </div>
 </div>
 <div class="img-container">
@@ -105,8 +105,8 @@ onto their Wayfinder, and even managed to pull up two crabs!</span>
 
 <section class="stickem-container">
 <div class="text-container stickem">
-<p class="show">This program will kicked off in summer 2018 with the National Geographic Student
-Expeditions at MIT, where we will hosted 40-50 high school students for <a href="https://learn.media.mit.edu/wayfinder/"
+<p class="show">This program kicked off in summer 2018 with the National Geographic Student
+Expeditions at MIT, where we hosted 40-50 high school students for <a href="https://learn.media.mit.edu/wayfinder/"
 target="_blank">two days of workshops</a> at the MIT Sea Grant and New England Aquarium.
 Going forward, we aim to adapt this programming for wider student audiences in after-school
 programs, classrooms, libraries, and community-based mentor clubs for youth.</p>
@@ -118,7 +118,7 @@ programs, classrooms, libraries, and community-based mentor clubs for youth.</p>
 </div>
 <div class="caption">
 <span>Some workshop participants hanging out on the docks at the New England Aquarium, getting ready to launch their
-Wayfinder.</span>
+underwater robot.</span>
 </div>
 </div>
 <div class="img-container">
@@ -126,7 +126,7 @@ Wayfinder.</span>
 <img src="{{ site.baseurl }}/img/elements/open-ocean--4-2.jpg">
 </div>
 <div class="caption">
-<span>A Wayfinder in the wild.</span>
+<span>A LEGO Underwater Robot in the wild.</span>
 </div>
 </div>
 </div>

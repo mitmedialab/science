@@ -4,7 +4,10 @@ layout: default
 
 <style type="text/css" media="screen">
   .container {
-    margin: 10px auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 600px;
     text-align: center;
   }
@@ -18,7 +21,12 @@ layout: default
 
 <div class="container">
   <h1>404</h1>
-
   <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p>We're sorry, but the requested page could not be found.</p>
 </div>
+
+<script src="{{ site.baseurl }}/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="{{ site.baseurl }}/js/plugins.js"></script>
+<script src="{{ site.baseurl }}/js/main.js"></script>

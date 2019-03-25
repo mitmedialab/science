@@ -2,16 +2,24 @@
 <section class="stickem-container">
 <div class="text-container stickem stickit">
 <h3 class="show">Personal Food Computer EDU</h3>
-<p class="show">The OpenAg™ Personal Food Computer is a tabletop-sized, controlled environment agriculture technology platform that uses robotic systems to control and monitor climate, energy, and plant growth inside of a specialized growing chamber. Climate variables such as carbon dioxide, air temperature, humidity, dissolved oxygen, potential hydrogen, electrical conductivity, and root-zone temperature are among the many conditions that can be controlled and monitored within the growing chamber to yield various phenotypic expressions in the plants.</p>
-<a href="https://www.media.mit.edu/posts/build-a-food-computer/" target="_blank" class="sliding green show">Click here to Build a Food Computer.</a>
+<p class="show">The OpenAg™ Personal Food Computer is a tabletop-sized, controlled environment agriculture technology platform that uses robotic systems to control and monitor climate, energy, and plant growth inside of a specialized growing chamber.</p>
+<a href="https://wiki.openag.media.mit.edu/education" target="_blank" class="sliding green show">wiki.openag.media.mit.edu/education</a>
 </div>
 <div class="media-container">
-<div class="img-container">
-<div class="img">
-<img src="https://dam-prod.media.mit.edu/thumb/2018/10/23/pfc_edu.gif.1400x1400.gif">
+<div class="video-container">
+<div class="video show">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-J1DNp4M_1k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div class="caption">
-<span>Personal Food Computer</span>
+<span>The "PFC_EDU" is the latest version of an open source Food Computer™, created by the MIT Open Agriculture Initiative and designed with and for educators working in formal and informal education (e.g. libraries, schools, museums). </span>
+</div>
+</div>
+<div class="img-container">
+<div class="img">
+<img src="{{ site.baseurl }}/img/elements/open-ag--1-1.gif">
+</div>
+<div class="caption">
+<span>The new Personal Food Computer v3.0 - "PFC_EDU" (2018).</span>
 </div>
 </div>
 </div>
@@ -19,31 +27,23 @@
 
 <section class="stickem-container">
 <div class="text-container stickem">
-<p class="show">The OpenAg™ Personal Food Computer is a tabletop-sized, controlled environment agriculture technology platform that uses robotic systems to control and monitor climate, energy, and plant growth inside of a specialized growing chamber. Climate variables such as carbon dioxide, air temperature, humidity, dissolved oxygen, potential hydrogen, electrical conductivity, and root-zone temperature are among the many conditions that can be controlled and monitored within the growing chamber to yield various phenotypic expressions in the plants.</p>
+<p class="show">Climate variables such as carbon dioxide, air temperature, humidity, dissolved oxygen, potential hydrogen, electrical conductivity, and root-zone temperature are among the many conditions that can be controlled and monitored within the growing chamber to yield various phenotypic expressions in the plants.</p>
 </div>
 <div class="media-container">
 <div class="img-container">
 <div class="img">
-<img src="https://dam-prod.media.mit.edu/thumb/2018/10/23/pfc-edu_assembly_img.png.1400x1400.png">
+<img src="{{ site.baseurl }}/img/elements/open-ag--2-1.png">
 </div>
 <div class="caption">
-<span>Personal Food Computer</span>
+<span>The "brain board" of the new PFC_EDU, where the sensors and microcontrollers are housed.</span>
 </div>
 </div>
 <div class="img-container">
 <div class="img">
-<img src="https://dam-prod.media.mit.edu/thumb/2018/10/23/pfc_edu.gif.1400x1400.gif">
+<img src="{{ site.baseurl }}/img/elements/open-ag--2-2.jpg">
 </div>
 <div class="caption">
-<span>Personal Food Computer</span>
-</div>
-</div>
-<div class="img-container">
-<div class="img">
-<img src="https://dam-prod.media.mit.edu/thumb/2018/10/23/pfc-edu_assembly_img.png.1400x1400.png">
-</div>
-<div class="caption">
-<span>Personal Food Computer</span>
+<span>A collection of PFC_EDUs running their climate recipes.</span>
 </div>
 </div>
 </div>
@@ -51,23 +51,15 @@
 
 <section class="stickem-container">
 <div class="text-container stickem">
-<p class="show">The OpenAg™ Personal Food Computer is a tabletop-sized, controlled environment agriculture technology platform that uses robotic systems to control and monitor climate, energy, and plant growth inside of a specialized growing chamber. Climate variables such as carbon dioxide, air temperature, humidity, dissolved oxygen, potential hydrogen, electrical conductivity, and root-zone temperature are among the many conditions that can be controlled and monitored within the growing chamber to yield various phenotypic expressions in the plants.</p>
+<p class="show">Our latest version—the PFC v3.0, or "PFC_EDU"—has been scaled down from previous PFC's in terms of cost, size, and complexity, and designed specifically with educators and children aged 8-14 in mind. It offers a spectrum of control so that users can make their growing experience as manual or as automated as they would like.</p>
 </div>
 <div class="media-container">
 <div class="img-container">
 <div class="img">
-<img src="https://dam-prod.media.mit.edu/thumb/2018/10/23/pfc_edu.gif.1400x1400.gif">
+<img src="{{ site.baseurl }}/img/elements/open-ag--3-1.jpg"/>
 </div>
 <div class="caption">
-<span>Personal Food Computer</span>
-</div>
-</div>
-<div class="img-container">
-<div class="img">
-<img src="https://dam-prod.media.mit.edu/thumb/2018/10/23/pfc-edu_assembly_img.png.1400x1400.png">
-</div>
-<div class="caption">
-<span>Personal Food Computer</span>
+<span>A group of high school students who helped prototype some of the earliest versions of the PFC_EDU.</span>
 </div>
 </div>
 </div>
@@ -75,23 +67,40 @@
 
 <section class="stickem-container">
 <div class="text-container stickem">
-<p class="show">The OpenAg™ Personal Food Computer is a tabletop-sized, controlled environment agriculture technology platform that uses robotic systems to control and monitor climate, energy, and plant growth inside of a specialized growing chamber. Climate variables such as carbon dioxide, air temperature, humidity, dissolved oxygen, potential hydrogen, electrical conductivity, and root-zone temperature are among the many conditions that can be controlled and monitored within the growing chamber to yield various phenotypic expressions in the plants.</p>
+<p class="show">Today's students have grown up in a world of rapidly evolving technology, and they are natural-born experimenters, programmers, and tinkerers. By introducing OpenAg™  Food Computers into the education context, including in schools and museums, we hope to inspire and empower the high-tech farmers of the future. Our latest testing in schools and libraries shows <b>more than half of students</b> who tested a PFC_EDU <b>think more about food production, hunger, and where their food comes from.</b></p>
 </div>
 <div class="media-container">
 <div class="img-container">
 <div class="img">
-<img src="https://dam-prod.media.mit.edu/thumb/2018/10/23/pfc_edu.gif.1400x1400.gif">
+<img src="{{ site.baseurl }}/img/elements/open-ag--4-1.jpeg">
 </div>
 <div class="caption">
-<span>Personal Food Computer</span>
+<span>Students assemble a PFC_EDU for their classroom.</span>
+</div>
+</div>
+</div>
+</section>
+
+<section class="stickem-container">
+<div class="text-container stickem">
+<p class="show">Like all OpenAg's Food Computers, the PFC_EDU is open source and can be made from easily accessible components so that #nerdfarmers with a broad spectrum of skills, resources, and interests can build, modify, share, and upgrade over time.</p>
+<a href="https://www.media.mit.edu/posts/build-a-food-computer/" target="_blank" class="sliding green show">Get Started Building your own PFC_EDU!</a>
+</div>
+<div class="media-container">
+<div class="img-container">
+<div class="img">
+<img src="{{ site.baseurl }}/img/elements/open-ag--5-1.png">
+</div>
+<div class="caption">
+<span>The PFC_EDU assembly.</span>
 </div>
 </div>
 <div class="img-container">
 <div class="img">
-<img src="https://dam-prod.media.mit.edu/thumb/2018/10/23/pfc-edu_assembly_img.png.1400x1400.png">
+<img src="{{ site.baseurl }}/img/elements/open-ag--5-2.jpeg">
 </div>
 <div class="caption">
-<span>Personal Food Computer</span>
+<span>An assembled PFC_EDU. Want to build you own? You can!</span>
 </div>
 </div>
 </div>
