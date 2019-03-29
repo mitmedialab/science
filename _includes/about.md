@@ -1,11 +1,11 @@
 {::options parse_block_html="true" /}
 <section>
 <h3>About</h3>
-The Elements project is opening up MIT Media Lab research in the form of <a href="https://en.wikipedia.org/wiki/STEAM_fields/" target="_blank" class="sliding black">STEAM</a> learning programs that democratize science in three elemental areas: earth, ocean, and space. 
+The Democratizing Science project is opening up MIT Media Lab research in the form of <a href="https://en.wikipedia.org/wiki/STEAM_fields/" target="_blank" class="sliding black">STEAM</a> learning programs in three elemental areas: earth, ocean, and space. 
 
-These creative, Media-Lab style programs will challenge and excite young people as they engage in learning experiences that are anti-disciplinary, interest-based, and hands-on. With an emphasis on access and equity, Elements is reimagining how to inspire young people to be more connected to their local ecosystems.
+These creative, Media-Lab style programs will challenge and excite young people as they engage in learning experiences that are anti-disciplinary, interest-based, and hands-on. With an emphasis on access and equity, this project is reimagining how to inspire young people to be more connected to their local ecosystems.
 
-Elements is a collaborative Media Lab project from ML Learning, OpenAg, Open Ocean, and the Space Exploration Initiative. Each of our three elemental focus areas is based on current Media Lab research.
+Democratizing Science is a collaborative Media Lab project from ML Learning, OpenAg, Open Ocean, and the Space Exploration Initiative. Each of our three elemental focus areas is based on current Media Lab research.
 
 Scroll down to learn more about the work of each initiative.
 </section>

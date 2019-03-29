@@ -1,7 +1,7 @@
 {
-  "name": "elements",
+  "name": "democratizing science",
   "version": "1.0.0",
-  "description": "",
+  "description": "The democratizing science project is opening up MIT Media Lab research in the form of STEAM learning programs in the three elemental areas of Earth - Oceans - Space.",
   "main": "index.js",
   "devDependencies": {
     "browser-sync": "^2.26.3",
@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ml-learning/elements.git"
+    "url": "git+https://github.com/ml-learning/science.git"
   },
-  "author": "Kwang-Su Kim",
-  "license": "ISC",
+  "author": "ML Learning Initiative",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ml-learning/elements/issues"
+    "url": "https://github.com/ml-learning/science/issues"
   },
-  "homepage": "https://github.com/ml-learning/elements#readme"
+  "homepage": "https://github.com/ml-learning/science#readme"
 }
