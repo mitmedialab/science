@@ -76,7 +76,7 @@
 <section class="stickem-container">
 <div class="text-container stickem">
 <p class="show">Our latest testing in schools and libraries shows more than half of students who tested a PFC_EDU think more about food production, hunger, and where their food comes from. Like all OpenAg's Food Computers, the PFC_EDU is open source and can be made from easily accessible components so that #nerdfarmers with a broad spectrum of skills, resources, and interests can build, modify, share, and upgrade over time.</p>
-<a href="https://www.media.mit.edu/posts/build-a-food-computer/" target="_blank" class="sliding green show">Get Started Building your own PFC_EDU!</a>
+<a href="https://www.media.mit.edu/posts/build-a-food-computer/" target="_blank" class="sliding green show">Build your own PFC_EDU.</a>
 </div>
 <div class="media-container">
 <div class="img-container">
@@ -92,7 +92,7 @@
 <img src="{{ site.baseurl }}/img/elements/open-ag--5-2.jpeg">
 </div>
 <div class="caption">
-<span>An assembled PFC_EDU. Want to build you own? You can!</span>
+<span>An assembled PFC_EDU.</span>
 </div>
 </div>
 </div>
