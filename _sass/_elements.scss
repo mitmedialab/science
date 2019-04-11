@@ -1,5 +1,4 @@
 main.elements {
-    padding-bottom: 60px;
 
     .section-container {
         padding-top: 130px;
@@ -11,13 +10,15 @@ main.elements {
         section {
             padding-top: 110px;
             padding-bottom: 60px;
-            padding-left: 150px;
-            padding-right: 150px;
-            zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+            padding-left: 120px;
+            padding-right: 60px;
+            zoom: 1;
 
             @media only screen and (max-width: $breakpoint-large) {
                 padding-top: 30px;
                 padding-bottom: 30px;
+                padding-left: 70px;
+                padding-right: 70px;
             }
             
             @media only screen and (max-width: $breakpoint-med) {
@@ -56,7 +57,8 @@ main.elements {
                 float: left;
                 position: absolute;
                 padding-bottom: 30px;
-                width: calc(50% - 240px);
+                width: calc(50% - 180px);
+                max-width: 540px;
 
                 @media only screen and (max-width: $breakpoint-large) {
                     width: auto;
@@ -69,23 +71,20 @@ main.elements {
                     margin-top: 0;
                     margin-bottom: 50px;
                     font-family: $bold;
-                    font-size: 25px;
+                    font-size: 20px;
                 }
                 
                 p {
                     color: #666;
-                    font-size: 20px;
-                    line-height: 1.5;
-                    @media only screen and (max-width: $breakpoint-med) {
-                        font-size: 15px;
-                    }
+                    font-size: 15px;
+                    line-height: 1.75;
                 }
 
                 a {
                     margin-top: 20px;
                     color: #000;
                     font-family: $bold;
-                    font-size: 20px;
+                    font-size: 15px;
                     text-decoration: none;
                     transition: color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
                     @media only screen and (max-width: $breakpoint-med) {
@@ -96,7 +95,7 @@ main.elements {
 
             .media-container {
                 float: right;
-                width: calc(50% - 120px);
+                width: calc(50% - 30px);
                 
                 @media only screen and (max-width: $breakpoint-large) {
                     width: auto;
