@@ -1,6 +1,6 @@
 {::options parse_block_html="true" /}
-<section class="stickem-container">
-<div class="text-container stickem stickit">
+<section>
+<div class="text-container">
 <h3 class="show">LEGO Underwater Robots</h3>
 <p class="show">The LEGO Underwater Robot project combines LEGO, robotics, and seawater into a playground of project-based
 learning and citizen science for budding engineers and explorers. As part of this outreach program, our team is
@@ -29,8 +29,8 @@ allowfullscreen></iframe>
 </div>
 </section>
 
-<section class="stickem-container">
-<div class="text-container stickem">
+<section>
+<div class="text-container">
 <p class="show">Using this kit, we will run a series of workshops with young people who will build on top of it, making
 the marine explorer more sophisticated and customized in order to execute marine science experiments of their
 design.</p>
@@ -63,8 +63,8 @@ design.</p>
 </div>
 </section>
 
-<section class="stickem-container">
-<div class="text-container stickem">
+<section>
+<div class="text-container">
 <p class="show">Our aim is to build an awareness of the state of the aquatic environment and instill a greater
 responsibility in shaping our interactions with the environment. To do so, young people will view underwater
 wonders of the world with their robots and get outside to explore their local waterway. Our approach embraces
@@ -103,8 +103,8 @@ onto their bot, and even managed to pull up two crabs!</span>
 </div>
 </section>
 
-<section class="stickem-container">
-<div class="text-container stickem">
+<section>
+<div class="text-container">
 <p class="show">This program kicked off in summer 2018 with the National Geographic Student
 Expeditions at MIT, where we hosted 40-50 high school students for <a href="https://learn.media.mit.edu/wayfinder/"
 target="_blank">two days of workshops</a> at the MIT Sea Grant and New England Aquarium.

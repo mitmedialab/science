@@ -1,14 +1,11 @@
 window.sr = ScrollReveal({
-    delay: 0,
-    distance: "30px",
+    delay: 100,
+    distance: "50px",
     easing: "cubic-bezier(.19,1,.22,1)",
-    rotate: {
-        z: 0
-    },
     opacity: 1,
     scale: 1,
-    duration: 1000,
-    viewFactor: 0.5,
+    duration: 500,
+    viewFactor: 0.25,
     mobile: false
 });
 
@@ -21,8 +18,8 @@ function init() {
         sr.reveal(".caption", 50);
         sr.reveal(".show");
 
-        $(".stickem-container").stickem({
-            offset: 240
+        $(".text-container").stick_in_parent({
+            offset_top: 240
         });
     });
 }
@@ -44,11 +41,10 @@ $(".left-container li").click(function() {
 });
 
 $(document).ready(function() {
-    var sticky = $(".stickem-container").stickem();
     if ($(window).width() > 960) {
         init();
     } else {
-        sticky.destroy();
+        $(".text-container").trigger("sticky_kit:detach");
     }
 });
 
@@ -77,7 +73,7 @@ $(window).on("resize", function() {
         if ($(window).width() > 960) {
             init();
         } else {
-            sticky.destroy();
+            $(".text-container").trigger("sticky_kit:detach");
         }
     }, 250);
 });

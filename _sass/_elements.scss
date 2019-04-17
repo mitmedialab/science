@@ -36,23 +36,6 @@ main.elements {
                 clear: both;
             }
 
-            &.stickem-container {
-                position: relative;
-
-                .stickit {
-                    position: fixed;
-                    top: 240px;
-                    @media only screen and (max-width: 960px) {
-                        position: static;
-                    }
-                }
-
-                .stickit-end {	
-                    position: absolute;	
-                    bottom: 0;
-                }
-            }
-
             .text-container {
                 float: left;
                 position: absolute;

@@ -1,6 +1,6 @@
 {::options parse_block_html="true" /}
-<section class="stickem-container">
-<div class="text-container stickem stickit">
+<section>
+<div class="text-container">
 <h3 class="show">Personal Food Computer EDU</h3>
 <p class="show">The OpenAg™ Personal Food Computer is a tabletop-sized, controlled environment agriculture technology platform that uses robotic systems to control and monitor climate, energy, and plant growth inside of a specialized growing chamber.</p>
 <a href="https://wiki.openag.media.mit.edu/education" target="_blank" class="sliding green show">wiki.openag.media.mit.edu/education</a>
@@ -25,8 +25,8 @@
 </div>
 </section>
 
-<section class="stickem-container">
-<div class="text-container stickem">
+<section>
+<div class="text-container">
 <p class="show">Climate variables such as carbon dioxide, air temperature, humidity, dissolved oxygen, potential hydrogen, electrical conductivity, and root-zone temperature are among the many conditions that can be controlled and monitored within the growing chamber to yield various phenotypic expressions in the plants.</p>
 </div>
 <div class="media-container">
@@ -49,8 +49,8 @@
 </div>
 </section>
 
-<section class="stickem-container">
-<div class="text-container stickem">
+<section>
+<div class="text-container">
 <p class="show">Our latest version—the PFC v3.0, or "PFC_EDU"—has been scaled down from previous PFC's in terms of cost, size, and complexity, and designed specifically with educators and children aged 8-14 in mind. It offers a spectrum of control so that users can make their growing experience as manual or as automated as they would like. By introducing PFC_EDUs into the education context, including in schools and museums, we hope to inspire and empower the high-tech farmers of the future.</p>
 </div>
 <div class="media-container">
@@ -73,8 +73,8 @@
 </div>
 </section>
 
-<section class="stickem-container">
-<div class="text-container stickem">
+<section>
+<div class="text-container">
 <p class="show">Our latest testing in schools and libraries shows more than half of students who tested a PFC_EDU think more about food production, hunger, and where their food comes from. Like all OpenAg's Food Computers, the PFC_EDU is open source and can be made from easily accessible components so that #nerdfarmers with a broad spectrum of skills, resources, and interests can build, modify, share, and upgrade over time.</p>
 <a href="https://www.media.mit.edu/posts/build-a-food-computer/" target="_blank" class="sliding green show">Build your own PFC_EDU.</a>
 </div>
