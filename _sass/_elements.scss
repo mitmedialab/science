@@ -4,7 +4,7 @@ main.elements {
     @media only screen and (max-width: $breakpoint-med) {
         padding-top: 65px;
     }
-    
+
     .section-container {
 
         section {
@@ -75,14 +75,14 @@ main.elements {
                 }
                 
                 p {
-                    color: #666;
+                    color: $grey;
                     font-size: 15px;
                     line-height: 1.75;
                 }
 
                 a {
                     margin-top: 20px;
-                    color: #000;
+                    color: $black;
                     font-family: $bold;
                     font-size: 15px;
                     text-decoration: none;
@@ -143,14 +143,15 @@ main.elements {
                 .caption {
                     margin-top: -20px;
                     padding-bottom: 45px;
+                    max-width: 540px;
                     @media only screen and (max-width: $breakpoint-med) {
                         padding-bottom: 30px;
                     }
 
                     span {
-                        color: #999;
-                        font-size: 13px;
-                        line-break: 25px;
+                        color: $grey;
+                        font-size: 12px;
+                        line-height: 1.35;
                     }
                 }
             }

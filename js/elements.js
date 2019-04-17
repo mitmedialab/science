@@ -31,9 +31,15 @@ $(".left-container li").click(function() {
     $(".left-container li").removeClass("state");
     $(this).addClass("state");
     sectionIndex = $(this).index();
-    $("html, body").animate({
-        scrollTop: $("section").eq(sectionIndex).offset().top - 130
-    }, 750);
+    $("html, body").animate(
+        {
+            scrollTop:
+                $("section")
+                    .eq(sectionIndex)
+                    .offset().top - 130
+        },
+        750
+    );
     return false;
 });
 
@@ -50,21 +56,24 @@ $(window).scroll(function() {
     var a = $(window).height() / 2 + $(window).scrollTop();
     $("section").each(function() {
         var $this = $(this),
-        b = $this.offset().top,
-        c = b + $this.height();
+            b = $this.offset().top,
+            c = b + $this.height();
         $this.toggleClass("active", b < a && c >= a);
     });
     var e = $(".active").index("section");
     if (e >= 0) {
-        $("nav ul li").removeClass("state").eq(e).addClass("state");
-    };
+        $("nav ul li")
+            .removeClass("state")
+            .eq(e)
+            .addClass("state");
+    }
 });
 
 var resizeTimer;
 
 $(window).on("resize", function() {
     clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(function () {
+    resizeTimer = setTimeout(function() {
         if ($(window).width() > 960) {
             init();
         } else {
