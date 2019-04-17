@@ -244,7 +244,6 @@ nav {
     z-index: 3000;
     background-color: $black;
     transition: all ease-in-out 0.5s;
-    cursor: pointer;
 
     &.state {
         left: 0;
@@ -265,6 +264,7 @@ nav {
                 color: $white;
                 font-size: 20px;
                 text-decoration: none;
+                cursor: pointer;
             }
         }
     }
