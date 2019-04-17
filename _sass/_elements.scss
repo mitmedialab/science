@@ -1,11 +1,11 @@
 main.elements {
+    padding-top: 130px;
 
+    @media only screen and (max-width: $breakpoint-med) {
+        padding-top: 65px;
+    }
+    
     .section-container {
-        padding-top: 130px;
-        
-        @media only screen and (max-width: $breakpoint-med) {
-            padding-top: 65px;
-        }
 
         section {
             padding-top: 110px;
