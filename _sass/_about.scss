@@ -21,7 +21,7 @@ main.about {
             vertical-align: middle;
 
             svg {
-                opacity: 0.5;
+                opacity: 0.75;
                 fill: $white;
                 stroke-width: 0.1px;
                 width: 100%;
@@ -54,7 +54,7 @@ main.about {
             text-align: left;
 
             &:last-of-type {
-                padding-bottom: calc(100% - 260px);
+                padding-bottom: 260px;
             }
 
             @media only screen and (max-width: $breakpoint-med) {

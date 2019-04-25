@@ -14,12 +14,11 @@ $(document).ready(function() {
             path: "#s-1"
         },
         {
-            duration: 250,
+            duration: 750,
             easing: "easingCubicInOut",
-            duration: 2000,
             reverseFirstPath: false,
-            morphPrecision: 1,
-            morphIndex: 150
+            morphPrecision: 100,
+            morphPrecision: 1
         }
     );
 
@@ -35,12 +34,11 @@ $(document).ready(function() {
             path: "#s-2"
         },
         {
-            duration: 250,
+            duration: 750,
             easing: "easingCubicInOut",
-            duration: 2000,
             reverseFirstPath: true,
-            morphPrecision: 500,
-            morphIndex: 100
+            morphPrecision: 100,
+            morphIndex: 1
         }
     );
 
@@ -56,12 +54,11 @@ $(document).ready(function() {
             path: "#s-3"
         },
         {
-            duration: 250,
+            duration: 750,
             easing: "easingCubicInOut",
-            duration: 2000,
             reverseFirstPath: true,
-            morphPrecision: 500,
-            morphIndex: 100
+            morphPrecision: 100,
+            morphIndex: 1
         }
     );
 
@@ -74,12 +71,11 @@ $(document).ready(function() {
             path: "#s-4"
         },
         {
-            duration: 250,
+            duration: 750,
             easing: "easingCubicInOut",
-            duration: 2000,
             reverseFirstPath: false,
-            morphPrecision: 1,
-            morphIndex: 50
+            morphPrecision: 100,
+            morphIndex: 1
         }
     );
 
@@ -98,12 +94,11 @@ $(document).ready(function() {
             path: "#s-5"
         },
         {
-            duration: 250,
+            duration: 750,
             easing: "easingCubicInOut",
-            duration: 2000,
             reverseFirstPath: false,
-            morphPrecision: 1,
-            morphIndex: 150
+            morphPrecision: 100,
+            morphPrecision: 1
         }
     );
 
@@ -127,6 +122,8 @@ $(document).ready(function() {
         );
     });
 
+    var resizeTimer;
+
     $(window).scroll(function() {
         var a = $(window).height() / 2 + $(window).scrollTop();
         $("section").each(function() {
@@ -143,6 +140,10 @@ $(document).ready(function() {
                 .addClass("state");
         }
         var sectionIndex = $("section.active").index();
-        eval("tween" + sectionIndex).start();
+
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            eval("tween" + sectionIndex).start();
+        }, 250);
     });
 });

@@ -86,9 +86,9 @@ main.elements {
                 }
                 .img-container {
                     .img {
-                        display: block;
+                        display: inline-block;
                         margin-bottom: 30px;
-                        width: 100%;
+                        width: auto;
                         background-color: $light-grey;
 
                         img,
@@ -97,7 +97,10 @@ main.elements {
                         }
 
                         img {
-                            width: 100%;
+                            max-width: 100%;
+                            max-height: 540px;
+                            width: auto;
+                            height: auto;
                         }
                     }
                 }
