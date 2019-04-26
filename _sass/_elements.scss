@@ -42,6 +42,7 @@ main.elements {
                 padding-bottom: 30px;
                 width: calc(50% - 180px);
                 max-width: 540px;
+                z-index: 100;
 
                 @media only screen and (max-width: $breakpoint-large) {
                     width: auto;
