@@ -87,6 +87,14 @@ main.home {
                         img {
                             transform: scale(1.05);
                         }
+
+                        .element-text--container {
+                            h4 {
+                                &::after {
+                                    opacity: 1;
+                                }
+                            }
+                        }
                     }
 
                     @media only screen and (max-width: $breakpoint-small) {
@@ -127,9 +135,22 @@ main.home {
                         h4 {
                             margin-bottom: 10px;
                             color: $black;
-                            font-size: 20px;
+                            font-size: 17.5px;
                             font-family: $bold;
                             letter-spacing: -0.025em;
+                            vertical-align: bottom;
+
+                            &::after {
+                                display: inline-block;
+                                margin-left: 15px;
+                                opacity: 0.5;
+                                transition: opacity 0.5s;
+                                width: 15px;
+                                height: 15px;
+                                background-image: url("../img/link@2x.png");
+                                background-size: 100%;
+                                content: "";
+                            }
                         }
         
                         p {
