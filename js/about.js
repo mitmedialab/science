@@ -1,106 +1,18 @@
 $(document).ready(function() {
-    var tween0 = KUTE.fromTo(
-        "#s-1",
-        {
-            attr: {
-                stroke: "#673AB7"
-            },
-            path: "#s-5"
-        },
-        {
-            attr: {
-                stroke: "#2196F3"
-            },
-            path: "#s-1"
-        },
-        {
-            duration: 750,
-            easing: "easingCubicInOut",
-            reverseFirstPath: false,
-            morphPrecision: 100,
-            morphPrecision: 1
-        }
-    );
-
-    var tween1 = KUTE.fromTo(
-        "#s-1",
-        {
-            attr: {
-                stroke: "#FFFFFF"
-            },
-            path: "#s-1"
-        },
-        {
-            path: "#s-2"
-        },
-        {
-            duration: 750,
-            easing: "easingCubicInOut",
-            reverseFirstPath: true,
-            morphPrecision: 100,
-            morphIndex: 1
-        }
-    );
-
-    var tween2 = KUTE.fromTo(
-        "#s-1",
-        {
-            attr: {
-                stroke: "#673AB7"
-            },
-            path: "#s-2"
-        },
-        {
-            path: "#s-3"
-        },
-        {
-            duration: 750,
-            easing: "easingCubicInOut",
-            reverseFirstPath: true,
-            morphPrecision: 100,
-            morphIndex: 1
-        }
-    );
-
-    var tween3 = KUTE.fromTo(
-        "#s-1",
-        {
-            path: "#s-3"
-        },
-        {
-            path: "#s-4"
-        },
-        {
-            duration: 750,
-            easing: "easingCubicInOut",
-            reverseFirstPath: false,
-            morphPrecision: 100,
-            morphIndex: 1
-        }
-    );
-
-    var tween4 = KUTE.fromTo(
-        "#s-1",
-        {
-            attr: {
-                stroke: "#673AB7"
-            },
-            path: "#s-4"
-        },
-        {
-            attr: {
-                stroke: "#2196F3"
-            },
-            path: "#s-5"
-        },
-        {
-            duration: 750,
-            easing: "easingCubicInOut",
-            reverseFirstPath: false,
-            morphPrecision: 100,
-            morphPrecision: 1
-        }
-    );
+    var svg = document.getElementById("svg");
+    var s = Snap(svg);
+    var Shape1 = Snap.select("#shape1");
+    var Shape2 = Snap.select("#shape2");
+    var Shape3 = Snap.select("#shape3");
+    var Shape4 = Snap.select("#shape4");
+    var Shape1Points = Shape1.node.getAttribute("d");
+    var Shape2Points = Shape2.node.getAttribute("d");
+    var Shape3Points = Shape3.node.getAttribute("d");
+    var Shape4Points = Shape4.node.getAttribute("d");
+    var ToShape1 = function() { Shape1.animate({ d: Shape1Points }, 1000, mina.backout); }
+    var ToShape2 = function() { Shape1.animate({ d: Shape2Points }, 1000, mina.backout); }
+    var ToShape3 = function() { Shape1.animate({ d: Shape3Points }, 1000, mina.backout); }
+    var ToShape4 = function() { Shape1.animate({ d: Shape4Points }, 1000, mina.backout); }
 
     $("nav ul li").click(function() {
         sectionIndex = $(this).index();
@@ -108,21 +20,13 @@ $(document).ready(function() {
         if (!$(this).hasClass("state")) {
             $("nav ul li").removeClass("state");
             $(this).addClass("state");
-            eval("tween" + sectionIndex).start();
         }
 
-        $("html, body").animate(
-            {
-                scrollTop:
-                    $("section")
-                        .eq(sectionIndex)
-                        .offset().top - 130
-            },
-            750
+        $("html, body").animate({
+                scrollTop: $("section").eq(sectionIndex).offset().top - 130
+            }, 750
         );
     });
-
-    var resizeTimer;
 
     $(window).scroll(function() {
         var a = $(window).height() / 2 + $(window).scrollTop();
@@ -133,17 +37,17 @@ $(document).ready(function() {
             $this.toggleClass("active", b < a && c >= a);
         });
         var e = $(".active").index("section");
+        var ToShape = "ToShape" + parseInt(e);
         if (e >= 0) {
             $("nav ul li")
                 .removeClass("state")
                 .eq(e)
                 .addClass("state");
         }
-        var sectionIndex = $("section.active").index();
-
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function() {
-            eval("tween" + sectionIndex).start();
-        }, 250);
+        if (e <= 0) {
+            ToShape1();
+        } else {
+            eval("ToShape" + parseInt(e))();
+        }
     });
 });
