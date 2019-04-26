@@ -90,6 +90,18 @@ main.home {
 
                         .element-text--container {
                             h4 {
+                                &.blue {
+                                    color: $blue;
+                                }
+
+                                &.green {
+                                    color: $green;
+                                }
+
+                                &.yellow {
+                                    color: $yellow;
+                                }
+
                                 &::after {
                                     opacity: 1;
                                 }
@@ -133,6 +145,7 @@ main.home {
                         }
         
                         h4 {
+                            transition: color 0.5s;
                             margin-bottom: 10px;
                             color: $black;
                             font-size: 17.5px;
