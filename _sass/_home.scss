@@ -1,6 +1,7 @@
 main.home {
     .container {
         width: 87.5%;
+        max-width: 1400px;
 
         @media only screen and (max-width: $breakpoint-med) {
             width: 96%;
@@ -80,8 +81,8 @@ main.home {
                 text-decoration: none;
 
                 .element-link {
-                    padding-left: 17.5%;
-                    padding-right: 17.5%;
+                    padding-left: 7.5%;
+                    padding-right: 7.5%;
 
                     &:hover {
                         img {
@@ -136,26 +137,33 @@ main.home {
                     }
         
                     .element-text--container {
-                        padding-top: 20px;
+                        position: relative;
+                        margin-top: 20px;
         
                         @media only screen and (max-width: $breakpoint-med) {
-                            padding-top: 15px;
+                            margin-top: 15px;
                             padding-left: 0;
                             padding-right: 0;
                         }
         
                         h4 {
-                            transition: color 0.5s;
+                            display: inline-block;
                             margin-bottom: 10px;
+                            margin-right: 15px;
+                            transition: color 0.5s;
+                            width: calc(100% - 20px);
                             color: $black;
                             font-size: 17.5px;
                             font-family: $bold;
                             letter-spacing: -0.025em;
+                            line-height: 1.35;
                             vertical-align: bottom;
 
                             &::after {
-                                display: inline-block;
-                                margin-left: 15px;
+                                position: absolute;
+                                top: 5px;
+                                right: 0;
+                                margin-left: 5px;
                                 opacity: 0.5;
                                 transition: opacity 0.5s;
                                 width: 15px;
