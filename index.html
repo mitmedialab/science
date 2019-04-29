@@ -1,6 +1,20 @@
 ---
 layout: default
 ---
+    <div class="corner--container">
+        <div class="corner l-1 loaded">
+            <img src="{{ site.baseurl }}/img/l-1@2x.png">
+        </div>
+        <div class="corner l-2 loaded">
+            <img src="{{ site.baseurl }}/img/l-2@2x.png">
+        </div>
+        <div class="mit">
+            <a href="https://www.media.mit.edu/" target="_blank"><img src="{{ site.baseurl }}/img/mit-media-lab@2x.png"></a>
+        </div>
+    </div>
+
+    <div class="load"></div>
+
     <main class="home">
         <div class="content--container">
             <div class="container">
@@ -70,6 +84,40 @@ layout: default
         crossorigin="anonymous"></script>
     <script>
         window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-3.2.1.min.js"><\/script>')
+    </script>
+    <script>
+    function loaded() {
+        $(".l-1").delay(500).animate({
+            "top": 0,
+            "right": 0
+        }, 500), $(".l-2").delay(500).animate({
+            "bottom": 0,
+            "left": 0
+        }, 500);
+        $(".l-1, .l-2").promise().then(function() {
+            $(".load").remove();
+        });
+    }
+    
+    function onLoad(loading, loaded) {
+        if (document.readyState === "complete") {
+            return loaded();
+        }
+        loading();
+        if (window.addEventListener) {
+            window.addEventListener("load", loaded, false);
+        }
+        else if (window.attachEvent) {
+            window.attachEvent("onload", loaded);
+
+        }
+    };
+    
+    onLoad(function () {
+        //
+    }, function () {
+        loaded();
+    });
     </script>
     <script src="{{ site.baseurl }}/js/plugins.js"></script>
     <script src="{{ site.baseurl }}/js/main.js"></script>

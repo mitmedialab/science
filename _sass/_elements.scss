@@ -1,3 +1,24 @@
+.load--overlay {
+    position: fixed;
+    top: 131px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 131px);
+    z-index: 500;
+    background-color: $white;
+    transition: opacity 0.5s;
+
+    @media only screen and (max-width: $breakpoint-small) {
+        top: 66px;
+        height: calc(100% - 66px);
+    }
+
+    @media only screen and (max-width: $breakpoint-med) {
+        top: 66px;
+        height: calc(100% - 66px);
+    }
+}
+
 main.elements {
     padding-top: 130px;
 
@@ -5,7 +26,7 @@ main.elements {
         padding-top: 65px;
     }
 
-    .section-container {
+    .section--container {
 
         section {
             padding-top: 110px;
@@ -36,7 +57,7 @@ main.elements {
                 clear: both;
             }
 
-            .text-container {
+            .text--container {
                 float: left;
                 position: absolute;
                 padding-bottom: 30px;
@@ -77,7 +98,7 @@ main.elements {
                 }
             }
 
-            .media-container {
+            .media--container {
                 float: right;
                 width: calc(50% - 30px);
                 
@@ -85,7 +106,8 @@ main.elements {
                     width: auto;
                     float: unset;
                 }
-                .img-container {
+
+                .img--container {
                     .img {
                         display: inline-block;
                         margin-bottom: 30px;
@@ -106,7 +128,7 @@ main.elements {
                     }
                 }
                 
-                .video-container {
+                .video--container {
                     .video {
                         position: relative;
                         padding-bottom: 56.25%;

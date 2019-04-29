@@ -1,29 +1,43 @@
 ---
 layout: default
 ---
-<main class="elements">
-    <span class="divider"></span>
-
-    <div class="left-container">
-        <nav>
-            <ul>
-                <li><span>1</span><span>Overview</span></li>
-                <li><span>2</span><span>Payloads</span></li>
-                <li><span>3</span><span>Open Data</span></li>
-                <li><span>4</span><span>Space + Libraries</span></li>
-            </ul>
-        </nav>
+    <div class="corner--container">
+        <div class="corner l-1">
+            <img src="{{ site.baseurl }}/img/l-1@2x.png">
+        </div>
+        <div class="corner l-2">
+            <img src="{{ site.baseurl }}/img/l-2@2x.png">
+        </div>
+        <div class="mit">
+            <a href="https://www.media.mit.edu/" target="_blank"><img src="{{ site.baseurl }}/img/mit-media-lab@2x.png"></a>
+        </div>
     </div>
+    
+    <div class="load--overlay"></div>
 
-    <div class="section-container">
-        {% capture m %}{% include climate-cubesat-co-building.md %}{% endcapture %}
-        {{ m | markdownify }}
-    </div>
-</main>
+    <main class="elements">
+        <span class="divider"></span>
 
-<script>
-    window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-3.2.1.min.js"><\/script>')
-</script>
-<script src="{{ site.baseurl }}/js/plugins.js"></script>
-<script src="{{ site.baseurl }}/js/elements.js"></script>
-<script src="{{ site.baseurl }}/js/main.js"></script>
+        <div class="left--container">
+            <nav>
+                <ul>
+                    <li><span>1</span><span>Overview</span></li>
+                    <li><span>2</span><span>Payloads</span></li>
+                    <li><span>3</span><span>Open Data</span></li>
+                    <li><span>4</span><span>Space + Libraries</span></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="section--container">
+            {% capture m %}{% include climate-cubesat-co-building.md %}{% endcapture %}
+            {{ m | markdownify }}
+        </div>
+    </main>
+
+    <script>
+        window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-3.2.1.min.js"><\/script>')
+    </script>
+    <script src="{{ site.baseurl }}/js/plugins.js"></script>
+    <script src="{{ site.baseurl }}/js/elements.js"></script>
+    <script src="{{ site.baseurl }}/js/main.js"></script>

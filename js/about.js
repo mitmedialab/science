@@ -1,3 +1,36 @@
+function loaded() {
+    $(".load--overlay").animate(
+        {
+            opacity: 0
+        },
+        100,
+        function() {
+            $(this).remove();
+        }
+    );
+}
+
+function onLoad(loading, loaded) {
+    if (document.readyState === "complete") {
+        return loaded();
+    }
+    loading();
+    if (window.addEventListener) {
+        window.addEventListener("load", loaded, false);
+    } else if (window.attachEvent) {
+        window.attachEvent("onload", loaded);
+    }
+}
+
+onLoad(
+    function() {
+        //
+    },
+    function() {
+        loaded();
+    }
+);
+
 $(document).ready(function() {
     var svg = document.getElementById("svg");
     var s = Snap(svg);
@@ -26,6 +59,15 @@ $(document).ready(function() {
                 scrollTop: $("section").eq(sectionIndex).offset().top - 130
             }, 750
         );
+    });
+
+    $(document).ready(function() {
+        $(".left--container").each(function() {
+            $(this)
+                .find("li")
+                .eq(0)
+                .addClass("state");
+        });
     });
 
     $(window).scroll(function() {

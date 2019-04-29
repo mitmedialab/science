@@ -94,6 +94,11 @@
     }
 
     .l-1 {
+        &.loaded {
+            top: calc(50% - 65px);
+            right: calc(50% - 65px); 
+        }
+
         top: 0;
         right: 0;
 
@@ -109,6 +114,11 @@
     }
 
     .l-2 {
+        &.loaded {
+            bottom: calc(50% - 65px);
+            left: calc(50% - 65px);
+        }
+
         bottom: 0;
         left: 0;
 
@@ -128,13 +138,17 @@
             }
         }
     }
+
+    .l-1, .l-2 {
+        // transition: top 1s, bottom 1s, left 1s, right 1s;
+    }
 }
 
 .mit {
     position: fixed;
     bottom: 45px;
     left: 45px;
-    z-index: 2000;
+    z-index: 1000;
 
     @media only screen and (max-width: $breakpoint-med) {
         display: none;
