@@ -58,7 +58,7 @@
 </section>
 
 <section>
-<div class="text-container">
+<div class="text--container">
 <p>Our local program (the beta test for expanding nationally and globally) currently supports 20 high school students. We are also working in collaboration with the Media Lab Learning initiative to bring this program to public libraries across the U.S. as part of their <a href="https://plix.media.mit.edu" target="_blank">Public Library Innovation Exchange (PLIX)</a> program. Our library collaborators include amazing librarians from Cambridge Public Library, Charlotte Mecklenburg Library, and the Wolbach Library at the Harvard-Smithsonian Center for Astrophysics.</p>
 </div>
 <div class="media--container">
