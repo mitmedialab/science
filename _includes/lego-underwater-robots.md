@@ -1,8 +1,8 @@
 {::options parse_block_html="true" /}
 <section>
 <div class="text-container">
-<h3 class="show">LEGO Underwater Robots</h3>
-<p class="show">The LEGO Underwater Robot project combines LEGO, robotics, and seawater into a playground of project-based
+<h3>LEGO Underwater Robots</h3>
+<p>The LEGO Underwater Robot project combines LEGO, robotics, and seawater into a playground of project-based
 learning and citizen science for budding engineers and explorers. As part of this outreach program, our team is
 developing a prototype of a buildable LEGO marine exploration vehicle kit—addressing some of the design challenges of
 building for the underwater context.</p>
@@ -10,7 +10,7 @@ building for the underwater context.</p>
 </div>
 <div class="media-container">
 <div class="video-container">
-<div class="video show">
+<div class="video">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kY4im93tFyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div>
@@ -31,7 +31,7 @@ allowfullscreen></iframe>
 
 <section>
 <div class="text-container">
-<p class="show">Using this kit, we will run a series of workshops with young people who will build on top of it, making
+<p>Using this kit, we will run a series of workshops with young people who will build on top of it, making
 the marine explorer more sophisticated and customized in order to execute marine science experiments of their
 design.</p>
 </div>
@@ -65,7 +65,7 @@ design.</p>
 
 <section>
 <div class="text-container">
-<p class="show">Our aim is to build an awareness of the state of the aquatic environment and instill a greater
+<p>Our aim is to build an awareness of the state of the aquatic environment and instill a greater
 responsibility in shaping our interactions with the environment. To do so, young people will view underwater
 wonders of the world with their robots and get outside to explore their local waterway. Our approach embraces
 Seymour Papert’s model of "low floors" (where getting started is easy), and "high ceilings," where students can
@@ -105,7 +105,7 @@ onto their bot, and even managed to pull up two crabs!</span>
 
 <section>
 <div class="text-container">
-<p class="show">This program kicked off in summer 2018 with the National Geographic Student
+<p>This program kicked off in summer 2018 with the National Geographic Student
 Expeditions at MIT, where we hosted 40-50 high school students for <a href="https://learn.media.mit.edu/wayfinder/"
 target="_blank">two days of workshops</a> at the MIT Sea Grant and New England Aquarium.
 Going forward, we aim to adapt this programming for wider student audiences in after-school

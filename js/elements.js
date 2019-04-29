@@ -15,7 +15,6 @@ function init() {
     $("main").imagesLoaded(function() {
         sr.reveal(".img-container");
         sr.reveal(".video-container");
-        sr.reveal(".caption", 50);
         sr.reveal(".show");
 
         $(".text-container").stick_in_parent({
@@ -46,6 +45,19 @@ $(document).ready(function() {
     } else {
         $(".text-container").trigger("sticky_kit:detach");
     }
+
+    $(".left-container").each(function() {
+        $(this)
+            .find("li")
+            .eq(0)
+            .addClass("state");
+    });
+
+    $("section").each(function() {
+        $(this)
+            .find("h3, p, a, .img, .video, .caption")
+            .addClass("show");
+    });
 });
 
 $(window).scroll(function() {
