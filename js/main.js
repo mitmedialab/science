@@ -16,8 +16,8 @@ $(document).ready(function() {
         }
     });
 
-    $(".menu--container").click(function() {
-        if ($(".menu--container").hasClass("state")) {
+    $(".menu--container").click(function(e) {
+        if ($(e.target).is("a") && $(".menu--container").hasClass("state")) {
             $(".menu--container").removeClass("state");
             $(".overlay").hide();
         }

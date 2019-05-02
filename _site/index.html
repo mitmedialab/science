@@ -54,7 +54,7 @@
         <div class="corner l-1 loaded">
             <img src="/science/img/l-1@2x.png">
         </div>
-        <div class="corner l-2 loaded">
+        <div class="corner l-2 loaded state">
             <img src="/science/img/l-2@2x.png">
         </div>
         <div class="mit">
@@ -145,6 +145,7 @@
         }, 500);
         $(".l-1, .l-2").promise().then(function() {
             $(".load").remove();
+            $(".l-2").removeClass("state");
         });
     }
     
