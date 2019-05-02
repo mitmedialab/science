@@ -126,10 +126,13 @@
             @media only screen and (max-width: $breakpoint-med) {
                 bottom: calc(50% - 65px / 2);
                 left: calc(50% - 65px / 2);
-                border-top: solid 1px rgba($color: $black, $alpha: 0.1);
-                width: 100%;
-                background-color: $white;
             }
+        }
+
+        @media only screen and (max-width: $breakpoint-med) {
+            border-top: solid 1px rgba($color: $black, $alpha: 0.1);
+            width: 100%;
+            background-color: $white;
         }
 
         bottom: 0;
