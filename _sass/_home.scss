@@ -9,6 +9,9 @@
 }
 
 main.home {
+    display: table;
+    width: 100%;
+
     .container {
         width: 87.5%;
         max-width: 1400px;
@@ -19,13 +22,15 @@ main.home {
     }
 
     .content--container {
-        position: absolute;
-        top: 130px;
+        display: table-cell;
+        vertical-align: middle;
+        padding-top: 60px;
         padding-bottom: 30px;
         width: 100%;
+        min-height: calc(100% - 160px);
 
         @media only screen and (max-width: $breakpoint-med) {
-            top: 65px;
+            padding-top: 80px;
             padding-bottom: 80px;
         }
 

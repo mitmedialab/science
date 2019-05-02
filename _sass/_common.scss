@@ -1,3 +1,7 @@
+main {
+    min-height: 100%;
+}
+
 .sliding {
     display: inline-block;
     transition: all .5s cubic-bezier(0.23, 1, 0.32, 1);
