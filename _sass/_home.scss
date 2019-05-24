@@ -13,7 +13,7 @@ main.home {
     width: 100%;
 
     .container {
-        width: 87.5%;
+        width: 82%;
         max-width: 1400px;
 
         @media only screen and (max-width: $breakpoint-med) {
@@ -24,8 +24,8 @@ main.home {
     .content--container {
         display: table-cell;
         vertical-align: middle;
-        padding-top: 60px;
-        padding-bottom: 30px;
+        padding-top: 110px;
+        padding-bottom: 100px;
         width: 100%;
         min-height: calc(100% - 160px);
 
@@ -46,6 +46,7 @@ main.home {
                 font-size: 25px;
                 letter-spacing: -0.025em;
                 line-height: 1.5em;
+                text-align: center;
 
                 @media only screen and (max-width: $breakpoint-med) {
                     font-size: 20px;
@@ -86,7 +87,7 @@ main.home {
         }
 
         .element--container {
-            padding-top: 75px;
+            padding-top: 50px;
 
             @media only screen and (max-width: $breakpoint-med) {
                 padding-top: 0;
@@ -174,7 +175,7 @@ main.home {
                             line-height: 1.35;
                             vertical-align: bottom;
 
-                            &::after {
+                            /*&::after {
                                 position: absolute;
                                 top: 5px;
                                 right: 0;
@@ -186,7 +187,7 @@ main.home {
                                 background-image: url("../img/link@2x.png");
                                 background-size: 100%;
                                 content: "";
-                            }
+                            }*/
                         }
         
                         p {

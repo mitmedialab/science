@@ -81,7 +81,7 @@ main.elements {
                 
                 p {
                     color: $grey;
-                    font-size: 15px;
+                    font-size: 16px;
                     line-height: 1.75;
                 }
 
@@ -89,11 +89,14 @@ main.elements {
                     margin-top: 20px;
                     color: $black;
                     font-family: $bold;
-                    font-size: 15px;
+                    font-size: 16px;
                     text-decoration: none;
                     transition: color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
                     @media only screen and (max-width: $breakpoint-med) {
-                        font-size: 15px;
+                        font-size: 16px;
+                    }
+                     &.main-link {
+                        font-size: 18px;
                     }
                 }
             }

@@ -3,7 +3,7 @@
 <div class="text--container">
 <h3>Personal Food Computer EDU</h3>
 <p>The OpenAg™ Personal Food Computer is a tabletop-sized, controlled environment agriculture technology platform that uses robotic systems to control and monitor climate, energy, and plant growth inside of a specialized growing chamber.</p>
-<a href="https://wiki.openag.media.mit.edu/education" target="_blank" class="sliding green">wiki.openag.media.mit.edu/education</a>
+<a href="https://wiki.openag.media.mit.edu/education" target="_blank" class="sliding green main-link">wiki.openag.media.mit.edu/education</a>
 </div>
 <div class="media--container">
 <div class="video--container">
@@ -75,8 +75,8 @@
 
 <section>
 <div class="text--container">
-<p>Our latest testing in schools and libraries shows more than half of students who tested a PFC_EDU think more about food production, hunger, and where their food comes from. Like all OpenAg's Food Computers, the PFC_EDU is open source and can be made from easily accessible components so that #nerdfarmers with a broad spectrum of skills, resources, and interests can build, modify, share, and upgrade over time.</p>
-<a href="https://www.media.mit.edu/posts/build-a-food-computer/" target="_blank" class="sliding green">Build your own PFC_EDU.</a>
+<p>Like all of OpenAg's Food Computers, the PFC_EDU is open source and can be made from easily accessible components so that #nerdfarmers with a broad spectrum of skills, resources, and interests can build, modify, share, and upgrade over time.</p>
+<a href="https://www.media.mit.edu/posts/build-a-food-computer/" target="_blank" class="sliding green">Build your own PFC_EDU</a>
 </div>
 <div class="media--container">
 <div class="img--container">

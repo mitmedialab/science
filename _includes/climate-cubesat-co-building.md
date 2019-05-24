@@ -2,11 +2,11 @@
 <section>
 <div class="text--container">
 <h3>Climate CubeSat Co-Building</h3>
-<p>Beginning in Spring 2018, in an aim to fulfill NASA’s vision of <a href="https://www.nasa.gov/content/cubesat-launch-initiative-50-cubesats-from-50-states-in-5-years" target="_blank">50 CubeSats from 50 States in 5 Years</a>, the Space Exploration Initiative launched our Climate CubeSat Co-building Outreach Program (C3), in which we mentor high school students through designing, building, testing, and launching a cubesat that makes climate science and earth-observation measurements.</p>
-<a href="https://c3.pubpub.org/" target="_blank" class="sliding yellow">c3.pubpub.org/</a>
+<p>Beginning in Spring 2018, in an aim to fulfill NASA’s vision of 50 CubeSats from 50 States in 5 Years, the Space Exploration Initiative launched our Climate CubeSat Co-building Outreach Program (C3), in which we mentor high school students through designing, building, testing, and launching a cubesat that makes climate science and earth-observation measurements.</p>
+<a href="https://c3.pubpub.org/" target="_blank" class="sliding yellow main-link">c3.pubpub.org</a>
 </div>
 <div class="media--container">
-<div class="img--containe">
+<div class="img--container">
 <div class="img">
 <img src="{{ site.baseurl }}/img/elements/space--1-1.jpg">
 </div>
@@ -14,7 +14,7 @@
 <span>A CubeSat being launched in space from a much larger satellite.</span>
 </div>
 </div>
-<div class="img-container">
+<div class="img--container">
 <div class="img">
 <img src="{{ site.baseurl }}/img/elements/space--1-2.png">
 </div>
@@ -76,6 +76,14 @@
 </div>
 <div class="caption">
 <span>Students at Cambridge Public Library tinker with Micro:bits for data collection as part of a high altitude balloon launch.</span>
+</div>
+</div>
+<div class="img--container">
+<div class="img">
+<img src="{{ site.baseurl }}/img/elements/space--4-3.jpg">
+</div>
+<div class="caption">
+<span>One participant doing a VR spacewalk!</span>
 </div>
 </div>
 </div>

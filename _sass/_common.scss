@@ -43,7 +43,7 @@ main {
         }
 
         &:hover {
-            color: $red;
+            color: $red !important;
             &:after {
                 background-color: $red;
             }
@@ -56,7 +56,7 @@ main {
         }
 
         &:hover {
-            color: $green;
+            color: $green !important;
             &:after {
                 background-color: $green;
             }
@@ -69,7 +69,7 @@ main {
         }
 
         &:hover {
-            color: $blue;
+            color: $blue !important;
             &:after {
                 background-color: $blue;
             }
@@ -82,7 +82,7 @@ main {
         }
 
         &:hover {
-            color: $yellow;
+            color: $yellow !important;
             &:after {
                 background-color: $yellow;
             }

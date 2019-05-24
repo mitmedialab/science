@@ -1,12 +1,12 @@
 {::options parse_block_html="true" /}
 <section>
 <div class="text--container">
-<h3>LEGO Underwater Robots</h3>
-<p>The LEGO Underwater Robot project combines LEGO, robotics, and seawater into a playground of project-based
+<h3>LEGO Wayfinder</h3>
+<p>The LEGO Wayfinder project combines LEGO, robotics, and seawater into a playground of project-based
 learning and citizen science for budding engineers and explorers. As part of this outreach program, our team is
 developing a prototype of a buildable LEGO marine exploration vehicle kit—addressing some of the design challenges of
 building for the underwater context.</p>
-<a href="https://learn.media.mit.edu/wayfinder/" target="_blank" class="sliding blue">learn.media.mit.edu/wayfinder</a>
+<a href="https://www.media.mit.edu/projects/lego-wayfinder/overview/" target="_blank" class="sliding blue main-link">media.mit.edu/projects/lego-wayfinder</a>
 </div>
 <div class="media--container">
 <div class="video--container">
@@ -15,7 +15,7 @@ building for the underwater context.</p>
 allowfullscreen></iframe>
 </div>
 <div class="caption">
-<span>A LEGO Underwater Robot in action.</span>
+<span>A LEGO Wayfinder in action.</span>
 </div>
 </div>
 <div class="img--container">
@@ -49,7 +49,7 @@ design.</p>
 <img src="{{ site.baseurl }}/img/elements/open-ocean--2-2.jpg">
 </div>
 <div class="caption">
-<span>Customizing the LEGO Underwater Robot software, using Scratch Extensions for LEGO Mindstorms.</span>
+<span>Customizing the LEGO Wayfinder software, using Scratch Extensions for LEGO Mindstorms.</span>
 </div>
 </div>
 <div class="img--container">
@@ -57,7 +57,7 @@ design.</p>
 <img src="{{ site.baseurl }}/img/elements/open-ocean--2-3.jpg">
 </div>
 <div class="caption">
-<span>Testing the LEGO Underwater Robot for water-tightness in a tank at MIT Sea Grant.</span>
+<span>Testing the LEGO Wayfinder for water-tightness in a tank at MIT Sea Grant.</span>
 </div>
 </div>
 </div>
@@ -88,7 +88,7 @@ sending back!</span>
 allowfullscreen></iframe>
 </div>
 <div class="caption">
-<span>A view of the LEGO Underwater Robot interface displaying the underwater video feed -- this team rigged a squid-baited lure
+<span>A view of the LEGO Wayfinder interface displaying the underwater video feed -- this team rigged a squid-baited lure
 onto their bot, and even managed to pull up two crabs!</span>
 </div>
 </div>
@@ -110,6 +110,7 @@ Expeditions at MIT, where we hosted 40-50 high school students for <a href="http
 target="_blank">two days of workshops</a> at the MIT Sea Grant and New England Aquarium.
 Going forward, we aim to adapt this programming for wider student audiences in after-school
 programs, classrooms, libraries, and community-based mentor clubs for youth.</p>
+<p style="margin-top:15px;">A special thanks to the amazing team who worked on this project with us: MIT Sea Grant, the Incredible Machine, ML Learning Initiative, UROPs Rachel Hwang & John Paris, and the New England Aquarium.</p>
 </div>
 <div class="media--container">
 <div class="img--container">
@@ -126,7 +127,7 @@ underwater robot.</span>
 <img src="{{ site.baseurl }}/img/elements/open-ocean--4-2.jpg">
 </div>
 <div class="caption">
-<span>A LEGO Underwater Robot in the wild.</span>
+<span>A LEGO Wayfinder in the wild.</span>
 </div>
 </div>
 </div>
