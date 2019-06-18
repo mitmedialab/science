@@ -1,6 +1,6 @@
 window.sr = ScrollReveal({
-    delay: 100,
-    distance: "50px",
+    delay: 0,
+    distance: "30px",
     easing: "cubic-bezier(.19,1,.22,1)",
     opacity: 1,
     scale: 1,
@@ -16,7 +16,6 @@ function init() {
         sr.reveal(".img--container");
         sr.reveal(".video--container");
         sr.reveal(".show");
-        console.log("init running");
         $(".text--container").stick_in_parent({
             offset_top: 240
         });
