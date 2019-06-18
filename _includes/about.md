@@ -5,9 +5,9 @@ The Democratizing Science project is opening up MIT Media Lab research in the fo
 
 These creative, Media-Lab style programs will challenge and excite young people as they engage in learning experiences that are anti-disciplinary, interest-based, and hands-on.
 
-Democratizing Science is a collaborative project from ML Learning, Open Ocean, OpenAg, and the Space Exploration Initiative. Each of our three elemental focus areas is based on current Media Lab research.
+Democratizing Science is a collaborative project from ML Learning, Open Ocean, OpenAg, and the Space Exploration Initiative. Each of our three elemental focus areas is based on current Media Lab research. Scroll down to learn more about the work of each initiative.
 
-Scroll down to learn more about the work of each initiative.
+Want to get in touch about this project? <br/>Email us at learn[at]media.mit.edu 
 </section>
 
 <section class="red">
