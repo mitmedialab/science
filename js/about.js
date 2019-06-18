@@ -1,3 +1,4 @@
+/*
 function loaded() {
     $(".load--overlay").animate(
         {
@@ -30,13 +31,13 @@ onLoad(
         loaded();
     }
 );
-
+*/
 $(document).ready(function() {
     var svg = document.getElementById("svg");
     var s = Snap(svg);
     var Shape1 = Snap.select("#shape1");
-    var Shape2 = Snap.select("#shape2");
-    var Shape3 = Snap.select("#shape3");
+    var Shape2 = Snap.select("#shape3");
+    var Shape3 = Snap.select("#shape2");
     var Shape4 = Snap.select("#shape4");
     var Shape1Points = Shape1.node.getAttribute("d");
     var Shape2Points = Shape2.node.getAttribute("d");
@@ -46,6 +47,16 @@ $(document).ready(function() {
     var ToShape2 = function() { Shape1.animate({ d: Shape2Points }, 1000, mina.backout); }
     var ToShape3 = function() { Shape1.animate({ d: Shape3Points }, 1000, mina.backout); }
     var ToShape4 = function() { Shape1.animate({ d: Shape4Points }, 1000, mina.backout); }
+
+    $(".load--overlay").animate(
+        {
+            opacity: 0
+        },
+        100,
+        function() {
+            $(this).remove();
+        }
+    );
 
     $("nav ul li").click(function() {
         sectionIndex = $(this).index();

@@ -16,10 +16,15 @@ function init() {
         sr.reveal(".img--container");
         sr.reveal(".video--container");
         sr.reveal(".show");
-
+        console.log("init running");
         $(".text--container").stick_in_parent({
             offset_top: 240
         });
+    });
+    $(".load--overlay").animate({
+        "opacity": 0
+    }, 100, function() {
+        $(this).remove();
     });
 }
 
@@ -39,6 +44,7 @@ $(".left--container li").click(function() {
     return false;
 });
 
+/*
 function loaded() {
     $(".load--overlay").animate({
         "opacity": 0
@@ -67,7 +73,7 @@ onLoad(
         loaded();
     }
 );
-
+*/
 $(document).ready(function() {
     $(".left--container").each(function() {
         $(this)
