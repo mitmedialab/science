@@ -1,6 +1,6 @@
 window.sr = ScrollReveal({
     delay: 0,
-    distance: "30px",
+    distance: "0px",
     easing: "cubic-bezier(.19,1,.22,1)",
     opacity: 1,
     scale: 1,
