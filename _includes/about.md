@@ -1,7 +1,7 @@
 {::options parse_block_html="true" /}
 <section>
 <h3>About</h3>
-The Democratizing Science project is opening up MIT Media Lab research in the form of <a href="https://en.wikipedia.org/wiki/STEAM_fields/" target="_blank" class="sliding black">STEAM</a> learning programs in three elemental areas: ocean, earth, and space. 
+The Democratizing Science project is opening up MIT Media Lab research in the form of <a href="https://en.wikipedia.org/wiki/STEAM_fields" target="_blank" class="sliding black">STEAM</a> learning programs in three elemental areas: ocean, earth, and space. 
 
 These creative, Media-Lab style programs will challenge and excite young people as they engage in learning experiences that are anti-disciplinary, interest-based, and hands-on.
 
