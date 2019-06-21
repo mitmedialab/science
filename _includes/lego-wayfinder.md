@@ -111,6 +111,7 @@ target="_blank">two days of workshops</a> at the MIT Sea Grant and New England A
 Going forward, we aim to adapt this programming for wider student audiences in after-school
 programs, classrooms, libraries, and community-based mentor clubs for youth.</p>
 <p style="margin-top:15px;">A special thanks to the amazing team who worked on this project with us: MIT Sea Grant, the Incredible Machine, ML Learning Initiative, UROPs Rachel Hwang & John Paris, and the New England Aquarium.</p>
+<p class="last-call">Learn more at <a href="https://www.media.mit.edu/projects/lego-wayfinder/overview/" target="_blank" class="sliding blue main-link">media.mit.edu/projects/lego-wayfinder</a></p>
 </div>
 <div class="media--container">
 <div class="img--container">

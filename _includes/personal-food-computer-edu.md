@@ -76,7 +76,7 @@
 <section>
 <div class="text--container">
 <p>Like all of OpenAg's Food Computers, the PFC_EDU is open source and can be made from easily accessible components so that #nerdfarmers with a broad spectrum of skills, resources, and interests can build, modify, share, and upgrade over time.</p>
-<a href="https://www.media.mit.edu/posts/build-a-food-computer/" target="_blank" class="sliding green">Build your own PFC_EDU</a>
+<p class="last-call"><a href="https://www.media.mit.edu/posts/build-a-food-computer/" target="_blank" class="sliding green">Build your own PFC_EDU</a></p>
 </div>
 <div class="media--container">
 <div class="img--container">

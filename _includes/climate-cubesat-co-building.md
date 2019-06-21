@@ -2,7 +2,7 @@
 <section>
 <div class="text--container">
 <h3>Climate CubeSat Co-Building</h3>
-<p>Beginning in Spring 2018, in an aim to fulfill NASA’s vision of 50 CubeSats from 50 States in 5 Years, the Space Exploration Initiative launched our Climate CubeSat Co-building Outreach Program (C3), in which we mentor high school students through designing, building, testing, and launching a cubesat that makes climate science and earth-observation measurements.</p>
+<p>Rigorous investigation of Earth’s changing climate by satellite technology will benefit from more equitable access to currently hard-to-reach tools. In an effort to democratize space and climate exploration, we developed the Climate CubeSat Co-Build (C3) program, a multi-tiered outreach platform which aims to enable learning communities—classrooms, cities, and public libraries—nationally and internationally, to gain technical literacy in fundamental principles of climate science, small spacecraft engineering, and data analysis in a highly collaborative setting.</p>
 <a href="https://c3.pubpub.org/" target="_blank" class="sliding yellow main-link">c3.pubpub.org</a>
 </div>
 <div class="media--container">
@@ -27,7 +27,7 @@
 
 <section>
 <div class="text--container">
-<p>The program is themed around Climate Science and Remote Sensing; the payloads are designed and developed as part of a communal, participatory satellite constellation that takes numerous atmospheric (greenhouse gas) measurements. Student groups can either build CubeSats to support the citizen-science constellation or low-cost ground stations to support the active measurements as CubeSats fly over.</p>
+<p>As the flagship element of this program, we are working with a cohort of 20 Boston-area high school students, primarily from non-dominant backgrounds, who will pioneer the development of a 3U cubesat with climate-sensing capabilities. Through the C3 curriculum, co-builders interface with local experts (MIT Lincoln Lab and AeroAstro) to manage and execute the build of an engineering cubesat model, including payload development, model testing, and subsequent analysis and iteration. </p>
 </div>
 <div class="media--container">
 <div class="img--container">
@@ -43,7 +43,7 @@
 
 <section>
 <div class="text--container">
-<p>A third means of involvement centers on the open data set to be released as measurements are taken, offering an inclusive and easily scalable means of participating in the program: become part of the data analysis community effort as this global data set is gathered and reviewed. We view this three-part citizen science program (build a CubeSat; build a ground station; analyze the open data) as a critical opportunity to engage a broader and younger population in climate science discussions and awareness of climate change.</p>
+<p>The resulting “BeaverCube,” capable of gathering cloud top and ocean infrared data, will serve as a standardized model suitable for modification and deployment by high school classrooms across the globe. Our pilot curriculum, which drew students from J.D. O’Bryant School of Mathematics and Science (Roxbury) and the Clay Center for Science and Technology (Brookline), concluded in spring 2019, and resulted in the development of a 3U demosat capable of visible and infrared imaging, which we are preparing for testing on a high-altitude weather balloon. Our second cohort will begin in the fall of 2019.</p>
 </div>
 <div class="media--container">
 <div class="img--container">
@@ -59,7 +59,8 @@
 
 <section>
 <div class="text--container">
-<p>Our local program (the beta test for expanding nationally and globally) currently supports 20 high school students. We are also working in collaboration with the Media Lab Learning initiative to bring this program to public libraries across the U.S. as part of their <a href="https://plix.media.mit.edu" target="_blank">Public Library Innovation Exchange (PLIX)</a> program. Our library collaborators include amazing librarians from Cambridge Public Library, Charlotte Mecklenburg Library, and the Wolbach Library at the Harvard-Smithsonian Center for Astrophysics.</p>
+<p>To broaden the reach of C3 programming, we are working collaboratively with the Media Lab Learning initiative to bring this program to public libraries across the U.S. as part of their <a href="https://plix.media.mit.edu" target="_blank">Public Library Innovation Exchange (PLIX)</a> program. Our use of an online community publishing platform for these collaborations not only serves as a repository for lecture materials and workshop ideas, but also enables diverse learning communities to share data, experiences, successes, and failures in the learning process.</p>
+<p class="last-call">Learn more at <a href="https://c3.pubpub.org/" target="_blank" class="sliding yellow main-link">c3.pubpub.org</a></p>
 </div>
 <div class="media--container">
 <div class="img--container">
